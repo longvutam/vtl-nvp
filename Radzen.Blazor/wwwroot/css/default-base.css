@@ -4975,6 +4975,7 @@ ul.rz-profile-menu {
 .rz-slot-title {
     text-align: right;
     font-size: 0.75rem;
+    padding: 0 0.25rem;
 }
 
 
@@ -5081,6 +5082,7 @@ ul.rz-profile-menu {
     display: flex;
     justify-content: right;
     height: 100%;
+    width: 15%;
 }
 
     .rz-month-view .rz-slot:first-child {
@@ -5124,8 +5126,8 @@ ul.rz-profile-menu {
 
         .rz-scheduler-nav-views .rz-button:last-child,
         .rz-scheduler-nav-views .rz-paginator-element:last-child {
-            border-top-left-radius: 0.25rem;
-            border-bottom-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
             border-left: none;
         }
 
