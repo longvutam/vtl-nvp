@@ -12,22 +12,22 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
 using System.Text;
 
 #line default
 #line hidden
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
 #line hidden
-#line 3 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 3 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
 using Microsoft.JSInterop;
 
 #line default
@@ -39,7 +39,7 @@ using Microsoft.JSInterop;
         {
         }
         #pragma warning restore 1998
-#line 10 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 10 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
        
     protected override async Task OnClick()
     {
@@ -63,30 +63,32 @@ using Microsoft.JSInterop;
             __builder2.AddAttribute(4, "class", "rz-html-editor-dialog-item");
             __builder2.AddMarkupContent(5, "\r\n            ");
             __builder2.OpenElement(6, "label");
-#line 23 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
-__builder2.AddContent(7, SelectText);
+            __builder2.AddContent(7, 
+#line 23 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+                    SelectText
 
 #line default
 #line hidden
+            );
             __builder2.CloseElement();
             __builder2.AddMarkupContent(8, "\r\n            ");
             __builder2.OpenElement(9, "RadzenUpload");
             __builder2.AddAttribute(10, "ChooseText", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                       UploadChooseText
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(11, "@ref", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                              FileUpload
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(12, "Url", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                                              Editor.UploadUrl
 
 #line default
@@ -97,7 +99,7 @@ __builder2.AddContent(7, SelectText);
             __builder2.AddAttribute(15, "style", "width: 100%");
             __builder2.AddAttribute(16, "Complete", "OnUploadComplete");
             __builder2.AddMarkupContent(17, "\r\n");
-#line 26 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 26 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                  foreach (var header in uploadHeaders)
                         {
 
@@ -106,14 +108,14 @@ __builder2.AddContent(7, SelectText);
             __builder2.AddContent(18, "                            ");
             __builder2.OpenElement(19, "RadzenUploadHeader");
             __builder2.AddAttribute(20, "Name", 
-#line 28 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 28 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                       header.Key
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(21, "Value", 
-#line 28 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 28 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                                         header.Value
 
 #line default
@@ -121,7 +123,7 @@ __builder2.AddContent(7, SelectText);
             );
             __builder2.CloseElement();
             __builder2.AddMarkupContent(22, "\r\n");
-#line 29 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 29 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                         }
 
 #line default
@@ -135,16 +137,18 @@ __builder2.AddContent(7, SelectText);
             __builder2.AddAttribute(27, "class", "rz-html-editor-dialog-item");
             __builder2.AddMarkupContent(28, "\r\n                    ");
             __builder2.OpenElement(29, "label");
-#line 33 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
-__builder2.AddContent(30, WidthText);
+            __builder2.AddContent(30, 
+#line 33 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+                            WidthText
 
 #line default
 #line hidden
+            );
             __builder2.CloseElement();
             __builder2.AddMarkupContent(31, "\r\n                    ");
             __builder2.OpenElement(32, "RadzenTextBox");
             __builder2.AddAttribute(33, "@bind-Value", 
-#line 34 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 34 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                 Attributes.Width
 
 #line default
@@ -159,16 +163,18 @@ __builder2.AddContent(30, WidthText);
             __builder2.AddAttribute(38, "class", "rz-html-editor-dialog-item");
             __builder2.AddMarkupContent(39, "\r\n                    ");
             __builder2.OpenElement(40, "label");
-#line 37 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
-__builder2.AddContent(41, HeightText);
+            __builder2.AddContent(41, 
+#line 37 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+                            HeightText
 
 #line default
 #line hidden
+            );
             __builder2.CloseElement();
             __builder2.AddMarkupContent(42, "\r\n                    ");
             __builder2.OpenElement(43, "RadzenTextBox");
             __builder2.AddAttribute(44, "@bind-Value", 
-#line 38 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 38 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                 Attributes.Height
 
 #line default
@@ -183,16 +189,18 @@ __builder2.AddContent(41, HeightText);
             __builder2.AddAttribute(49, "class", "rz-html-editor-dialog-item");
             __builder2.AddMarkupContent(50, "\r\n                    ");
             __builder2.OpenElement(51, "label");
-#line 41 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
-__builder2.AddContent(52, UrlText);
+            __builder2.AddContent(52, 
+#line 41 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+                            UrlText
 
 #line default
 #line hidden
+            );
             __builder2.CloseElement();
             __builder2.AddMarkupContent(53, "\r\n                    ");
             __builder2.OpenElement(54, "RadzenTextBox");
             __builder2.AddAttribute(55, "@bind-Value", 
-#line 42 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 42 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                 Attributes.Src
 
 #line default
@@ -207,16 +215,18 @@ __builder2.AddContent(52, UrlText);
             __builder2.AddAttribute(60, "class", "rz-html-editor-dialog-item");
             __builder2.AddMarkupContent(61, "\r\n                    ");
             __builder2.OpenElement(62, "label");
-#line 45 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
-__builder2.AddContent(63, AltText);
+            __builder2.AddContent(63, 
+#line 45 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+                            AltText
 
 #line default
 #line hidden
+            );
             __builder2.CloseElement();
             __builder2.AddMarkupContent(64, "\r\n                    ");
             __builder2.OpenElement(65, "RadzenTextBox");
             __builder2.AddAttribute(66, "@bind-Value", 
-#line 46 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 46 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                                 Attributes.Alt
 
 #line default
@@ -232,7 +242,7 @@ __builder2.AddContent(63, AltText);
             __builder2.AddMarkupContent(72, "\r\n                    ");
             __builder2.OpenElement(73, "RadzenButton");
             __builder2.AddAttribute(74, "Text", 
-#line 49 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 49 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                         OkText
 
 #line default
@@ -243,7 +253,7 @@ __builder2.AddContent(63, AltText);
             __builder2.AddMarkupContent(76, "\r\n                    ");
             __builder2.OpenElement(77, "RadzenButton");
             __builder2.AddAttribute(78, "Text", 
-#line 50 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 50 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
                                         CancelText
 
 #line default
@@ -258,7 +268,7 @@ __builder2.AddContent(63, AltText);
             __builder2.CloseElement();
             __builder2.AddMarkupContent(83, "\r\n");
         }
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorImage.razor"
     );
     }
 

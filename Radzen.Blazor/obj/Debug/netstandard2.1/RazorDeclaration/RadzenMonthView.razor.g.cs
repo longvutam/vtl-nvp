@@ -12,17 +12,17 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
@@ -34,7 +34,7 @@ using Radzen.Blazor.Rendering;
         {
         }
         #pragma warning restore 1998
-#line 6 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 6 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
            
     public override RenderFragment Render()
     {
@@ -59,7 +59,7 @@ using Radzen.Blazor.Rendering;
         (__builder2) => {
             __builder2.OpenElement(0, "CascadingValue");
             __builder2.AddAttribute(1, "Value", 
-#line 23 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 23 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
                                        Scheduler
 
 #line default
@@ -68,35 +68,35 @@ using Radzen.Blazor.Rendering;
             __builder2.AddMarkupContent(2, "\r\n            ");
             __builder2.OpenElement(3, "MonthView");
             __builder2.AddAttribute(4, "StartDate", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
                                   StartDate
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(5, "EndDate", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
                                                      EndDate
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(6, "MaxAppointmentsInSlot", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
                                                                                     maxAppointmentsInSlot
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(7, "MoreText", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
                                                                                                                     MoreText
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(8, "Appointments", 
-#line 24 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 24 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
                                                                                                                                            appointments
 
 #line default
@@ -106,7 +106,7 @@ using Radzen.Blazor.Rendering;
             __builder2.AddMarkupContent(9, "\r\n        ");
             __builder2.CloseElement();
         }
-#line 25 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
+#line 25 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenMonthView.razor"
                          ;
     }
 

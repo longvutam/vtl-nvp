@@ -13,70 +13,70 @@ namespace RadzenBlazorDemos.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
+#line 3 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
+#line 4 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
+#line 5 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
+#line 6 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
 using Radzen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
+#line 3 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
+#line 4 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
 using RadzenBlazorDemos;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
+#line 5 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\_Imports.razor"
 using RadzenBlazorDemos.Shared;
 
 #line default
@@ -92,7 +92,7 @@ using RadzenBlazorDemos.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
+#line 27 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
        
     EventConsole console;
     int orderID = 10248;
@@ -149,13 +149,15 @@ using RadzenBlazorDemos.Shared;
                     <RadzenButton Text=""Cancel"" Click=""() => ds.Close(false)"" ButtonStyle=""ButtonStyle.Secondary"" Style=""margin-bottom: 10px; width: 150px""></RadzenButton>
                     <RadzenButton Text=""Refresh"" Click=""(() => { orderID = 10249; ds.Refresh(); })"" ButtonStyle=""ButtonStyle.Info"" Style=""margin-bottom: 10px; width: 150px""></RadzenButton>
                     Order ID: ");
+            __builder2.AddContent(9, 
 #nullable restore
-#line 71 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
-__builder2.AddContent(9, orderID);
+#line 71 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
+                               orderID
 
 #line default
 #line hidden
 #nullable disable
+            );
             __builder2.AddMarkupContent(10, "\r\n                ");
             __builder2.CloseElement();
             __builder2.AddMarkupContent(11, "\r\n            ");
@@ -164,7 +166,7 @@ __builder2.AddContent(9, orderID);
             __builder2.CloseElement();
         }
 #nullable restore
-#line 74 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
+#line 74 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
               );
     
       console.Log($"Dialog result: {result}");
@@ -182,7 +184,7 @@ __builder2.AddContent(9, orderID);
             __builder2.AddMarkupContent(13, "<div>\r\n            Click outside to close this Dialog\r\n        </div>");
         }
 #nullable restore
-#line 84 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
+#line 84 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
               , new DialogOptions() { CloseDialogOnOverlayClick = true });
     }
 
@@ -220,7 +222,7 @@ __builder2.AddContent(9, orderID);
             __builder2.AddMarkupContent(14, "<div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-12\">\r\n                        Loading...\r\n                    </div>\r\n                </div>\r\n        </div>");
         }
 #nullable restore
-#line 118 "C:\Users\owlsn\Source\Repos\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
+#line 118 "D:\c#\blazor\vtl-nvp\RadzenBlazorDemos\Pages\DialogPage.razor"
               , new DialogOptions() { ShowTitle = false, Style = "min-height:auto;min-width:auto;width:auto" });
     }
 

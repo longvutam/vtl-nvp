@@ -12,17 +12,17 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
@@ -34,7 +34,7 @@ using Radzen.Blazor.Rendering;
         {
         }
         #pragma warning restore 1998
-#line 6 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 6 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
        
     public override RenderFragment Render()
     {
@@ -50,7 +50,7 @@ using Radzen.Blazor.Rendering;
         (__builder2) => {
             __builder2.OpenElement(0, "CascadingValue");
             __builder2.AddAttribute(1, "Value", 
-#line 14 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 14 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
                             Scheduler
 
 #line default
@@ -59,42 +59,42 @@ using Radzen.Blazor.Rendering;
             __builder2.AddMarkupContent(2, "\r\n        ");
             __builder2.OpenElement(3, "DayView");
             __builder2.AddAttribute(4, "StartDate", 
-#line 15 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 15 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
                             StartDate
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(5, "EndDate", 
-#line 15 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 15 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
                                                EndDate
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(6, "StartTime", 
-#line 15 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 15 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
                                                                   StartTime
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(7, "EndTime", 
-#line 15 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 15 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
                                                                                      EndTime
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(8, "Appointments", 
-#line 15 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 15 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
                                                                                                            appointments
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(9, "TimeFormat", 
-#line 16 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 16 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
                      TimeFormat
 
 #line default
@@ -105,7 +105,7 @@ using Radzen.Blazor.Rendering;
             __builder2.CloseElement();
             __builder2.AddMarkupContent(11, "\r\n");
         }
-#line 18 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
+#line 18 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDayView.razor"
     ;
     }
 

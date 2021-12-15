@@ -11,17 +11,17 @@ namespace Radzen.Blazor
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenRating.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenRating.razor"
 using System.Linq;
 
 #line default
 #line hidden
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenRating.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenRating.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default

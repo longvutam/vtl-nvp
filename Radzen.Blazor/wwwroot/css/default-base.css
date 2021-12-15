@@ -1,104 +1,81 @@
-﻿@font-face {
+﻿@charset "UTF-8";
+
+:root {
+    --bs-blue: #009ef6;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray: #7E8299;
+    --bs-gray-dark: #3F4254;
+    --bs-gray-100: #F5F8FA;
+    --bs-gray-200: #EFF2F5;
+    --bs-gray-300: #E4E6EF;
+    --bs-gray-400: #B5B5C3;
+    --bs-gray-500: #A1A5B7;
+    --bs-gray-600: #7E8299;
+    --bs-gray-700: #5E6278;
+    --bs-gray-800: #3F4254;
+    --bs-gray-900: #181C32;
+    --bs-white: #ffffff;
+    --bs-light: #F5F8FA;
+    --bs-primary: #009EF7;
+    --bs-secondary: #E4E6EF;
+    --bs-success: #50CD89;
+    --bs-info: #7239EA;
+    --bs-warning: #FFC700;
+    --bs-danger: #F1416C;
+    --bs-dark: #181C32;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-light-rgb: 245, 248, 250;
+    --bs-primary-rgb: 0, 158, 247;
+    --bs-secondary-rgb: 228, 230, 239;
+    --bs-success-rgb: 80, 205, 137;
+    --bs-info-rgb: 114, 57, 234;
+    --bs-warning-rgb: 255, 199, 0;
+    --bs-danger-rgb: 241, 65, 108;
+    --bs-dark-rgb: 24, 28, 50;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 24, 28, 50;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: Poppins, Helvetica, "sans-serif";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Poppins, Helvetica, "sans-serif";
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #181C32;
+    --bs-body-bg: #ffffff;
+}
+
+@font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
     src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/MaterialIcons-Regular.woff") format("woff");
 }
 
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 200;
-    font-style: normal;
-    font-stretch: normal;
-    src: local("SourceSansPro-ExtraLight"), local("Source Sans Pro"), url("../fonts/SourceSansPro-ExtraLight.woff") format("woff");
-}
 
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    src: local("SourceSansPro-Light"), local("Source Sans Pro"), url("../fonts/SourceSansPro-Light.woff") format("woff");
-}
+/*chỉnh font*/
 
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    src: local("SourceSansPro-Regular"), local("Source Sans Pro"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    src: local("SourceSansPro-Semibold"), local("Source Sans Pro Semibold"), url("../fonts/SourceSansPro-Semibold.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    src: local("SourceSansPro-Bold"), local("Source Sans Pro Bold"), url("../fonts/SourceSansPro-Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: local("SourceSansPro-Black"), local("Source Sans Pro Black"), url("../fonts/SourceSansPro-Black.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 200;
-    font-style: italic;
-    font-stretch: normal;
-    src: local("SourceSansPro-ExtraLightIt"), local("Source Sans Pro"), url("../fonts/SourceSansPro-ExtraLightIt.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 300;
-    font-style: italic;
-    font-stretch: normal;
-    src: local("SourceSansPro-LightIt"), local("Source Sans Pro"), url("../fonts/SourceSansPro-LightIt.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal;
-    src: local("SourceSansPro-It"), local("Source Sans Pro"), url("../fonts/SourceSansPro-It.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 600;
-    font-style: italic;
-    font-stretch: normal;
-    src: local("SourceSansPro-SemiboldIt"), local("Source Sans Pro"), url("../fonts/SourceSansPro-SemiboldIt.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 700;
-    font-style: italic;
-    font-stretch: normal;
-    src: local("SourceSansPro-BoldIt"), local("Source Sans Pro"), url("../fonts/SourceSansPro-BoldIt.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-weight: 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: local("SourceSansPro-BlackIt"), local("Source Sans Pro"), url("../fonts/SourceSansPro-BlackIt.woff") format("woff");
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 h1 {
@@ -139,12 +116,30 @@ label {
     margin-bottom: 0;
 }
 
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 /* Preferred icon size */
-.rzi, .rz-column-drag, .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-header .rzi-plus, .rz-sortable-column .rzi-grid-sort, .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rzi-chevron-circle-right, .rz-fileupload-row .rz-button .rzi-close, .rz-fileupload-row .rz-paginator-element .rzi-close,
+
+.rzi,
+.rz-column-drag,
+.rz-datatable-loading-content .rzi-circle-o-notch,
+.rz-datatable-header .rzi-plus,
+.rz-sortable-column .rzi-grid-sort,
+.rz-datatable .rzi-chevron-circle-down,
+.rz-datatable .rzi-chevron-circle-right,
+.rz-fileupload-row .rz-button .rzi-close,
+.rz-fileupload-row .rz-paginator-element .rzi-close,
 .rz-fileupload-row .rz-button .rzi-times,
 .rz-fileupload-row .rz-paginator-element .rzi-times,
 .rz-fileupload-row .rz-button .rz-icon-trash,
-.rz-fileupload-row .rz-paginator-element .rz-icon-trash, .rz-menuitem .rz-menuitem-icon {
+.rz-fileupload-row .rz-paginator-element .rz-icon-trash,
+.rz-menuitem .rz-menuitem-icon {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -204,7 +199,8 @@ p-button[type] {
     -webkit-appearance: none;
 }
 
-.rz-button, .rz-paginator-element {
+.rz-button,
+.rz-paginator-element {
     -webkit-appearance: none;
     border-radius: 4px;
     background-color: #ff6d41;
@@ -212,7 +208,7 @@ p-button[type] {
     border: none;
     outline: none;
     line-height: initial;
-    font-size: 1.0625rem;
+    font-size: 0.85rem;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: none;
@@ -222,22 +218,29 @@ p-button[type] {
     background-repeat: no-repeat;
 }
 
-    .rz-button:focus, .rz-paginator-element:focus {
+    .rz-button:focus,
+    .rz-paginator-element:focus {
         outline: none;
     }
 
-    .rz-button:not(.rz-state-disabled), .rz-paginator-element:not(.rz-state-disabled) {
+    .rz-button:not(.rz-state-disabled),
+    .rz-paginator-element:not(.rz-state-disabled) {
         cursor: pointer;
+        text-decoration: none;
     }
 
-        .rz-button:not(.rz-state-disabled):hover:not(:active), .rz-paginator-element:not(.rz-state-disabled):hover:not(:active) {
+        .rz-button:not(.rz-state-disabled):hover:not(:active),
+        .rz-paginator-element:not(.rz-state-disabled):hover:not(:active) {
             background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1)));
             background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
             background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
             background-size: auto;
+            -webkit-box-shadow: inset 0 -3px 0 0 rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0 -3px 0 0 rgba(255, 255, 255, 0.2);
         }
 
-        .rz-button:not(.rz-state-disabled):active, .rz-paginator-element:not(.rz-state-disabled):active {
+        .rz-button:not(.rz-state-disabled):active,
+        .rz-paginator-element:not(.rz-state-disabled):active {
             background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
             background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
             background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
@@ -246,94 +249,127 @@ p-button[type] {
             box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
         }
 
-    .rz-button.rz-state-disabled, .rz-state-disabled.rz-paginator-element {
+    .rz-button.rz-state-disabled,
+    .rz-state-disabled.rz-paginator-element {
         opacity: 0.2;
         cursor: initial;
     }
 
-    .rz-button .rz-button-text, .rz-paginator-element .rz-button-text {
+    .rz-button .rz-button-text,
+    .rz-paginator-element .rz-button-text {
         vertical-align: middle;
         line-height: 1.5rem;
     }
 
-    .rz-button .rzi, .rz-paginator-element .rzi, .rz-button .rz-column-drag, .rz-paginator-element .rz-column-drag,
-    .rz-button .rz-datatable-loading-content .rzi-circle-o-notch, .rz-paginator-element .rz-datatable-loading-content .rzi-circle-o-notch,
-    .rz-datatable-loading-content .rz-button .rzi-circle-o-notch, .rz-datatable-loading-content .rz-paginator-element .rzi-circle-o-notch,
-    .rz-button .rz-datatable-header .rzi-plus, .rz-paginator-element .rz-datatable-header .rzi-plus,
-    .rz-datatable-header .rz-button .rzi-plus, .rz-datatable-header .rz-paginator-element .rzi-plus, .rz-button .rz-sortable-column .rzi-grid-sort,
-    .rz-paginator-element .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-button .rzi-grid-sort,
-    .rz-sortable-column .rz-paginator-element .rzi-grid-sort, .rz-button .rz-datatable .rzi-chevron-circle-down,
-    .rz-paginator-element .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-button .rzi-chevron-circle-down,
-    .rz-datatable .rz-paginator-element .rzi-chevron-circle-down, .rz-button .rz-datatable .rzi-chevron-circle-right,
-    .rz-paginator-element .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-button .rzi-chevron-circle-right,
-    .rz-datatable .rz-paginator-element .rzi-chevron-circle-right, .rz-fileupload-row .rz-button .rzi-close,
+    .rz-button .rzi,
+    .rz-paginator-element .rzi,
+    .rz-button .rz-column-drag,
+    .rz-paginator-element .rz-column-drag,
+    .rz-button .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-paginator-element .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-button .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-paginator-element .rzi-circle-o-notch,
+    .rz-button .rz-datatable-header .rzi-plus,
+    .rz-paginator-element .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-button .rzi-plus,
+    .rz-datatable-header .rz-paginator-element .rzi-plus,
+    .rz-button .rz-sortable-column .rzi-grid-sort,
+    .rz-paginator-element .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-button .rzi-grid-sort,
+    .rz-sortable-column .rz-paginator-element .rzi-grid-sort,
+    .rz-button .rz-datatable .rzi-chevron-circle-down,
+    .rz-paginator-element .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-button .rzi-chevron-circle-down,
+    .rz-datatable .rz-paginator-element .rzi-chevron-circle-down,
+    .rz-button .rz-datatable .rzi-chevron-circle-right,
+    .rz-paginator-element .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-button .rzi-chevron-circle-right,
+    .rz-datatable .rz-paginator-element .rzi-chevron-circle-right,
+    .rz-fileupload-row .rz-button .rzi-close,
     .rz-fileupload-row .rz-paginator-element .rzi-close,
     .rz-fileupload-row .rz-button .rzi-times,
     .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-icon-trash, .rz-button .rz-menuitem .rz-menuitem-icon,
-    .rz-paginator-element .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-button .rz-menuitem-icon,
+    .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
+    .rz-button .rz-menuitem .rz-menuitem-icon,
+    .rz-paginator-element .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-button .rz-menuitem-icon,
     .rz-menuitem .rz-paginator-element .rz-menuitem-icon {
         vertical-align: middle;
     }
 
-    .rz-button.btn-primary, .btn-primary.rz-paginator-element {
+    .rz-button.btn-primary,
+    .btn-primary.rz-paginator-element {
         color: #ffffff;
         background-color: #009EF7;
         border-color: #009EF7;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-    .rz-button.btn-light, .btn-light.rz-paginator-element {
+    .rz-button.btn-light,
+    .btn-light.rz-paginator-element {
         color: #7e8299;
         background-color: #F5F8FA;
         border-color: #F5F8FA;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-    .rz-button.btn-secondary, .btn-secondary.rz-paginator-element {
+    .rz-button.btn-secondary,
+    .btn-secondary.rz-paginator-element {
         color: #3f4254;
         background-color: #E4E6EF;
         border-color: #E4E6EF;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-    .rz-button.btn-info, .btn-info.rz-paginator-element {
+    .rz-button.btn-info,
+    .btn-info.rz-paginator-element {
         color: #ffffff;
         background-color: #7239EA;
         border-color: #7239EA;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-    .rz-button.btn-warning, .btn-warning.rz-paginator-element {
+    .rz-button.btn-warning,
+    .btn-warning.rz-paginator-element {
         color: #ffffff;
         background-color: #FFC700;
         border-color: #FFC700;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-    .rz-button.btn-error, .btn-error.rz-paginator-element {
+    .rz-button.btn-error,
+    .btn-error.rz-paginator-element {
         color: #181C32;
         background-color: #F1416C;
         border-color: #F1416C;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-    .rz-button.btn-danger, .btn-danger.rz-paginator-element {
+    .rz-button.btn-danger,
+    .btn-danger.rz-paginator-element {
         color: #ffffff;
         background-color: #F1416C;
         border-color: #F1416C;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-    .rz-button.btn-success, .btn-success.rz-paginator-element {
+    .rz-button.btn-success,
+    .btn-success.rz-paginator-element {
         color: #ffffff;
         background-color: #50CD89;
         border-color: #50CD89;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     }
 
-.rz-button-md, .rz-date-filter-buttons .rz-button, .rz-date-filter-buttons .rz-paginator-element, .rz-fileupload-choose, .rz-selectbutton .rz-button, .rz-selectbutton .rz-paginator-element, .rz-splitbutton-menubutton, .rz-splitbutton .rz-button-text-icon-left,
+.rz-button-md,
+.rz-date-filter-buttons .rz-button,
+.rz-date-filter-buttons .rz-paginator-element,
+.rz-fileupload-choose,
+.rz-selectbutton .rz-button,
+.rz-selectbutton .rz-paginator-element,
+.rz-splitbutton-menubutton,
+.rz-splitbutton .rz-button-text-icon-left,
 .rz-splitbutton .rz-button-text-only {
     display: inline-block;
     font-weight: 500;
@@ -350,54 +386,85 @@ p-button[type] {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-    .rz-button-md.rz-button-text-icon-left, .rz-date-filter-buttons .rz-button-text-icon-left.rz-button, .rz-date-filter-buttons .rz-button-text-icon-left.rz-paginator-element, .rz-button-text-icon-left.rz-fileupload-choose, .rz-selectbutton .rz-button-text-icon-left.rz-button, .rz-selectbutton .rz-button-text-icon-left.rz-paginator-element, .rz-button-text-icon-left.rz-splitbutton-menubutton, .rz-splitbutton .rz-button-text-icon-left {
+    .rz-button-md.rz-button-text-icon-left,
+    .rz-date-filter-buttons .rz-button-text-icon-left.rz-button,
+    .rz-date-filter-buttons .rz-button-text-icon-left.rz-paginator-element,
+    .rz-button-text-icon-left.rz-fileupload-choose,
+    .rz-selectbutton .rz-button-text-icon-left.rz-button,
+    .rz-selectbutton .rz-button-text-icon-left.rz-paginator-element,
+    .rz-button-text-icon-left.rz-splitbutton-menubutton,
+    .rz-splitbutton .rz-button-text-icon-left {
         padding: 0;
     }
 
-        .rz-button-md.rz-button-icon-only, .rz-button-md.rz-paginator-element, .rz-date-filter-buttons .rz-button-icon-only.rz-button, .rz-date-filter-buttons .rz-paginator-element, .rz-button-icon-only.rz-fileupload-choose, .rz-fileupload-choose.rz-paginator-element, .rz-selectbutton .rz-button-icon-only.rz-button, .rz-selectbutton .rz-paginator-element, .rz-splitbutton-menubutton.rz-paginator-element, .rz-splitbutton .rz-button-icon-only.rz-button-text-icon-left, .rz-splitbutton .rz-button-text-icon-left.rz-paginator-element,
+        .rz-button-md.rz-button-icon-only,
+        .rz-button-md.rz-paginator-element,
+        .rz-date-filter-buttons .rz-button-icon-only.rz-button,
+        .rz-date-filter-buttons .rz-paginator-element,
+        .rz-button-icon-only.rz-fileupload-choose,
+        .rz-fileupload-choose.rz-paginator-element,
+        .rz-selectbutton .rz-button-icon-only.rz-button,
+        .rz-selectbutton .rz-paginator-element,
+        .rz-splitbutton-menubutton.rz-paginator-element,
+        .rz-splitbutton .rz-button-icon-only.rz-button-text-icon-left,
+        .rz-splitbutton .rz-button-text-icon-left.rz-paginator-element,
         .rz-splitbutton .rz-button-icon-only.rz-button-text-only,
         .rz-splitbutton .rz-button-text-only.rz-paginator-element {
             padding: 0;
         }
 
-            .rz-button-md .rzi, .rz-button-md .rz-column-drag, .rz-button-md .rz-datatable-loading-content .rzi-circle-o-notch,
-            .rz-datatable-loading-content .rz-button-md .rzi-circle-o-notch, .rz-date-filter-buttons .rz-button .rzi,
-            .rz-date-filter-buttons .rz-paginator-element .rzi, .rz-date-filter-buttons .rz-button .rz-column-drag,
+            .rz-button-md .rzi,
+            .rz-button-md .rz-column-drag,
+            .rz-button-md .rz-datatable-loading-content .rzi-circle-o-notch,
+            .rz-datatable-loading-content .rz-button-md .rzi-circle-o-notch,
+            .rz-date-filter-buttons .rz-button .rzi,
+            .rz-date-filter-buttons .rz-paginator-element .rzi,
+            .rz-date-filter-buttons .rz-button .rz-column-drag,
             .rz-date-filter-buttons .rz-paginator-element .rz-column-drag,
             .rz-date-filter-buttons .rz-button .rz-datatable-loading-content .rzi-circle-o-notch,
             .rz-date-filter-buttons .rz-paginator-element .rz-datatable-loading-content .rzi-circle-o-notch,
             .rz-datatable-loading-content .rz-date-filter-buttons .rz-button .rzi-circle-o-notch,
             .rz-datatable-loading-content .rz-date-filter-buttons .rz-paginator-element .rzi-circle-o-notch,
-            .rz-button-md .rz-datatable-header .rzi-plus, .rz-date-filter-buttons .rz-button .rz-datatable-header .rzi-plus,
-            .rz-date-filter-buttons .rz-paginator-element .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-button-md .rzi-plus,
+            .rz-button-md .rz-datatable-header .rzi-plus,
+            .rz-date-filter-buttons .rz-button .rz-datatable-header .rzi-plus,
+            .rz-date-filter-buttons .rz-paginator-element .rz-datatable-header .rzi-plus,
+            .rz-datatable-header .rz-button-md .rzi-plus,
             .rz-datatable-header .rz-date-filter-buttons .rz-button .rzi-plus,
             .rz-datatable-header .rz-date-filter-buttons .rz-paginator-element .rzi-plus,
             .rz-date-filter-buttons .rz-datatable-header .rz-button .rzi-plus,
-            .rz-date-filter-buttons .rz-datatable-header .rz-paginator-element .rzi-plus, .rz-button-md .rz-sortable-column .rzi-grid-sort,
+            .rz-date-filter-buttons .rz-datatable-header .rz-paginator-element .rzi-plus,
+            .rz-button-md .rz-sortable-column .rzi-grid-sort,
             .rz-date-filter-buttons .rz-button .rz-sortable-column .rzi-grid-sort,
-            .rz-date-filter-buttons .rz-paginator-element .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-button-md .rzi-grid-sort,
+            .rz-date-filter-buttons .rz-paginator-element .rz-sortable-column .rzi-grid-sort,
+            .rz-sortable-column .rz-button-md .rzi-grid-sort,
             .rz-sortable-column .rz-date-filter-buttons .rz-button .rzi-grid-sort,
             .rz-sortable-column .rz-date-filter-buttons .rz-paginator-element .rzi-grid-sort,
             .rz-date-filter-buttons .rz-sortable-column .rz-button .rzi-grid-sort,
-            .rz-date-filter-buttons .rz-sortable-column .rz-paginator-element .rzi-grid-sort, .rz-button-md .rz-datatable .rzi-chevron-circle-down,
+            .rz-date-filter-buttons .rz-sortable-column .rz-paginator-element .rzi-grid-sort,
+            .rz-button-md .rz-datatable .rzi-chevron-circle-down,
             .rz-date-filter-buttons .rz-button .rz-datatable .rzi-chevron-circle-down,
             .rz-date-filter-buttons .rz-paginator-element .rz-datatable .rzi-chevron-circle-down,
-            .rz-datatable .rz-button-md .rzi-chevron-circle-down, .rz-datatable .rz-date-filter-buttons .rz-button .rzi-chevron-circle-down,
+            .rz-datatable .rz-button-md .rzi-chevron-circle-down,
+            .rz-datatable .rz-date-filter-buttons .rz-button .rzi-chevron-circle-down,
             .rz-datatable .rz-date-filter-buttons .rz-paginator-element .rzi-chevron-circle-down,
             .rz-date-filter-buttons .rz-datatable .rz-button .rzi-chevron-circle-down,
-            .rz-date-filter-buttons .rz-datatable .rz-paginator-element .rzi-chevron-circle-down, .rz-button-md .rz-datatable .rzi-chevron-circle-right,
+            .rz-date-filter-buttons .rz-datatable .rz-paginator-element .rzi-chevron-circle-down,
+            .rz-button-md .rz-datatable .rzi-chevron-circle-right,
             .rz-date-filter-buttons .rz-button .rz-datatable .rzi-chevron-circle-right,
             .rz-date-filter-buttons .rz-paginator-element .rz-datatable .rzi-chevron-circle-right,
-            .rz-datatable .rz-button-md .rzi-chevron-circle-right, .rz-datatable .rz-date-filter-buttons .rz-button .rzi-chevron-circle-right,
+            .rz-datatable .rz-button-md .rzi-chevron-circle-right,
+            .rz-datatable .rz-date-filter-buttons .rz-button .rzi-chevron-circle-right,
             .rz-datatable .rz-date-filter-buttons .rz-paginator-element .rzi-chevron-circle-right,
             .rz-date-filter-buttons .rz-datatable .rz-button .rzi-chevron-circle-right,
             .rz-date-filter-buttons .rz-datatable .rz-paginator-element .rzi-chevron-circle-right,
-            .rz-button-md .rz-fileupload-row .rz-button .rzi-close, .rz-button-md .rz-fileupload-row .rz-paginator-element .rzi-close,
+            .rz-button-md .rz-fileupload-row .rz-button .rzi-close,
+            .rz-button-md .rz-fileupload-row .rz-paginator-element .rzi-close,
             .rz-date-filter-buttons .rz-button .rz-fileupload-row .rz-button .rzi-close,
             .rz-date-filter-buttons .rz-paginator-element .rz-fileupload-row .rz-button .rzi-close,
             .rz-date-filter-buttons .rz-button .rz-fileupload-row .rz-paginator-element .rzi-close,
             .rz-date-filter-buttons .rz-paginator-element .rz-fileupload-row .rz-paginator-element .rzi-close,
-            .rz-fileupload-row .rz-button .rz-button-md .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-button-md .rzi-close,
+            .rz-fileupload-row .rz-button .rz-button-md .rzi-close,
+            .rz-fileupload-row .rz-paginator-element .rz-button-md .rzi-close,
             .rz-fileupload-row .rz-button .rz-date-filter-buttons .rz-button .rzi-close,
             .rz-fileupload-row .rz-paginator-element .rz-date-filter-buttons .rz-button .rzi-close,
             .rz-fileupload-row .rz-button .rz-date-filter-buttons .rz-paginator-element .rzi-close,
@@ -437,7 +504,23 @@ p-button[type] {
             .rz-date-filter-buttons .rz-fileupload-row .rz-button .rz-button .rz-icon-trash,
             .rz-date-filter-buttons .rz-fileupload-row .rz-paginator-element .rz-button .rz-icon-trash,
             .rz-date-filter-buttons .rz-fileupload-row .rz-button .rz-paginator-element .rz-icon-trash,
-            .rz-date-filter-buttons .rz-fileupload-row .rz-paginator-element .rz-paginator-element .rz-icon-trash, .rz-fileupload-choose .rzi, .rz-fileupload-choose .rz-column-drag, .rz-fileupload-choose .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-fileupload-choose .rzi-circle-o-notch, .rz-fileupload-choose .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-fileupload-choose .rzi-plus, .rz-fileupload-choose .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-fileupload-choose .rzi-grid-sort, .rz-fileupload-choose .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-fileupload-choose .rzi-chevron-circle-down, .rz-fileupload-choose .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-fileupload-choose .rzi-chevron-circle-right, .rz-fileupload-choose .rz-fileupload-row .rz-button .rzi-close, .rz-fileupload-choose .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-fileupload-choose .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-fileupload-choose .rzi-close,
+            .rz-date-filter-buttons .rz-fileupload-row .rz-paginator-element .rz-paginator-element .rz-icon-trash,
+            .rz-fileupload-choose .rzi,
+            .rz-fileupload-choose .rz-column-drag,
+            .rz-fileupload-choose .rz-datatable-loading-content .rzi-circle-o-notch,
+            .rz-datatable-loading-content .rz-fileupload-choose .rzi-circle-o-notch,
+            .rz-fileupload-choose .rz-datatable-header .rzi-plus,
+            .rz-datatable-header .rz-fileupload-choose .rzi-plus,
+            .rz-fileupload-choose .rz-sortable-column .rzi-grid-sort,
+            .rz-sortable-column .rz-fileupload-choose .rzi-grid-sort,
+            .rz-fileupload-choose .rz-datatable .rzi-chevron-circle-down,
+            .rz-datatable .rz-fileupload-choose .rzi-chevron-circle-down,
+            .rz-fileupload-choose .rz-datatable .rzi-chevron-circle-right,
+            .rz-datatable .rz-fileupload-choose .rzi-chevron-circle-right,
+            .rz-fileupload-choose .rz-fileupload-row .rz-button .rzi-close,
+            .rz-fileupload-choose .rz-fileupload-row .rz-paginator-element .rzi-close,
+            .rz-fileupload-row .rz-button .rz-fileupload-choose .rzi-close,
+            .rz-fileupload-row .rz-paginator-element .rz-fileupload-choose .rzi-close,
             .rz-fileupload-choose .rz-fileupload-row .rz-button .rzi-times,
             .rz-fileupload-choose .rz-fileupload-row .rz-paginator-element .rzi-times,
             .rz-fileupload-row .rz-button .rz-fileupload-choose .rzi-times,
@@ -445,19 +528,34 @@ p-button[type] {
             .rz-fileupload-choose .rz-fileupload-row .rz-button .rz-icon-trash,
             .rz-fileupload-choose .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
             .rz-fileupload-row .rz-button .rz-fileupload-choose .rz-icon-trash,
-            .rz-fileupload-row .rz-paginator-element .rz-fileupload-choose .rz-icon-trash, .rz-selectbutton .rz-button .rzi, .rz-selectbutton .rz-paginator-element .rzi,
-            .rz-selectbutton .rz-button .rz-column-drag, .rz-selectbutton .rz-paginator-element .rz-column-drag, .rz-selectbutton .rz-button .rz-datatable-loading-content .rzi-circle-o-notch,
-            .rz-selectbutton .rz-paginator-element .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-selectbutton .rz-button .rzi-circle-o-notch,
-            .rz-datatable-loading-content .rz-selectbutton .rz-paginator-element .rzi-circle-o-notch, .rz-selectbutton .rz-button .rz-datatable-header .rzi-plus,
-            .rz-selectbutton .rz-paginator-element .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-selectbutton .rz-button .rzi-plus,
-            .rz-datatable-header .rz-selectbutton .rz-paginator-element .rzi-plus, .rz-selectbutton .rz-button .rz-sortable-column .rzi-grid-sort,
-            .rz-selectbutton .rz-paginator-element .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-selectbutton .rz-button .rzi-grid-sort,
-            .rz-sortable-column .rz-selectbutton .rz-paginator-element .rzi-grid-sort, .rz-selectbutton .rz-button .rz-datatable .rzi-chevron-circle-down,
-            .rz-selectbutton .rz-paginator-element .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-selectbutton .rz-button .rzi-chevron-circle-down,
-            .rz-datatable .rz-selectbutton .rz-paginator-element .rzi-chevron-circle-down, .rz-selectbutton .rz-button .rz-datatable .rzi-chevron-circle-right,
-            .rz-selectbutton .rz-paginator-element .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-selectbutton .rz-button .rzi-chevron-circle-right,
-            .rz-datatable .rz-selectbutton .rz-paginator-element .rzi-chevron-circle-right, .rz-selectbutton .rz-fileupload-row .rz-button .rzi-close,
-            .rz-selectbutton .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-selectbutton .rz-button .rzi-close,
+            .rz-fileupload-row .rz-paginator-element .rz-fileupload-choose .rz-icon-trash,
+            .rz-selectbutton .rz-button .rzi,
+            .rz-selectbutton .rz-paginator-element .rzi,
+            .rz-selectbutton .rz-button .rz-column-drag,
+            .rz-selectbutton .rz-paginator-element .rz-column-drag,
+            .rz-selectbutton .rz-button .rz-datatable-loading-content .rzi-circle-o-notch,
+            .rz-selectbutton .rz-paginator-element .rz-datatable-loading-content .rzi-circle-o-notch,
+            .rz-datatable-loading-content .rz-selectbutton .rz-button .rzi-circle-o-notch,
+            .rz-datatable-loading-content .rz-selectbutton .rz-paginator-element .rzi-circle-o-notch,
+            .rz-selectbutton .rz-button .rz-datatable-header .rzi-plus,
+            .rz-selectbutton .rz-paginator-element .rz-datatable-header .rzi-plus,
+            .rz-datatable-header .rz-selectbutton .rz-button .rzi-plus,
+            .rz-datatable-header .rz-selectbutton .rz-paginator-element .rzi-plus,
+            .rz-selectbutton .rz-button .rz-sortable-column .rzi-grid-sort,
+            .rz-selectbutton .rz-paginator-element .rz-sortable-column .rzi-grid-sort,
+            .rz-sortable-column .rz-selectbutton .rz-button .rzi-grid-sort,
+            .rz-sortable-column .rz-selectbutton .rz-paginator-element .rzi-grid-sort,
+            .rz-selectbutton .rz-button .rz-datatable .rzi-chevron-circle-down,
+            .rz-selectbutton .rz-paginator-element .rz-datatable .rzi-chevron-circle-down,
+            .rz-datatable .rz-selectbutton .rz-button .rzi-chevron-circle-down,
+            .rz-datatable .rz-selectbutton .rz-paginator-element .rzi-chevron-circle-down,
+            .rz-selectbutton .rz-button .rz-datatable .rzi-chevron-circle-right,
+            .rz-selectbutton .rz-paginator-element .rz-datatable .rzi-chevron-circle-right,
+            .rz-datatable .rz-selectbutton .rz-button .rzi-chevron-circle-right,
+            .rz-datatable .rz-selectbutton .rz-paginator-element .rzi-chevron-circle-right,
+            .rz-selectbutton .rz-fileupload-row .rz-button .rzi-close,
+            .rz-selectbutton .rz-fileupload-row .rz-paginator-element .rzi-close,
+            .rz-fileupload-row .rz-selectbutton .rz-button .rzi-close,
             .rz-fileupload-row .rz-selectbutton .rz-paginator-element .rzi-close,
             .rz-selectbutton .rz-fileupload-row .rz-button .rzi-times,
             .rz-selectbutton .rz-fileupload-row .rz-paginator-element .rzi-times,
@@ -466,14 +564,23 @@ p-button[type] {
             .rz-selectbutton .rz-fileupload-row .rz-button .rz-icon-trash,
             .rz-selectbutton .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
             .rz-fileupload-row .rz-selectbutton .rz-button .rz-icon-trash,
-            .rz-fileupload-row .rz-selectbutton .rz-paginator-element .rz-icon-trash, .rz-splitbutton-menubutton .rzi, .rz-splitbutton-menubutton .rz-column-drag,
-            .rz-splitbutton-menubutton .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-splitbutton-menubutton .rzi-circle-o-notch,
-            .rz-splitbutton-menubutton .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-splitbutton-menubutton .rzi-plus,
-            .rz-splitbutton-menubutton .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-splitbutton-menubutton .rzi-grid-sort,
-            .rz-splitbutton-menubutton .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-splitbutton-menubutton .rzi-chevron-circle-down,
-            .rz-splitbutton-menubutton .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-splitbutton-menubutton .rzi-chevron-circle-right,
-            .rz-splitbutton-menubutton .rz-fileupload-row .rz-button .rzi-close, .rz-splitbutton-menubutton .rz-fileupload-row .rz-paginator-element .rzi-close,
-            .rz-fileupload-row .rz-button .rz-splitbutton-menubutton .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-splitbutton-menubutton .rzi-close,
+            .rz-fileupload-row .rz-selectbutton .rz-paginator-element .rz-icon-trash,
+            .rz-splitbutton-menubutton .rzi,
+            .rz-splitbutton-menubutton .rz-column-drag,
+            .rz-splitbutton-menubutton .rz-datatable-loading-content .rzi-circle-o-notch,
+            .rz-datatable-loading-content .rz-splitbutton-menubutton .rzi-circle-o-notch,
+            .rz-splitbutton-menubutton .rz-datatable-header .rzi-plus,
+            .rz-datatable-header .rz-splitbutton-menubutton .rzi-plus,
+            .rz-splitbutton-menubutton .rz-sortable-column .rzi-grid-sort,
+            .rz-sortable-column .rz-splitbutton-menubutton .rzi-grid-sort,
+            .rz-splitbutton-menubutton .rz-datatable .rzi-chevron-circle-down,
+            .rz-datatable .rz-splitbutton-menubutton .rzi-chevron-circle-down,
+            .rz-splitbutton-menubutton .rz-datatable .rzi-chevron-circle-right,
+            .rz-datatable .rz-splitbutton-menubutton .rzi-chevron-circle-right,
+            .rz-splitbutton-menubutton .rz-fileupload-row .rz-button .rzi-close,
+            .rz-splitbutton-menubutton .rz-fileupload-row .rz-paginator-element .rzi-close,
+            .rz-fileupload-row .rz-button .rz-splitbutton-menubutton .rzi-close,
+            .rz-fileupload-row .rz-paginator-element .rz-splitbutton-menubutton .rzi-close,
             .rz-splitbutton-menubutton .rz-fileupload-row .rz-button .rzi-times,
             .rz-splitbutton-menubutton .rz-fileupload-row .rz-paginator-element .rzi-times,
             .rz-fileupload-row .rz-button .rz-splitbutton-menubutton .rzi-times,
@@ -481,24 +588,41 @@ p-button[type] {
             .rz-splitbutton-menubutton .rz-fileupload-row .rz-button .rz-icon-trash,
             .rz-splitbutton-menubutton .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
             .rz-fileupload-row .rz-button .rz-splitbutton-menubutton .rz-icon-trash,
-            .rz-fileupload-row .rz-paginator-element .rz-splitbutton-menubutton .rz-icon-trash, .rz-button-md .rz-menuitem .rz-menuitem-icon,
-            .rz-date-filter-buttons .rz-button .rz-menuitem .rz-menuitem-icon, .rz-date-filter-buttons .rz-paginator-element .rz-menuitem .rz-menuitem-icon,
-            .rz-fileupload-choose .rz-menuitem .rz-menuitem-icon, .rz-selectbutton .rz-button .rz-menuitem .rz-menuitem-icon,
-            .rz-selectbutton .rz-paginator-element .rz-menuitem .rz-menuitem-icon, .rz-splitbutton-menubutton .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-button-md .rz-menuitem-icon,
-            .rz-menuitem .rz-date-filter-buttons .rz-button .rz-menuitem-icon, .rz-menuitem .rz-date-filter-buttons .rz-paginator-element .rz-menuitem-icon,
-            .rz-date-filter-buttons .rz-menuitem .rz-button .rz-menuitem-icon, .rz-date-filter-buttons .rz-menuitem .rz-paginator-element .rz-menuitem-icon,
-            .rz-menuitem .rz-fileupload-choose .rz-menuitem-icon, .rz-menuitem .rz-selectbutton .rz-button .rz-menuitem-icon,
-            .rz-menuitem .rz-selectbutton .rz-paginator-element .rz-menuitem-icon, .rz-selectbutton .rz-menuitem .rz-button .rz-menuitem-icon,
-            .rz-selectbutton .rz-menuitem .rz-paginator-element .rz-menuitem-icon, .rz-menuitem .rz-splitbutton-menubutton .rz-menuitem-icon,
-            .rz-splitbutton .rz-button-text-icon-left .rzi, .rz-splitbutton .rz-button-text-icon-left .rz-column-drag,
+            .rz-fileupload-row .rz-paginator-element .rz-splitbutton-menubutton .rz-icon-trash,
+            .rz-button-md .rz-menuitem .rz-menuitem-icon,
+            .rz-date-filter-buttons .rz-button .rz-menuitem .rz-menuitem-icon,
+            .rz-date-filter-buttons .rz-paginator-element .rz-menuitem .rz-menuitem-icon,
+            .rz-fileupload-choose .rz-menuitem .rz-menuitem-icon,
+            .rz-selectbutton .rz-button .rz-menuitem .rz-menuitem-icon,
+            .rz-selectbutton .rz-paginator-element .rz-menuitem .rz-menuitem-icon,
+            .rz-splitbutton-menubutton .rz-menuitem .rz-menuitem-icon,
+            .rz-menuitem .rz-button-md .rz-menuitem-icon,
+            .rz-menuitem .rz-date-filter-buttons .rz-button .rz-menuitem-icon,
+            .rz-menuitem .rz-date-filter-buttons .rz-paginator-element .rz-menuitem-icon,
+            .rz-date-filter-buttons .rz-menuitem .rz-button .rz-menuitem-icon,
+            .rz-date-filter-buttons .rz-menuitem .rz-paginator-element .rz-menuitem-icon,
+            .rz-menuitem .rz-fileupload-choose .rz-menuitem-icon,
+            .rz-menuitem .rz-selectbutton .rz-button .rz-menuitem-icon,
+            .rz-menuitem .rz-selectbutton .rz-paginator-element .rz-menuitem-icon,
+            .rz-selectbutton .rz-menuitem .rz-button .rz-menuitem-icon,
+            .rz-selectbutton .rz-menuitem .rz-paginator-element .rz-menuitem-icon,
+            .rz-menuitem .rz-splitbutton-menubutton .rz-menuitem-icon,
+            .rz-splitbutton .rz-button-text-icon-left .rzi,
+            .rz-splitbutton .rz-button-text-icon-left .rz-column-drag,
             .rz-splitbutton .rz-button-text-icon-left .rz-datatable-loading-content .rzi-circle-o-notch,
             .rz-datatable-loading-content .rz-splitbutton .rz-button-text-icon-left .rzi-circle-o-notch,
-            .rz-splitbutton .rz-button-text-icon-left .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-splitbutton .rz-button-text-icon-left .rzi-plus,
-            .rz-splitbutton .rz-button-text-icon-left .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-splitbutton .rz-button-text-icon-left .rzi-grid-sort,
-            .rz-splitbutton .rz-button-text-icon-left .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-splitbutton .rz-button-text-icon-left .rzi-chevron-circle-down,
-            .rz-splitbutton .rz-button-text-icon-left .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-splitbutton .rz-button-text-icon-left .rzi-chevron-circle-right,
-            .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-button .rzi-close, .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-paginator-element .rzi-close,
-            .rz-fileupload-row .rz-button .rz-splitbutton .rz-button-text-icon-left .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-splitbutton .rz-button-text-icon-left .rzi-close,
+            .rz-splitbutton .rz-button-text-icon-left .rz-datatable-header .rzi-plus,
+            .rz-datatable-header .rz-splitbutton .rz-button-text-icon-left .rzi-plus,
+            .rz-splitbutton .rz-button-text-icon-left .rz-sortable-column .rzi-grid-sort,
+            .rz-sortable-column .rz-splitbutton .rz-button-text-icon-left .rzi-grid-sort,
+            .rz-splitbutton .rz-button-text-icon-left .rz-datatable .rzi-chevron-circle-down,
+            .rz-datatable .rz-splitbutton .rz-button-text-icon-left .rzi-chevron-circle-down,
+            .rz-splitbutton .rz-button-text-icon-left .rz-datatable .rzi-chevron-circle-right,
+            .rz-datatable .rz-splitbutton .rz-button-text-icon-left .rzi-chevron-circle-right,
+            .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-button .rzi-close,
+            .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-paginator-element .rzi-close,
+            .rz-fileupload-row .rz-button .rz-splitbutton .rz-button-text-icon-left .rzi-close,
+            .rz-fileupload-row .rz-paginator-element .rz-splitbutton .rz-button-text-icon-left .rzi-close,
             .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-button .rzi-times,
             .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-paginator-element .rzi-times,
             .rz-fileupload-row .rz-button .rz-splitbutton .rz-button-text-icon-left .rzi-times,
@@ -506,7 +630,8 @@ p-button[type] {
             .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-button .rz-icon-trash,
             .rz-splitbutton .rz-button-text-icon-left .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
             .rz-fileupload-row .rz-button .rz-splitbutton .rz-button-text-icon-left .rz-icon-trash,
-            .rz-fileupload-row .rz-paginator-element .rz-splitbutton .rz-button-text-icon-left .rz-icon-trash, .rz-splitbutton .rz-button-text-icon-left .rz-menuitem .rz-menuitem-icon,
+            .rz-fileupload-row .rz-paginator-element .rz-splitbutton .rz-button-text-icon-left .rz-icon-trash,
+            .rz-splitbutton .rz-button-text-icon-left .rz-menuitem .rz-menuitem-icon,
             .rz-menuitem .rz-splitbutton .rz-button-text-icon-left .rz-menuitem-icon,
             .rz-splitbutton .rz-button-text-only .rzi,
             .rz-splitbutton .rz-button-text-only .rz-column-drag,
@@ -536,41 +661,73 @@ p-button[type] {
             .rz-menuitem .rz-splitbutton .rz-button-text-only .rz-menuitem-icon {
             }
 
-            .rz-button-md .rz-button-text, .rz-date-filter-buttons .rz-button .rz-button-text, .rz-date-filter-buttons .rz-paginator-element .rz-button-text,
-            .rz-fileupload-choose .rz-button-text, .rz-selectbutton .rz-button .rz-button-text, .rz-selectbutton .rz-paginator-element .rz-button-text,
-            .rz-splitbutton-menubutton .rz-button-text, .rz-splitbutton .rz-button-text-icon-left .rz-button-text,
+            .rz-button-md .rz-button-text,
+            .rz-date-filter-buttons .rz-button .rz-button-text,
+            .rz-date-filter-buttons .rz-paginator-element .rz-button-text,
+            .rz-fileupload-choose .rz-button-text,
+            .rz-selectbutton .rz-button .rz-button-text,
+            .rz-selectbutton .rz-paginator-element .rz-button-text,
+            .rz-splitbutton-menubutton .rz-button-text,
+            .rz-splitbutton .rz-button-text-icon-left .rz-button-text,
             .rz-splitbutton .rz-button-text-only .rz-button-text {
                 line-height: 1.5;
                 font-weight: 500;
                 font-size: 1.1rem;
             }
 
-.rz-button-sm, .rz-paginator-element, .rz-fileupload .rz-button, .rz-fileupload .rz-paginator-element {
+.rz-button-sm,
+.rz-paginator-element,
+.rz-fileupload .rz-button,
+.rz-fileupload .rz-paginator-element {
     font-size: 0.875rem;
     padding: 0 2.875rem;
     height: 1.75rem;
 }
 
-    .rz-button-sm.rz-button-text-icon-left, .rz-button-text-icon-left.rz-paginator-element, .rz-fileupload .rz-button-text-icon-left.rz-button {
+    .rz-button-sm.rz-button-text-icon-left,
+    .rz-button-text-icon-left.rz-paginator-element,
+    .rz-fileupload .rz-button-text-icon-left.rz-button {
         padding: 0 1.375rem;
     }
 
-    .rz-button-sm.rz-button-icon-only, .rz-paginator-element, .rz-fileupload .rz-button-icon-only.rz-button, .rz-fileupload .rz-button.rz-paginator-element {
+    .rz-button-sm.rz-button-icon-only,
+    .rz-paginator-element,
+    .rz-fileupload .rz-button-icon-only.rz-button,
+    .rz-fileupload .rz-button.rz-paginator-element {
         padding: 0 0.3125rem;
     }
 
-        .rz-button-sm .rzi, .rz-paginator-element .rzi, .rz-button-sm .rz-column-drag, .rz-paginator-element .rz-column-drag,
-        .rz-button-sm .rz-datatable-loading-content .rzi-circle-o-notch, .rz-paginator-element .rz-datatable-loading-content .rzi-circle-o-notch,
-        .rz-datatable-loading-content .rz-button-sm .rzi-circle-o-notch, .rz-datatable-loading-content .rz-paginator-element .rzi-circle-o-notch,
-        .rz-button-sm .rz-datatable-header .rzi-plus, .rz-paginator-element .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-button-sm .rzi-plus,
-        .rz-datatable-header .rz-paginator-element .rzi-plus, .rz-button-sm .rz-sortable-column .rzi-grid-sort, .rz-paginator-element .rz-sortable-column .rzi-grid-sort,
-        .rz-sortable-column .rz-button-sm .rzi-grid-sort, .rz-sortable-column .rz-paginator-element .rzi-grid-sort, .rz-button-sm .rz-datatable .rzi-chevron-circle-down,
-        .rz-paginator-element .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-button-sm .rzi-chevron-circle-down, .rz-datatable .rz-paginator-element .rzi-chevron-circle-down,
-        .rz-button-sm .rz-datatable .rzi-chevron-circle-right, .rz-paginator-element .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-button-sm .rzi-chevron-circle-right,
-        .rz-datatable .rz-paginator-element .rzi-chevron-circle-right, .rz-button-sm .rz-fileupload-row .rz-button .rzi-close,
-        .rz-paginator-element .rz-fileupload-row .rz-button .rzi-close, .rz-button-sm .rz-fileupload-row .rz-paginator-element .rzi-close,
-        .rz-paginator-element .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-button-sm .rzi-close,
-        .rz-fileupload-row .rz-button .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-button-sm .rzi-close,
+        .rz-button-sm .rzi,
+        .rz-paginator-element .rzi,
+        .rz-button-sm .rz-column-drag,
+        .rz-paginator-element .rz-column-drag,
+        .rz-button-sm .rz-datatable-loading-content .rzi-circle-o-notch,
+        .rz-paginator-element .rz-datatable-loading-content .rzi-circle-o-notch,
+        .rz-datatable-loading-content .rz-button-sm .rzi-circle-o-notch,
+        .rz-datatable-loading-content .rz-paginator-element .rzi-circle-o-notch,
+        .rz-button-sm .rz-datatable-header .rzi-plus,
+        .rz-paginator-element .rz-datatable-header .rzi-plus,
+        .rz-datatable-header .rz-button-sm .rzi-plus,
+        .rz-datatable-header .rz-paginator-element .rzi-plus,
+        .rz-button-sm .rz-sortable-column .rzi-grid-sort,
+        .rz-paginator-element .rz-sortable-column .rzi-grid-sort,
+        .rz-sortable-column .rz-button-sm .rzi-grid-sort,
+        .rz-sortable-column .rz-paginator-element .rzi-grid-sort,
+        .rz-button-sm .rz-datatable .rzi-chevron-circle-down,
+        .rz-paginator-element .rz-datatable .rzi-chevron-circle-down,
+        .rz-datatable .rz-button-sm .rzi-chevron-circle-down,
+        .rz-datatable .rz-paginator-element .rzi-chevron-circle-down,
+        .rz-button-sm .rz-datatable .rzi-chevron-circle-right,
+        .rz-paginator-element .rz-datatable .rzi-chevron-circle-right,
+        .rz-datatable .rz-button-sm .rzi-chevron-circle-right,
+        .rz-datatable .rz-paginator-element .rzi-chevron-circle-right,
+        .rz-button-sm .rz-fileupload-row .rz-button .rzi-close,
+        .rz-paginator-element .rz-fileupload-row .rz-button .rzi-close,
+        .rz-button-sm .rz-fileupload-row .rz-paginator-element .rzi-close,
+        .rz-paginator-element .rz-fileupload-row .rz-paginator-element .rzi-close,
+        .rz-fileupload-row .rz-button .rz-button-sm .rzi-close,
+        .rz-fileupload-row .rz-button .rz-paginator-element .rzi-close,
+        .rz-fileupload-row .rz-paginator-element .rz-button-sm .rzi-close,
         .rz-fileupload-row .rz-paginator-element .rz-paginator-element .rzi-close,
         .rz-button-sm .rz-fileupload-row .rz-button .rzi-times,
         .rz-paginator-element .rz-fileupload-row .rz-button .rzi-times,
@@ -587,13 +744,22 @@ p-button[type] {
         .rz-fileupload-row .rz-button .rz-button-sm .rz-icon-trash,
         .rz-fileupload-row .rz-button .rz-paginator-element .rz-icon-trash,
         .rz-fileupload-row .rz-paginator-element .rz-button-sm .rz-icon-trash,
-        .rz-fileupload-row .rz-paginator-element .rz-paginator-element .rz-icon-trash, .rz-fileupload .rz-button .rzi, .rz-fileupload .rz-button .rz-column-drag,
-        .rz-fileupload .rz-button .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-fileupload .rz-button .rzi-circle-o-notch,
-        .rz-fileupload .rz-button .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-fileupload .rz-button .rzi-plus, .rz-fileupload .rz-button .rz-sortable-column .rzi-grid-sort,
-        .rz-sortable-column .rz-fileupload .rz-button .rzi-grid-sort, .rz-fileupload .rz-button .rz-datatable .rzi-chevron-circle-down,
-        .rz-datatable .rz-fileupload .rz-button .rzi-chevron-circle-down, .rz-fileupload .rz-button .rz-datatable .rzi-chevron-circle-right,
-        .rz-datatable .rz-fileupload .rz-button .rzi-chevron-circle-right, .rz-fileupload .rz-fileupload-row .rz-button .rzi-close,
-        .rz-fileupload .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-fileupload .rz-button .rzi-close,
+        .rz-fileupload-row .rz-paginator-element .rz-paginator-element .rz-icon-trash,
+        .rz-fileupload .rz-button .rzi,
+        .rz-fileupload .rz-button .rz-column-drag,
+        .rz-fileupload .rz-button .rz-datatable-loading-content .rzi-circle-o-notch,
+        .rz-datatable-loading-content .rz-fileupload .rz-button .rzi-circle-o-notch,
+        .rz-fileupload .rz-button .rz-datatable-header .rzi-plus,
+        .rz-datatable-header .rz-fileupload .rz-button .rzi-plus,
+        .rz-fileupload .rz-button .rz-sortable-column .rzi-grid-sort,
+        .rz-sortable-column .rz-fileupload .rz-button .rzi-grid-sort,
+        .rz-fileupload .rz-button .rz-datatable .rzi-chevron-circle-down,
+        .rz-datatable .rz-fileupload .rz-button .rzi-chevron-circle-down,
+        .rz-fileupload .rz-button .rz-datatable .rzi-chevron-circle-right,
+        .rz-datatable .rz-fileupload .rz-button .rzi-chevron-circle-right,
+        .rz-fileupload .rz-fileupload-row .rz-button .rzi-close,
+        .rz-fileupload .rz-fileupload-row .rz-paginator-element .rzi-close,
+        .rz-fileupload-row .rz-fileupload .rz-button .rzi-close,
         .rz-fileupload-row .rz-fileupload .rz-paginator-element .rzi-close,
         .rz-fileupload .rz-fileupload-row .rz-button .rzi-times,
         .rz-fileupload .rz-fileupload-row .rz-paginator-element .rzi-times,
@@ -602,16 +768,23 @@ p-button[type] {
         .rz-fileupload .rz-fileupload-row .rz-button .rz-icon-trash,
         .rz-fileupload .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
         .rz-fileupload-row .rz-fileupload .rz-button .rz-icon-trash,
-        .rz-fileupload-row .rz-fileupload .rz-paginator-element .rz-icon-trash, .rz-button-sm .rz-menuitem .rz-menuitem-icon, .rz-paginator-element .rz-menuitem .rz-menuitem-icon,
-        .rz-fileupload .rz-button .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-button-sm .rz-menuitem-icon, .rz-menuitem .rz-paginator-element .rz-menuitem-icon,
-        .rz-menuitem .rz-fileupload .rz-button .rz-menuitem-icon, .rz-fileupload .rz-menuitem .rz-button .rz-menuitem-icon {
+        .rz-fileupload-row .rz-fileupload .rz-paginator-element .rz-icon-trash,
+        .rz-button-sm .rz-menuitem .rz-menuitem-icon,
+        .rz-paginator-element .rz-menuitem .rz-menuitem-icon,
+        .rz-fileupload .rz-button .rz-menuitem .rz-menuitem-icon,
+        .rz-menuitem .rz-button-sm .rz-menuitem-icon,
+        .rz-menuitem .rz-paginator-element .rz-menuitem-icon,
+        .rz-menuitem .rz-fileupload .rz-button .rz-menuitem-icon,
+        .rz-fileupload .rz-menuitem .rz-button .rz-menuitem-icon {
             font-size: 0.9375rem;
             height: auto;
             line-height: 1.75rem;
             width: 1.125rem;
         }
 
-        .rz-button-sm .rz-button-text, .rz-paginator-element .rz-button-text, .rz-fileupload .rz-button .rz-button-text {
+        .rz-button-sm .rz-button-text,
+        .rz-paginator-element .rz-button-text,
+        .rz-fileupload .rz-button .rz-button-text {
             line-height: 1.75rem;
         }
 
@@ -640,21 +813,21 @@ p-button[type] {
 }
 
 .rz-badge {
-    color: #ffffff;
     display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
+    padding: 0.5em 0.85em;
+    font-size: 0.85rem;
+    font-weight: 600;
     line-height: 1;
+    color: #ffffff;
     text-align: center;
-    text-transform: none;
     white-space: nowrap;
-    border-radius: 0;
-    letter-spacing: 0;
+    vertical-align: baseline;
+    border-radius: 0.475rem;
 }
 
 .rz-badge-primary {
-    background-color: #ff6d41;
+    color: #FFFFFF;
+    background-color: #009EF7;
 }
 
 .rz-badge-light {
@@ -663,112 +836,220 @@ p-button[type] {
 }
 
 .rz-badge-secondary {
-    background-color: #479cc8;
+    color: #3F4254;
+    background-color: #E4E6EF;
 }
 
 .rz-badge-info {
-    background-color: #68d5c8;
+    color: #FFFFFF;
+    background-color: #7239EA;
 }
 
 .rz-badge-warning {
-    background-color: #e6c54f;
+    color: #FFFFFF;
+    background-color: #FFC700;
 }
 
 .rz-badge-error {
-    background-color: #f9777f;
+    color: #FFFFFF;
+    background-color: #F1416C;
 }
 
 .rz-badge-danger {
-    background-color: #f9777f;
+    color: #FFFFFF;
+    background-color: #F1416C;
 }
 
 .rz-badge-success {
-    background-color: #5dbf74;
+    color: #FFFFFF;
+    background-color: #50CD89;
 }
+
+
+/*end chỉnh badge 13/12/2021*/
+
+
+/*chỉnh pill 13/12/2021*/
 
 .rz-badge-pill {
-    border-radius: 4px;
-    padding: 0.25em 0.4em;
+    border-radius: 50rem !important;
 }
 
-.rz-autocomplete:hover, .rz-radiobutton-box:hover:not(.rz-state-disabled), .rz-chkbox-box:hover:not(.rz-state-disabled),
-.rz-colorpicker:not(:disabled):not(.rz-state-disabled):focus, .rz-lookup-search input:not(:disabled):not(.rz-state-disabled):focus,
-.rz-spinner:not(:disabled):not(.rz-state-disabled):focus, .rz-calendar .rz-inputtext:not(:disabled):not(.rz-state-disabled):focus,
-.rz-multiselect:not(:disabled):not(.rz-state-disabled):focus, .rz-dropdown:not(:disabled):not(.rz-state-disabled):focus,
-.mask:not(:disabled):not(.rz-state-disabled):focus, .rz-textarea:not(:disabled):not(.rz-state-disabled):focus,
-.rz-textbox:not(:disabled):not(.rz-state-disabled):focus, .rz-colorpicker:not(:disabled):not(.rz-state-disabled):hover,
-.rz-lookup-search input:not(:disabled):not(.rz-state-disabled):hover, .rz-spinner:not(:disabled):not(.rz-state-disabled):hover,
-.rz-calendar .rz-inputtext:not(:disabled):not(.rz-state-disabled):hover, .rz-multiselect:not(:disabled):not(.rz-state-disabled):hover,
-.rz-dropdown:not(:disabled):not(.rz-state-disabled):hover, .mask:not(:disabled):not(.rz-state-disabled):hover,
-.rz-textarea:not(:disabled):not(.rz-state-disabled):hover, .rz-textbox:not(:disabled):not(.rz-state-disabled):hover {
+.rz-autocomplete:hover,
+.rz-radiobutton-box:hover:not(.rz-state-disabled),
+.rz-chkbox-box:hover:not(.rz-state-disabled),
+.rz-colorpicker:not(:disabled):not(.rz-state-disabled):focus,
+.rz-lookup-search input:not(:disabled):not(.rz-state-disabled):focus,
+.rz-spinner:not(:disabled):not(.rz-state-disabled):focus,
+.rz-calendar .rz-inputtext:not(:disabled):not(.rz-state-disabled):focus,
+.rz-multiselect:not(:disabled):not(.rz-state-disabled):focus,
+.rz-dropdown:not(:disabled):not(.rz-state-disabled):focus,
+.mask:not(:disabled):not(.rz-state-disabled):focus,
+.rz-textarea:not(:disabled):not(.rz-state-disabled):focus,
+.rz-textbox:not(:disabled):not(.rz-state-disabled):focus,
+.rz-colorpicker:not(:disabled):not(.rz-state-disabled):hover,
+.rz-lookup-search input:not(:disabled):not(.rz-state-disabled):hover,
+.rz-spinner:not(:disabled):not(.rz-state-disabled):hover,
+.rz-calendar .rz-inputtext:not(:disabled):not(.rz-state-disabled):hover,
+.rz-multiselect:not(:disabled):not(.rz-state-disabled):hover,
+.rz-dropdown:not(:disabled):not(.rz-state-disabled):hover,
+.mask:not(:disabled):not(.rz-state-disabled):hover,
+.rz-textarea:not(:disabled):not(.rz-state-disabled):hover,
+.rz-textbox:not(:disabled):not(.rz-state-disabled):hover {
     /*-webkit-box-shadow: inset 0 4px 7px 0 rgba(0, 0, 0, 0.03);
           box-shadow: inset 0 4px 7px 0 rgba(0, 0, 0, 0.03);*/
     /*border: 1px solid #cecece;*/
 }
 
-.rz-spinner.rz-state-disabled, .rz-calendar.rz-state-disabled .rz-inputtext, .rz-listbox.rz-state-disabled,
-.rz-autocomplete-input:disabled, .rz-state-disabled .rz-autocomplete, .rz-state-disabled.rz-multiselect, .rz-state-disabled.rz-dropdown,
-.rz-radiobutton-box.rz-state-disabled, .rz-chkbox-box.rz-state-disabled, .rz-colorpicker:disabled, .rz-lookup-search input:disabled,
-.rz-spinner:disabled, .rz-calendar .rz-inputtext:disabled, .rz-multiselect:disabled, .rz-dropdown:disabled, .mask:disabled,
-.rz-textarea:disabled, .rz-textbox:disabled {
+.rz-spinner.rz-state-disabled,
+.rz-calendar.rz-state-disabled .rz-inputtext,
+.rz-listbox.rz-state-disabled,
+.rz-autocomplete-input:disabled,
+.rz-state-disabled .rz-autocomplete,
+.rz-state-disabled.rz-multiselect,
+.rz-state-disabled.rz-dropdown,
+.rz-radiobutton-box.rz-state-disabled,
+.rz-chkbox-box.rz-state-disabled,
+.rz-colorpicker:disabled,
+.rz-lookup-search input:disabled,
+.rz-spinner:disabled,
+.rz-calendar .rz-inputtext:disabled,
+.rz-multiselect:disabled,
+.rz-dropdown:disabled,
+.mask:disabled,
+.rz-textarea:disabled,
+.rz-textbox:disabled {
     color: rgba(58, 58, 58, 0.4);
     -webkit-box-shadow: inset 0 4px 7px 0 rgba(0, 0, 0, 0.03);
     box-shadow: inset 0 4px 7px 0 rgba(0, 0, 0, 0.03);
-    background-color: rgba(255,255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     border: solid 1px #eaeaea;
     opacity: 1;
 }
 
-    .rz-spinner.rz-state-disabled::-webkit-input-placeholder, .rz-calendar.rz-state-disabled .rz-inputtext::-webkit-input-placeholder,
-    .rz-listbox.rz-state-disabled::-webkit-input-placeholder, .rz-autocomplete-input:disabled::-webkit-input-placeholder, .rz-state-disabled .rz-autocomplete::-webkit-input-placeholder,
-    .rz-state-disabled.rz-multiselect::-webkit-input-placeholder, .rz-state-disabled.rz-dropdown::-webkit-input-placeholder,
-    .rz-radiobutton-box.rz-state-disabled::-webkit-input-placeholder, .rz-chkbox-box.rz-state-disabled::-webkit-input-placeholder, .rz-colorpicker:disabled::-webkit-input-placeholder,
-    .rz-lookup-search input:disabled::-webkit-input-placeholder, .rz-spinner:disabled::-webkit-input-placeholder, .rz-calendar .rz-inputtext:disabled::-webkit-input-placeholder,
-    .rz-multiselect:disabled::-webkit-input-placeholder, .rz-dropdown:disabled::-webkit-input-placeholder, .mask:disabled::-webkit-input-placeholder,
-    .rz-textarea:disabled::-webkit-input-placeholder, .rz-textbox:disabled::-webkit-input-placeholder {
+    .rz-spinner.rz-state-disabled::-webkit-input-placeholder,
+    .rz-calendar.rz-state-disabled .rz-inputtext::-webkit-input-placeholder,
+    .rz-listbox.rz-state-disabled::-webkit-input-placeholder,
+    .rz-autocomplete-input:disabled::-webkit-input-placeholder,
+    .rz-state-disabled .rz-autocomplete::-webkit-input-placeholder,
+    .rz-state-disabled.rz-multiselect::-webkit-input-placeholder,
+    .rz-state-disabled.rz-dropdown::-webkit-input-placeholder,
+    .rz-radiobutton-box.rz-state-disabled::-webkit-input-placeholder,
+    .rz-chkbox-box.rz-state-disabled::-webkit-input-placeholder,
+    .rz-colorpicker:disabled::-webkit-input-placeholder,
+    .rz-lookup-search input:disabled::-webkit-input-placeholder,
+    .rz-spinner:disabled::-webkit-input-placeholder,
+    .rz-calendar .rz-inputtext:disabled::-webkit-input-placeholder,
+    .rz-multiselect:disabled::-webkit-input-placeholder,
+    .rz-dropdown:disabled::-webkit-input-placeholder,
+    .mask:disabled::-webkit-input-placeholder,
+    .rz-textarea:disabled::-webkit-input-placeholder,
+    .rz-textbox:disabled::-webkit-input-placeholder {
         color: rgba(58, 58, 58, 0.4);
     }
 
-    .rz-spinner.rz-state-disabled::-moz-placeholder, .rz-calendar.rz-state-disabled .rz-inputtext::-moz-placeholder, .rz-listbox.rz-state-disabled::-moz-placeholder,
-    .rz-autocomplete-input:disabled::-moz-placeholder, .rz-state-disabled .rz-autocomplete::-moz-placeholder, .rz-state-disabled.rz-multiselect::-moz-placeholder,
-    .rz-state-disabled.rz-dropdown::-moz-placeholder, .rz-radiobutton-box.rz-state-disabled::-moz-placeholder, .rz-chkbox-box.rz-state-disabled::-moz-placeholder,
-    .rz-colorpicker:disabled::-moz-placeholder, .rz-lookup-search input:disabled::-moz-placeholder, .rz-spinner:disabled::-moz-placeholder,
-    .rz-calendar .rz-inputtext:disabled::-moz-placeholder, .rz-multiselect:disabled::-moz-placeholder, .rz-dropdown:disabled::-moz-placeholder,
-    .mask:disabled::-moz-placeholder, .rz-textarea:disabled::-moz-placeholder, .rz-textbox:disabled::-moz-placeholder {
+    .rz-spinner.rz-state-disabled::-moz-placeholder,
+    .rz-calendar.rz-state-disabled .rz-inputtext::-moz-placeholder,
+    .rz-listbox.rz-state-disabled::-moz-placeholder,
+    .rz-autocomplete-input:disabled::-moz-placeholder,
+    .rz-state-disabled .rz-autocomplete::-moz-placeholder,
+    .rz-state-disabled.rz-multiselect::-moz-placeholder,
+    .rz-state-disabled.rz-dropdown::-moz-placeholder,
+    .rz-radiobutton-box.rz-state-disabled::-moz-placeholder,
+    .rz-chkbox-box.rz-state-disabled::-moz-placeholder,
+    .rz-colorpicker:disabled::-moz-placeholder,
+    .rz-lookup-search input:disabled::-moz-placeholder,
+    .rz-spinner:disabled::-moz-placeholder,
+    .rz-calendar .rz-inputtext:disabled::-moz-placeholder,
+    .rz-multiselect:disabled::-moz-placeholder,
+    .rz-dropdown:disabled::-moz-placeholder,
+    .mask:disabled::-moz-placeholder,
+    .rz-textarea:disabled::-moz-placeholder,
+    .rz-textbox:disabled::-moz-placeholder {
         color: rgba(58, 58, 58, 0.4);
     }
 
-    .rz-spinner.rz-state-disabled:-ms-input-placeholder, .rz-calendar.rz-state-disabled .rz-inputtext:-ms-input-placeholder, .rz-listbox.rz-state-disabled:-ms-input-placeholder,
-    .rz-autocomplete-input:disabled:-ms-input-placeholder, .rz-state-disabled .rz-autocomplete:-ms-input-placeholder, .rz-state-disabled.rz-multiselect:-ms-input-placeholder,
-    .rz-state-disabled.rz-dropdown:-ms-input-placeholder, .rz-radiobutton-box.rz-state-disabled:-ms-input-placeholder, .rz-chkbox-box.rz-state-disabled:-ms-input-placeholder,
-    .rz-colorpicker:disabled:-ms-input-placeholder, .rz-lookup-search input:disabled:-ms-input-placeholder, .rz-spinner:disabled:-ms-input-placeholder,
-    .rz-calendar .rz-inputtext:disabled:-ms-input-placeholder, .rz-multiselect:disabled:-ms-input-placeholder, .rz-dropdown:disabled:-ms-input-placeholder,
-    .mask:disabled:-ms-input-placeholder, .rz-textarea:disabled:-ms-input-placeholder, .rz-textbox:disabled:-ms-input-placeholder {
+    .rz-spinner.rz-state-disabled:-ms-input-placeholder,
+    .rz-calendar.rz-state-disabled .rz-inputtext:-ms-input-placeholder,
+    .rz-listbox.rz-state-disabled:-ms-input-placeholder,
+    .rz-autocomplete-input:disabled:-ms-input-placeholder,
+    .rz-state-disabled .rz-autocomplete:-ms-input-placeholder,
+    .rz-state-disabled.rz-multiselect:-ms-input-placeholder,
+    .rz-state-disabled.rz-dropdown:-ms-input-placeholder,
+    .rz-radiobutton-box.rz-state-disabled:-ms-input-placeholder,
+    .rz-chkbox-box.rz-state-disabled:-ms-input-placeholder,
+    .rz-colorpicker:disabled:-ms-input-placeholder,
+    .rz-lookup-search input:disabled:-ms-input-placeholder,
+    .rz-spinner:disabled:-ms-input-placeholder,
+    .rz-calendar .rz-inputtext:disabled:-ms-input-placeholder,
+    .rz-multiselect:disabled:-ms-input-placeholder,
+    .rz-dropdown:disabled:-ms-input-placeholder,
+    .mask:disabled:-ms-input-placeholder,
+    .rz-textarea:disabled:-ms-input-placeholder,
+    .rz-textbox:disabled:-ms-input-placeholder {
         color: rgba(58, 58, 58, 0.4);
     }
 
-    .rz-spinner.rz-state-disabled::-ms-input-placeholder, .rz-calendar.rz-state-disabled .rz-inputtext::-ms-input-placeholder, .rz-listbox.rz-state-disabled::-ms-input-placeholder,
-    .rz-autocomplete-input:disabled::-ms-input-placeholder, .rz-state-disabled .rz-autocomplete::-ms-input-placeholder, .rz-state-disabled.rz-multiselect::-ms-input-placeholder,
-    .rz-state-disabled.rz-dropdown::-ms-input-placeholder, .rz-radiobutton-box.rz-state-disabled::-ms-input-placeholder, .rz-chkbox-box.rz-state-disabled::-ms-input-placeholder,
-    .rz-colorpicker:disabled::-ms-input-placeholder, .rz-lookup-search input:disabled::-ms-input-placeholder, .rz-spinner:disabled::-ms-input-placeholder,
-    .rz-calendar .rz-inputtext:disabled::-ms-input-placeholder, .rz-multiselect:disabled::-ms-input-placeholder, .rz-dropdown:disabled::-ms-input-placeholder,
-    .mask:disabled::-ms-input-placeholder, .rz-textarea:disabled::-ms-input-placeholder, .rz-textbox:disabled::-ms-input-placeholder {
+    .rz-spinner.rz-state-disabled::-ms-input-placeholder,
+    .rz-calendar.rz-state-disabled .rz-inputtext::-ms-input-placeholder,
+    .rz-listbox.rz-state-disabled::-ms-input-placeholder,
+    .rz-autocomplete-input:disabled::-ms-input-placeholder,
+    .rz-state-disabled .rz-autocomplete::-ms-input-placeholder,
+    .rz-state-disabled.rz-multiselect::-ms-input-placeholder,
+    .rz-state-disabled.rz-dropdown::-ms-input-placeholder,
+    .rz-radiobutton-box.rz-state-disabled::-ms-input-placeholder,
+    .rz-chkbox-box.rz-state-disabled::-ms-input-placeholder,
+    .rz-colorpicker:disabled::-ms-input-placeholder,
+    .rz-lookup-search input:disabled::-ms-input-placeholder,
+    .rz-spinner:disabled::-ms-input-placeholder,
+    .rz-calendar .rz-inputtext:disabled::-ms-input-placeholder,
+    .rz-multiselect:disabled::-ms-input-placeholder,
+    .rz-dropdown:disabled::-ms-input-placeholder,
+    .mask:disabled::-ms-input-placeholder,
+    .rz-textarea:disabled::-ms-input-placeholder,
+    .rz-textbox:disabled::-ms-input-placeholder {
         color: rgba(58, 58, 58, 0.4);
     }
 
-    .rz-spinner.rz-state-disabled::placeholder, .rz-calendar.rz-state-disabled .rz-inputtext::placeholder, .rz-listbox.rz-state-disabled::placeholder,
-    .rz-autocomplete-input:disabled::placeholder, .rz-state-disabled .rz-autocomplete::placeholder, .rz-state-disabled.rz-multiselect::placeholder,
-    .rz-state-disabled.rz-dropdown::placeholder, .rz-radiobutton-box.rz-state-disabled::placeholder, .rz-chkbox-box.rz-state-disabled::placeholder,
-    .rz-colorpicker:disabled::placeholder, .rz-lookup-search input:disabled::placeholder, .rz-spinner:disabled::placeholder, .rz-calendar .rz-inputtext:disabled::placeholder,
-    .rz-multiselect:disabled::placeholder, .rz-dropdown:disabled::placeholder, .mask:disabled::placeholder, .rz-textarea:disabled::placeholder, .rz-textbox:disabled::placeholder {
+    .rz-spinner.rz-state-disabled::placeholder,
+    .rz-calendar.rz-state-disabled .rz-inputtext::placeholder,
+    .rz-listbox.rz-state-disabled::placeholder,
+    .rz-autocomplete-input:disabled::placeholder,
+    .rz-state-disabled .rz-autocomplete::placeholder,
+    .rz-state-disabled.rz-multiselect::placeholder,
+    .rz-state-disabled.rz-dropdown::placeholder,
+    .rz-radiobutton-box.rz-state-disabled::placeholder,
+    .rz-chkbox-box.rz-state-disabled::placeholder,
+    .rz-colorpicker:disabled::placeholder,
+    .rz-lookup-search input:disabled::placeholder,
+    .rz-spinner:disabled::placeholder,
+    .rz-calendar .rz-inputtext:disabled::placeholder,
+    .rz-multiselect:disabled::placeholder,
+    .rz-dropdown:disabled::placeholder,
+    .mask:disabled::placeholder,
+    .rz-textarea:disabled::placeholder,
+    .rz-textbox:disabled::placeholder {
         color: rgba(58, 58, 58, 0.4);
     }
 
-    .rz-spinner.rz-state-disabled .rz-inputtext, .rz-calendar.rz-state-disabled .rz-inputtext .rz-inputtext, .rz-listbox.rz-state-disabled .rz-inputtext,
-    .rz-autocomplete-input:disabled .rz-inputtext, .rz-state-disabled .rz-autocomplete .rz-inputtext, .rz-state-disabled.rz-multiselect .rz-inputtext,
-    .rz-state-disabled.rz-dropdown .rz-inputtext, .rz-radiobutton-box.rz-state-disabled .rz-inputtext, .rz-chkbox-box.rz-state-disabled .rz-inputtext,
-    .rz-colorpicker:disabled .rz-inputtext, .rz-lookup-search input:disabled .rz-inputtext, .rz-spinner:disabled .rz-inputtext, .rz-calendar .rz-inputtext:disabled .rz-inputtext,
-    .rz-multiselect:disabled .rz-inputtext, .rz-dropdown:disabled .rz-inputtext, .mask:disabled .rz-inputtext, .rz-textarea:disabled .rz-inputtext, .rz-textbox:disabled .rz-inputtext {
+    .rz-spinner.rz-state-disabled .rz-inputtext,
+    .rz-calendar.rz-state-disabled .rz-inputtext .rz-inputtext,
+    .rz-listbox.rz-state-disabled .rz-inputtext,
+    .rz-autocomplete-input:disabled .rz-inputtext,
+    .rz-state-disabled .rz-autocomplete .rz-inputtext,
+    .rz-state-disabled.rz-multiselect .rz-inputtext,
+    .rz-state-disabled.rz-dropdown .rz-inputtext,
+    .rz-radiobutton-box.rz-state-disabled .rz-inputtext,
+    .rz-chkbox-box.rz-state-disabled .rz-inputtext,
+    .rz-colorpicker:disabled .rz-inputtext,
+    .rz-lookup-search input:disabled .rz-inputtext,
+    .rz-spinner:disabled .rz-inputtext,
+    .rz-calendar .rz-inputtext:disabled .rz-inputtext,
+    .rz-multiselect:disabled .rz-inputtext,
+    .rz-dropdown:disabled .rz-inputtext,
+    .mask:disabled .rz-inputtext,
+    .rz-textarea:disabled .rz-inputtext,
+    .rz-textbox:disabled .rz-inputtext {
         background-color: rgba(255, 255, 255, 0.7);
         color: rgba(58, 58, 58, 0.4);
     }
@@ -798,12 +1079,26 @@ input {
         color: #3a3a3a;
     }
 
-.rz-colorpicker, .rz-lookup-search input, .rz-spinner, .rz-calendar .rz-inputtext, .rz-multiselect, .rz-dropdown, .mask, .rz-textarea,
+.rz-colorpicker,
+.rz-lookup-search input,
+.rz-spinner,
+.rz-calendar .rz-inputtext,
+.rz-multiselect,
+.rz-dropdown,
+.mask,
+.rz-textarea,
 .rz-textbox {
     /*padding: 0.1875rem 0.625rem;*/
 }
 
-.rz-colorpicker, .rz-lookup-search input, .rz-spinner, .rz-calendar .rz-inputtext, .rz-multiselect, .rz-dropdown, .mask, .rz-textarea,
+.rz-colorpicker,
+.rz-lookup-search input,
+.rz-spinner,
+.rz-calendar .rz-inputtext,
+.rz-multiselect,
+.rz-dropdown,
+.mask,
+.rz-textarea,
 .rz-textbox {
     display: block;
     width: 100%;
@@ -818,11 +1113,18 @@ input {
     appearance: none;
     border-radius: .475rem;
     /*box-shadow: inset 0 1px 2px rgb(0 0 0 / 8%);*/
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.rz-colorpicker, .rz-lookup-search input, .rz-spinner, .rz-calendar .rz-inputtext, .rz-multiselect, .rz-dropdown, .mask,
-.rz-textarea, .rz-textbox {
+.rz-colorpicker,
+.rz-lookup-search input,
+.rz-spinner,
+.rz-calendar .rz-inputtext,
+.rz-multiselect,
+.rz-dropdown,
+.mask,
+.rz-textarea,
+.rz-textbox {
     /*height: 2.1875rem;
   line-height: 1.75rem;
   color: #212529;*/
@@ -833,17 +1135,28 @@ input {
     outline: none;
 }
 
-    .rz-colorpicker:not(:disabled):not(.rz-state-disabled):focus, .rz-lookup-search input:not(:disabled):not(.rz-state-disabled):focus,
-    .rz-spinner:not(:disabled):not(.rz-state-disabled):focus, .rz-calendar .rz-inputtext:not(:disabled):not(.rz-state-disabled):focus,
-    .rz-multiselect:not(:disabled):not(.rz-state-disabled):focus, .rz-dropdown:not(:disabled):not(.rz-state-disabled):focus,
-    .mask:not(:disabled):not(.rz-state-disabled):focus, .rz-textarea:not(:disabled):not(.rz-state-disabled):focus,
+    .rz-colorpicker:not(:disabled):not(.rz-state-disabled):focus,
+    .rz-lookup-search input:not(:disabled):not(.rz-state-disabled):focus,
+    .rz-spinner:not(:disabled):not(.rz-state-disabled):focus,
+    .rz-calendar .rz-inputtext:not(:disabled):not(.rz-state-disabled):focus,
+    .rz-multiselect:not(:disabled):not(.rz-state-disabled):focus,
+    .rz-dropdown:not(:disabled):not(.rz-state-disabled):focus,
+    .mask:not(:disabled):not(.rz-state-disabled):focus,
+    .rz-textarea:not(:disabled):not(.rz-state-disabled):focus,
     .rz-textbox:not(:disabled):not(.rz-state-disabled):focus {
         /*-webkit-box-shadow: inset 0 4px 3px 0 rgba(0, 0, 0, 0.03);
             box-shadow: inset 0 4px 3px 0 rgba(0, 0, 0, 0.03);*/
     }
 
 @media (max-width: 768px) {
-    .rz-colorpicker, .rz-lookup-search input, .rz-spinner, .rz-calendar .rz-inputtext, .rz-multiselect, .rz-dropdown, .mask, .rz-textarea,
+    .rz-colorpicker,
+    .rz-lookup-search input,
+    .rz-spinner,
+    .rz-calendar .rz-inputtext,
+    .rz-multiselect,
+    .rz-dropdown,
+    .mask,
+    .rz-textarea,
     .rz-textbox,
     input {
         font-size: 1rem;
@@ -948,7 +1261,22 @@ input {
         color: #479cc8;
     }
 
-    .rz-accordion-header .rzi, .rz-accordion-header .rz-column-drag, .rz-accordion-header .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-accordion-header .rzi-circle-o-notch, .rz-accordion-header .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-accordion-header .rzi-plus, .rz-accordion-header .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-accordion-header .rzi-grid-sort, .rz-accordion-header .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-accordion-header .rzi-chevron-circle-down, .rz-accordion-header .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-accordion-header .rzi-chevron-circle-right, .rz-accordion-header .rz-fileupload-row .rz-button .rzi-close, .rz-accordion-header .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-accordion-header .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-accordion-header .rzi-close,
+    .rz-accordion-header .rzi,
+    .rz-accordion-header .rz-column-drag,
+    .rz-accordion-header .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-accordion-header .rzi-circle-o-notch,
+    .rz-accordion-header .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-accordion-header .rzi-plus,
+    .rz-accordion-header .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-accordion-header .rzi-grid-sort,
+    .rz-accordion-header .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-accordion-header .rzi-chevron-circle-down,
+    .rz-accordion-header .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-accordion-header .rzi-chevron-circle-right,
+    .rz-accordion-header .rz-fileupload-row .rz-button .rzi-close,
+    .rz-accordion-header .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-accordion-header .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-accordion-header .rzi-close,
     .rz-accordion-header .rz-fileupload-row .rz-button .rzi-times,
     .rz-accordion-header .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-accordion-header .rzi-times,
@@ -956,7 +1284,9 @@ input {
     .rz-accordion-header .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-accordion-header .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-accordion-header .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-accordion-header .rz-icon-trash, .rz-accordion-header .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-accordion-header .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-accordion-header .rz-icon-trash,
+    .rz-accordion-header .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-accordion-header .rz-menuitem-icon {
         font-size: 1.5rem;
         margin: 0 0.375rem 0 0;
     }
@@ -1077,7 +1407,22 @@ input {
         border-radius: 0;
     }
 
-    .sidebar-toggle .rzi, .sidebar-toggle .rz-column-drag, .sidebar-toggle .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .sidebar-toggle .rzi-circle-o-notch, .sidebar-toggle .rz-datatable-header .rzi-plus, .rz-datatable-header .sidebar-toggle .rzi-plus, .sidebar-toggle .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .sidebar-toggle .rzi-grid-sort, .sidebar-toggle .rz-datatable .rzi-chevron-circle-down, .rz-datatable .sidebar-toggle .rzi-chevron-circle-down, .sidebar-toggle .rz-datatable .rzi-chevron-circle-right, .rz-datatable .sidebar-toggle .rzi-chevron-circle-right, .sidebar-toggle .rz-fileupload-row .rz-button .rzi-close, .sidebar-toggle .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .sidebar-toggle .rzi-close, .rz-fileupload-row .rz-paginator-element .sidebar-toggle .rzi-close,
+    .sidebar-toggle .rzi,
+    .sidebar-toggle .rz-column-drag,
+    .sidebar-toggle .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .sidebar-toggle .rzi-circle-o-notch,
+    .sidebar-toggle .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .sidebar-toggle .rzi-plus,
+    .sidebar-toggle .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .sidebar-toggle .rzi-grid-sort,
+    .sidebar-toggle .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .sidebar-toggle .rzi-chevron-circle-down,
+    .sidebar-toggle .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .sidebar-toggle .rzi-chevron-circle-right,
+    .sidebar-toggle .rz-fileupload-row .rz-button .rzi-close,
+    .sidebar-toggle .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .sidebar-toggle .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .sidebar-toggle .rzi-close,
     .sidebar-toggle .rz-fileupload-row .rz-button .rzi-times,
     .sidebar-toggle .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .sidebar-toggle .rzi-times,
@@ -1085,7 +1430,9 @@ input {
     .sidebar-toggle .rz-fileupload-row .rz-button .rz-icon-trash,
     .sidebar-toggle .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .sidebar-toggle .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .sidebar-toggle .rz-icon-trash, .sidebar-toggle .rz-menuitem .rz-menuitem-icon, .rz-menuitem .sidebar-toggle .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .sidebar-toggle .rz-icon-trash,
+    .sidebar-toggle .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .sidebar-toggle .rz-menuitem-icon {
         width: 1.5rem;
         height: 1.5rem;
     }
@@ -1117,7 +1464,8 @@ input {
     flex-direction: column;
 }
 
-.rz-context-menu .rz-menu, .rz-context-menu .rz-navigation-menu {
+.rz-context-menu .rz-menu,
+.rz-context-menu .rz-navigation-menu {
     -webkit-box-shadow: 0 10px 8px 0 rgba(58, 71, 77, 0.06);
     box-shadow: 0 10px 8px 0 rgba(58, 71, 77, 0.06);
     border: 1px solid #dadfe2;
@@ -1219,7 +1567,22 @@ input {
                 margin-left: 2.25rem;
             }
 
-    .rz-menu:not(.rz-profile-menu) .rzi:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-column-drag:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-datatable-loading-content .rzi-circle-o-notch:not(.rz-navigation-item-icon-children), .rz-datatable-loading-content .rz-menu:not(.rz-profile-menu) .rzi-circle-o-notch:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-datatable-header .rzi-plus:not(.rz-navigation-item-icon-children), .rz-datatable-header .rz-menu:not(.rz-profile-menu) .rzi-plus:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-sortable-column .rzi-grid-sort:not(.rz-navigation-item-icon-children), .rz-sortable-column .rz-menu:not(.rz-profile-menu) .rzi-grid-sort:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-datatable .rzi-chevron-circle-down:not(.rz-navigation-item-icon-children), .rz-datatable .rz-menu:not(.rz-profile-menu) .rzi-chevron-circle-down:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-datatable .rzi-chevron-circle-right:not(.rz-navigation-item-icon-children), .rz-datatable .rz-menu:not(.rz-profile-menu) .rzi-chevron-circle-right:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-button .rzi-close:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-paginator-element .rzi-close:not(.rz-navigation-item-icon-children), .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rzi-close:not(.rz-navigation-item-icon-children), .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rzi-close:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rzi:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-column-drag:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-datatable-loading-content .rzi-circle-o-notch:not(.rz-navigation-item-icon-children),
+    .rz-datatable-loading-content .rz-menu:not(.rz-profile-menu) .rzi-circle-o-notch:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-datatable-header .rzi-plus:not(.rz-navigation-item-icon-children),
+    .rz-datatable-header .rz-menu:not(.rz-profile-menu) .rzi-plus:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-sortable-column .rzi-grid-sort:not(.rz-navigation-item-icon-children),
+    .rz-sortable-column .rz-menu:not(.rz-profile-menu) .rzi-grid-sort:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-datatable .rzi-chevron-circle-down:not(.rz-navigation-item-icon-children),
+    .rz-datatable .rz-menu:not(.rz-profile-menu) .rzi-chevron-circle-down:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-datatable .rzi-chevron-circle-right:not(.rz-navigation-item-icon-children),
+    .rz-datatable .rz-menu:not(.rz-profile-menu) .rzi-chevron-circle-right:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-button .rzi-close:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-paginator-element .rzi-close:not(.rz-navigation-item-icon-children),
+    .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rzi-close:not(.rz-navigation-item-icon-children),
+    .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rzi-close:not(.rz-navigation-item-icon-children),
     .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-button .rzi-times:not(.rz-navigation-item-icon-children),
     .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-paginator-element .rzi-times:not(.rz-navigation-item-icon-children),
     .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rzi-times:not(.rz-navigation-item-icon-children),
@@ -1227,7 +1590,9 @@ input {
     .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-button .rz-icon-trash:not(.rz-navigation-item-icon-children),
     .rz-menu:not(.rz-profile-menu) .rz-fileupload-row .rz-paginator-element .rz-icon-trash:not(.rz-navigation-item-icon-children),
     .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rz-icon-trash:not(.rz-navigation-item-icon-children),
-    .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rz-icon-trash:not(.rz-navigation-item-icon-children), .rz-menu:not(.rz-profile-menu) .rz-menuitem .rz-menuitem-icon:not(.rz-navigation-item-icon-children), .rz-menuitem .rz-menu:not(.rz-profile-menu) .rz-menuitem-icon:not(.rz-navigation-item-icon-children) {
+    .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rz-icon-trash:not(.rz-navigation-item-icon-children),
+    .rz-menu:not(.rz-profile-menu) .rz-menuitem .rz-menuitem-icon:not(.rz-navigation-item-icon-children),
+    .rz-menuitem .rz-menu:not(.rz-profile-menu) .rz-menuitem-icon:not(.rz-navigation-item-icon-children) {
         margin: 0 0.625rem 0 0;
     }
 
@@ -1275,7 +1640,22 @@ input {
         display: none;
     }
 
-    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-column-drag, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-circle-o-notch, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-plus, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-grid-sort, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-chevron-circle-down, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-chevron-circle-right, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-button .rzi-close, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-close,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-column-drag,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-circle-o-notch,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-plus,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-grid-sort,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-chevron-circle-down,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-chevron-circle-right,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-button .rzi-close,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-close,
     .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-button .rzi-times,
     .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rzi-times,
@@ -1283,7 +1663,9 @@ input {
     .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-icon-trash, .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-icon-trash,
+    .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-menu:not(.rz-profile-menu) .rz-menu-toggle .rz-menuitem-icon {
         margin: 0;
     }
 
@@ -1491,7 +1873,22 @@ ul.rz-profile-menu {
             color: #3a474d;
         }
 
-        ul.rz-profile-menu .rz-navigation-menu .rzi, ul.rz-profile-menu .rz-navigation-menu .rz-column-drag, ul.rz-profile-menu .rz-navigation-menu .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content ul.rz-profile-menu .rz-navigation-menu .rzi-circle-o-notch, ul.rz-profile-menu .rz-navigation-menu .rz-datatable-header .rzi-plus, .rz-datatable-header ul.rz-profile-menu .rz-navigation-menu .rzi-plus, ul.rz-profile-menu .rz-navigation-menu .rz-sortable-column .rzi-grid-sort, .rz-sortable-column ul.rz-profile-menu .rz-navigation-menu .rzi-grid-sort, ul.rz-profile-menu .rz-navigation-menu .rz-datatable .rzi-chevron-circle-down, .rz-datatable ul.rz-profile-menu .rz-navigation-menu .rzi-chevron-circle-down, ul.rz-profile-menu .rz-navigation-menu .rz-datatable .rzi-chevron-circle-right, .rz-datatable ul.rz-profile-menu .rz-navigation-menu .rzi-chevron-circle-right, ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-button .rzi-close, ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button ul.rz-profile-menu .rz-navigation-menu .rzi-close, .rz-fileupload-row .rz-paginator-element ul.rz-profile-menu .rz-navigation-menu .rzi-close,
+        ul.rz-profile-menu .rz-navigation-menu .rzi,
+        ul.rz-profile-menu .rz-navigation-menu .rz-column-drag,
+        ul.rz-profile-menu .rz-navigation-menu .rz-datatable-loading-content .rzi-circle-o-notch,
+        .rz-datatable-loading-content ul.rz-profile-menu .rz-navigation-menu .rzi-circle-o-notch,
+        ul.rz-profile-menu .rz-navigation-menu .rz-datatable-header .rzi-plus,
+        .rz-datatable-header ul.rz-profile-menu .rz-navigation-menu .rzi-plus,
+        ul.rz-profile-menu .rz-navigation-menu .rz-sortable-column .rzi-grid-sort,
+        .rz-sortable-column ul.rz-profile-menu .rz-navigation-menu .rzi-grid-sort,
+        ul.rz-profile-menu .rz-navigation-menu .rz-datatable .rzi-chevron-circle-down,
+        .rz-datatable ul.rz-profile-menu .rz-navigation-menu .rzi-chevron-circle-down,
+        ul.rz-profile-menu .rz-navigation-menu .rz-datatable .rzi-chevron-circle-right,
+        .rz-datatable ul.rz-profile-menu .rz-navigation-menu .rzi-chevron-circle-right,
+        ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-button .rzi-close,
+        ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-paginator-element .rzi-close,
+        .rz-fileupload-row .rz-button ul.rz-profile-menu .rz-navigation-menu .rzi-close,
+        .rz-fileupload-row .rz-paginator-element ul.rz-profile-menu .rz-navigation-menu .rzi-close,
         ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-button .rzi-times,
         ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-paginator-element .rzi-times,
         .rz-fileupload-row .rz-button ul.rz-profile-menu .rz-navigation-menu .rzi-times,
@@ -1499,7 +1896,9 @@ ul.rz-profile-menu {
         ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-button .rz-icon-trash,
         ul.rz-profile-menu .rz-navigation-menu .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
         .rz-fileupload-row .rz-button ul.rz-profile-menu .rz-navigation-menu .rz-icon-trash,
-        .rz-fileupload-row .rz-paginator-element ul.rz-profile-menu .rz-navigation-menu .rz-icon-trash, ul.rz-profile-menu .rz-navigation-menu .rz-menuitem .rz-menuitem-icon, .rz-menuitem ul.rz-profile-menu .rz-navigation-menu .rz-menuitem-icon {
+        .rz-fileupload-row .rz-paginator-element ul.rz-profile-menu .rz-navigation-menu .rz-icon-trash,
+        ul.rz-profile-menu .rz-navigation-menu .rz-menuitem .rz-menuitem-icon,
+        .rz-menuitem ul.rz-profile-menu .rz-navigation-menu .rz-menuitem-icon {
             width: 1.125rem;
             height: 1.125rem;
             font-size: 1.125rem;
@@ -1609,13 +2008,21 @@ ul.rz-profile-menu {
         color: rgba(109, 120, 125, 0.5) !important;
     }
 
-    .rz-steps-next .rzi, .rz-steps-next .rz-column-drag, .rz-steps-next .rz-datatable-loading-content .rzi-circle-o-notch,
-    .rz-datatable-loading-content .rz-steps-next .rzi-circle-o-notch, .rz-steps-next .rz-datatable-header .rzi-plus,
-    .rz-datatable-header .rz-steps-next .rzi-plus, .rz-steps-next .rz-sortable-column .rzi-grid-sort,
-    .rz-sortable-column .rz-steps-next .rzi-grid-sort, .rz-steps-next .rz-datatable .rzi-chevron-circle-down,
-    .rz-datatable .rz-steps-next .rzi-chevron-circle-down, .rz-steps-next .rz-datatable .rzi-chevron-circle-right,
-    .rz-datatable .rz-steps-next .rzi-chevron-circle-right, .rz-steps-next .rz-fileupload-row .rz-button .rzi-close,
-    .rz-steps-next .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-steps-next .rzi-close,
+    .rz-steps-next .rzi,
+    .rz-steps-next .rz-column-drag,
+    .rz-steps-next .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-steps-next .rzi-circle-o-notch,
+    .rz-steps-next .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-steps-next .rzi-plus,
+    .rz-steps-next .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-steps-next .rzi-grid-sort,
+    .rz-steps-next .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-steps-next .rzi-chevron-circle-down,
+    .rz-steps-next .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-steps-next .rzi-chevron-circle-right,
+    .rz-steps-next .rz-fileupload-row .rz-button .rzi-close,
+    .rz-steps-next .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-steps-next .rzi-close,
     .rz-fileupload-row .rz-paginator-element .rz-steps-next .rzi-close,
     .rz-steps-next .rz-fileupload-row .rz-button .rzi-times,
     .rz-steps-next .rz-fileupload-row .rz-paginator-element .rzi-times,
@@ -1624,7 +2031,9 @@ ul.rz-profile-menu {
     .rz-steps-next .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-steps-next .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-steps-next .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-steps-next .rz-icon-trash, .rz-steps-next .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-steps-next .rz-menuitem-icon,
+    .rz-fileupload-row .rz-paginator-element .rz-steps-next .rz-icon-trash,
+    .rz-steps-next .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-steps-next .rz-menuitem-icon,
     .rz-steps-prev .rzi,
     .rz-steps-prev .rz-column-drag,
     .rz-steps-prev .rz-datatable-loading-content .rzi-circle-o-notch,
@@ -1728,7 +2137,22 @@ ul.rz-profile-menu {
         cursor: initial;
     }
 
-    .rz-chkbox-box .rzi, .rz-chkbox-box .rz-column-drag, .rz-chkbox-box .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-chkbox-box .rzi-circle-o-notch, .rz-chkbox-box .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-chkbox-box .rzi-plus, .rz-chkbox-box .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-chkbox-box .rzi-grid-sort, .rz-chkbox-box .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-chkbox-box .rzi-chevron-circle-down, .rz-chkbox-box .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-chkbox-box .rzi-chevron-circle-right, .rz-chkbox-box .rz-fileupload-row .rz-button .rzi-close, .rz-chkbox-box .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-chkbox-box .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-chkbox-box .rzi-close,
+    .rz-chkbox-box .rzi,
+    .rz-chkbox-box .rz-column-drag,
+    .rz-chkbox-box .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-chkbox-box .rzi-circle-o-notch,
+    .rz-chkbox-box .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-chkbox-box .rzi-plus,
+    .rz-chkbox-box .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-chkbox-box .rzi-grid-sort,
+    .rz-chkbox-box .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-chkbox-box .rzi-chevron-circle-down,
+    .rz-chkbox-box .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-chkbox-box .rzi-chevron-circle-right,
+    .rz-chkbox-box .rz-fileupload-row .rz-button .rzi-close,
+    .rz-chkbox-box .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-chkbox-box .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-chkbox-box .rzi-close,
     .rz-chkbox-box .rz-fileupload-row .rz-button .rzi-times,
     .rz-chkbox-box .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-chkbox-box .rzi-times,
@@ -1736,7 +2160,9 @@ ul.rz-profile-menu {
     .rz-chkbox-box .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-chkbox-box .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-chkbox-box .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-chkbox-box .rz-icon-trash, .rz-chkbox-box .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-chkbox-box .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-chkbox-box .rz-icon-trash,
+    .rz-chkbox-box .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-chkbox-box .rz-menuitem-icon {
         width: 0.875rem;
         height: 0.875rem;
         font-size: 0.875rem;
@@ -1929,7 +2355,22 @@ ul.rz-profile-menu {
         box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
     }
 
-    .rz-radiobutton-box .rzi, .rz-radiobutton-box .rz-column-drag, .rz-radiobutton-box .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-radiobutton-box .rzi-circle-o-notch, .rz-radiobutton-box .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-radiobutton-box .rzi-plus, .rz-radiobutton-box .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-radiobutton-box .rzi-grid-sort, .rz-radiobutton-box .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-radiobutton-box .rzi-chevron-circle-down, .rz-radiobutton-box .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-radiobutton-box .rzi-chevron-circle-right, .rz-radiobutton-box .rz-fileupload-row .rz-button .rzi-close, .rz-radiobutton-box .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-radiobutton-box .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-radiobutton-box .rzi-close,
+    .rz-radiobutton-box .rzi,
+    .rz-radiobutton-box .rz-column-drag,
+    .rz-radiobutton-box .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-radiobutton-box .rzi-circle-o-notch,
+    .rz-radiobutton-box .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-radiobutton-box .rzi-plus,
+    .rz-radiobutton-box .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-radiobutton-box .rzi-grid-sort,
+    .rz-radiobutton-box .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-radiobutton-box .rzi-chevron-circle-down,
+    .rz-radiobutton-box .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-radiobutton-box .rzi-chevron-circle-right,
+    .rz-radiobutton-box .rz-fileupload-row .rz-button .rzi-close,
+    .rz-radiobutton-box .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-radiobutton-box .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-radiobutton-box .rzi-close,
     .rz-radiobutton-box .rz-fileupload-row .rz-button .rzi-times,
     .rz-radiobutton-box .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-radiobutton-box .rzi-times,
@@ -1937,7 +2378,9 @@ ul.rz-profile-menu {
     .rz-radiobutton-box .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-radiobutton-box .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-radiobutton-box .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-radiobutton-box .rz-icon-trash, .rz-radiobutton-box .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-radiobutton-box .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-radiobutton-box .rz-icon-trash,
+    .rz-radiobutton-box .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-radiobutton-box .rz-menuitem-icon {
         width: 0.75rem;
         height: 0.75rem;
         color: #ffffff;
@@ -2007,11 +2450,20 @@ ul.rz-profile-menu {
     border: none;
 }
 
-    .rz-fieldset-toggler.rzi, .rz-fieldset-toggler.rz-column-drag, .rz-datatable-loading-content .rz-fieldset-toggler.rzi-circle-o-notch, .rz-datatable-header .rz-fieldset-toggler.rzi-plus, .rz-sortable-column .rz-fieldset-toggler.rzi-grid-sort, .rz-datatable .rz-fieldset-toggler.rzi-chevron-circle-down, .rz-datatable .rz-fieldset-toggler.rzi-chevron-circle-right, .rz-fileupload-row .rz-button .rz-fieldset-toggler.rzi-close, .rz-fileupload-row .rz-paginator-element .rz-fieldset-toggler.rzi-close,
+    .rz-fieldset-toggler.rzi,
+    .rz-fieldset-toggler.rz-column-drag,
+    .rz-datatable-loading-content .rz-fieldset-toggler.rzi-circle-o-notch,
+    .rz-datatable-header .rz-fieldset-toggler.rzi-plus,
+    .rz-sortable-column .rz-fieldset-toggler.rzi-grid-sort,
+    .rz-datatable .rz-fieldset-toggler.rzi-chevron-circle-down,
+    .rz-datatable .rz-fieldset-toggler.rzi-chevron-circle-right,
+    .rz-fileupload-row .rz-button .rz-fieldset-toggler.rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-fieldset-toggler.rzi-close,
     .rz-fileupload-row .rz-button .rz-fieldset-toggler.rzi-times,
     .rz-fileupload-row .rz-paginator-element .rz-fieldset-toggler.rzi-times,
     .rz-fileupload-row .rz-button .rz-fieldset-toggler.rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-fieldset-toggler.rz-icon-trash, .rz-menuitem .rz-fieldset-toggler.rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-fieldset-toggler.rz-icon-trash,
+    .rz-menuitem .rz-fieldset-toggler.rz-menuitem-icon {
         text-align: center;
         font-size: 1rem;
         line-height: 1.125rem;
@@ -2039,19 +2491,22 @@ ul.rz-profile-menu {
         text-decoration: none;
     }
 
-.rz-multiselect, .rz-dropdown {
+.rz-multiselect,
+.rz-dropdown {
     display: inline-block;
     position: relative;
     overflow: hidden;
 }
 
-    .rz-multiselect .rz-helper-hidden-accessible, .rz-dropdown .rz-helper-hidden-accessible {
+    .rz-multiselect .rz-helper-hidden-accessible,
+    .rz-dropdown .rz-helper-hidden-accessible {
         opacity: 0;
         height: 0;
         overflow: hidden;
     }
 
-    .rz-multiselect .rz-placeholder, .rz-dropdown .rz-placeholder {
+    .rz-multiselect .rz-placeholder,
+    .rz-dropdown .rz-placeholder {
         color: #3a3a3a;
     }
 
@@ -2065,7 +2520,8 @@ ul.rz-profile-menu {
         border: 1px solid #dadfe2;
     }
 
-.rz-multiselect-trigger, .rz-dropdown-trigger {
+.rz-multiselect-trigger,
+.rz-dropdown-trigger {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2078,7 +2534,22 @@ ul.rz-profile-menu {
     bottom: 0;
 }
 
-    .rz-multiselect-trigger .rzi, .rz-multiselect-trigger .rz-column-drag, .rz-multiselect-trigger .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-multiselect-trigger .rzi-circle-o-notch, .rz-multiselect-trigger .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-multiselect-trigger .rzi-plus, .rz-multiselect-trigger .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-multiselect-trigger .rzi-grid-sort, .rz-multiselect-trigger .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-multiselect-trigger .rzi-chevron-circle-down, .rz-multiselect-trigger .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-multiselect-trigger .rzi-chevron-circle-right, .rz-multiselect-trigger .rz-fileupload-row .rz-button .rzi-close, .rz-multiselect-trigger .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-multiselect-trigger .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-multiselect-trigger .rzi-close,
+    .rz-multiselect-trigger .rzi,
+    .rz-multiselect-trigger .rz-column-drag,
+    .rz-multiselect-trigger .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-multiselect-trigger .rzi-circle-o-notch,
+    .rz-multiselect-trigger .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-multiselect-trigger .rzi-plus,
+    .rz-multiselect-trigger .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-multiselect-trigger .rzi-grid-sort,
+    .rz-multiselect-trigger .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-multiselect-trigger .rzi-chevron-circle-down,
+    .rz-multiselect-trigger .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-multiselect-trigger .rzi-chevron-circle-right,
+    .rz-multiselect-trigger .rz-fileupload-row .rz-button .rzi-close,
+    .rz-multiselect-trigger .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-multiselect-trigger .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-multiselect-trigger .rzi-close,
     .rz-multiselect-trigger .rz-fileupload-row .rz-button .rzi-times,
     .rz-multiselect-trigger .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-multiselect-trigger .rzi-times,
@@ -2086,7 +2557,25 @@ ul.rz-profile-menu {
     .rz-multiselect-trigger .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-multiselect-trigger .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-multiselect-trigger .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-multiselect-trigger .rz-icon-trash, .rz-multiselect-trigger .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-multiselect-trigger .rz-menuitem-icon, .rz-dropdown-trigger .rzi, .rz-dropdown-trigger .rz-column-drag, .rz-dropdown-trigger .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-dropdown-trigger .rzi-circle-o-notch, .rz-dropdown-trigger .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-dropdown-trigger .rzi-plus, .rz-dropdown-trigger .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-dropdown-trigger .rzi-grid-sort, .rz-dropdown-trigger .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-dropdown-trigger .rzi-chevron-circle-down, .rz-dropdown-trigger .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-dropdown-trigger .rzi-chevron-circle-right, .rz-dropdown-trigger .rz-fileupload-row .rz-button .rzi-close, .rz-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-dropdown-trigger .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-dropdown-trigger .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-multiselect-trigger .rz-icon-trash,
+    .rz-multiselect-trigger .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-multiselect-trigger .rz-menuitem-icon,
+    .rz-dropdown-trigger .rzi,
+    .rz-dropdown-trigger .rz-column-drag,
+    .rz-dropdown-trigger .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-dropdown-trigger .rzi-circle-o-notch,
+    .rz-dropdown-trigger .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-dropdown-trigger .rzi-plus,
+    .rz-dropdown-trigger .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-dropdown-trigger .rzi-grid-sort,
+    .rz-dropdown-trigger .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-dropdown-trigger .rzi-chevron-circle-down,
+    .rz-dropdown-trigger .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-dropdown-trigger .rzi-chevron-circle-right,
+    .rz-dropdown-trigger .rz-fileupload-row .rz-button .rzi-close,
+    .rz-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-dropdown-trigger .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-dropdown-trigger .rzi-close,
     .rz-dropdown-trigger .rz-fileupload-row .rz-button .rzi-times,
     .rz-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-dropdown-trigger .rzi-times,
@@ -2094,14 +2583,17 @@ ul.rz-profile-menu {
     .rz-dropdown-trigger .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-dropdown-trigger .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-dropdown-trigger .rz-icon-trash, .rz-dropdown-trigger .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-dropdown-trigger .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-dropdown-trigger .rz-icon-trash,
+    .rz-dropdown-trigger .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-dropdown-trigger .rz-menuitem-icon {
         width: 1.1875rem;
         height: 1.1875rem;
         font-size: 1.1875rem;
         margin: 0 0.5rem 0 0;
     }
 
-    .rz-multiselect-trigger .rzi-chevron-down:before, .rz-dropdown-trigger .rzi-chevron-down:before {
+    .rz-multiselect-trigger .rzi-chevron-down:before,
+    .rz-dropdown-trigger .rzi-chevron-down:before {
         content: 'arrow_drop_down';
     }
 
@@ -2128,7 +2620,11 @@ ul.rz-profile-menu {
         opacity: 1;
     }
 
-.rz-html-editor-dropdown-items, .rz-splitbutton-menu, .rz-autocomplete-panel, .rz-multiselect-panel, .rz-dropdown-panel {
+.rz-html-editor-dropdown-items,
+.rz-splitbutton-menu,
+.rz-autocomplete-panel,
+.rz-multiselect-panel,
+.rz-dropdown-panel {
     position: absolute;
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
@@ -2156,13 +2652,17 @@ ul.rz-profile-menu {
         margin: 0 0.5rem 0 0;
     }
 
-.rz-dropdown-items, .rz-autocomplete-items, .rz-multiselect-items {
+.rz-dropdown-items,
+.rz-autocomplete-items,
+.rz-multiselect-items {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-    .rz-dropdown-items li, .rz-autocomplete-items li, .rz-multiselect-items li {
+    .rz-dropdown-items li,
+    .rz-autocomplete-items li,
+    .rz-multiselect-items li {
         /* The 'No results found' item has no CSS class */
     }
 
@@ -2181,7 +2681,8 @@ ul.rz-profile-menu {
     border-bottom: 1px solid rgba(151, 151, 151, 0.1);
 }
 
-.rz-dropdown-filter, .rz-multiselect-filter-container .rz-inputtext {
+.rz-dropdown-filter,
+.rz-multiselect-filter-container .rz-inputtext {
     background-color: transparent;
     color: #212529;
 }
@@ -2197,7 +2698,13 @@ ul.rz-profile-menu {
     margin: 0 -0.625rem;
 }
 
-.rz-dropdown-item, .rz-menuitem, .rz-autocomplete-list-item, .rz-multiselect-item, .rz-dropdown-items li, .rz-autocomplete-items li, .rz-multiselect-items li {
+.rz-dropdown-item,
+.rz-menuitem,
+.rz-autocomplete-list-item,
+.rz-multiselect-item,
+.rz-dropdown-items li,
+.rz-autocomplete-items li,
+.rz-multiselect-items li {
     padding: 0.25rem 0.625rem;
     -webkit-transition: none;
     -o-transition: none;
@@ -2206,7 +2713,13 @@ ul.rz-profile-menu {
     font-size: 0.875rem;
 }
 
-    .rz-dropdown-item.rz-state-highlight, .rz-state-highlight.rz-menuitem, .rz-state-highlight.rz-autocomplete-list-item, .rz-state-highlight.rz-multiselect-item, .rz-dropdown-items li.rz-state-highlight, .rz-autocomplete-items li.rz-state-highlight, .rz-multiselect-items li.rz-state-highlight {
+    .rz-dropdown-item.rz-state-highlight,
+    .rz-state-highlight.rz-menuitem,
+    .rz-state-highlight.rz-autocomplete-list-item,
+    .rz-state-highlight.rz-multiselect-item,
+    .rz-dropdown-items li.rz-state-highlight,
+    .rz-autocomplete-items li.rz-state-highlight,
+    .rz-multiselect-items li.rz-state-highlight {
         background-color: #009ef7;
         color: #ffffff;
         -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.01);
@@ -2214,12 +2727,24 @@ ul.rz-profile-menu {
         border-radius: 0;
     }
 
-        .rz-dropdown-item.rz-state-highlight:hover, .rz-state-highlight.rz-menuitem:hover, .rz-state-highlight.rz-autocomplete-list-item:hover, .rz-state-highlight.rz-multiselect-item:hover, .rz-dropdown-items li.rz-state-highlight:hover, .rz-autocomplete-items li.rz-state-highlight:hover, .rz-multiselect-items li.rz-state-highlight:hover {
+        .rz-dropdown-item.rz-state-highlight:hover,
+        .rz-state-highlight.rz-menuitem:hover,
+        .rz-state-highlight.rz-autocomplete-list-item:hover,
+        .rz-state-highlight.rz-multiselect-item:hover,
+        .rz-dropdown-items li.rz-state-highlight:hover,
+        .rz-autocomplete-items li.rz-state-highlight:hover,
+        .rz-multiselect-items li.rz-state-highlight:hover {
             background-color: #009ef7;
             color: #ffffff;
         }
 
-    .rz-dropdown-item:hover, .rz-menuitem:hover, .rz-autocomplete-list-item:hover, .rz-multiselect-item:hover, .rz-dropdown-items li:hover, .rz-autocomplete-items li:hover, .rz-multiselect-items li:hover {
+    .rz-dropdown-item:hover,
+    .rz-menuitem:hover,
+    .rz-autocomplete-list-item:hover,
+    .rz-multiselect-item:hover,
+    .rz-dropdown-items li:hover,
+    .rz-autocomplete-items li:hover,
+    .rz-multiselect-items li:hover {
         background-color: #009ef7;
         color: #ffffff;
         border-radius: 0;
@@ -2240,8 +2765,6 @@ ul.rz-profile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -2282,7 +2805,7 @@ ul.rz-profile-menu {
     appearance: none;
     border-radius: .475rem;
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 8%);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
     .rz-autocomplete-input:focus {
@@ -2373,7 +2896,9 @@ ul.rz-profile-menu {
     padding: 0.5rem;
 }
 
-.rz-listbox-filter-container, .rz-dropdown-filter-container, .rz-multiselect-filter-container {
+.rz-listbox-filter-container,
+.rz-dropdown-filter-container,
+.rz-multiselect-filter-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2386,7 +2911,9 @@ ul.rz-profile-menu {
     align-items: center;
 }
 
-    .rz-listbox-filter-container .rz-inputtext, .rz-dropdown-filter-container .rz-inputtext, .rz-multiselect-filter-container .rz-inputtext {
+    .rz-listbox-filter-container .rz-inputtext,
+    .rz-dropdown-filter-container .rz-inputtext,
+    .rz-multiselect-filter-container .rz-inputtext {
         -webkit-box-flex: 1;
         -ms-flex: auto;
         flex: auto;
@@ -2395,18 +2922,24 @@ ul.rz-profile-menu {
         line-height: 1.75rem;
     }
 
-        .rz-listbox-filter-container .rz-inputtext:focus, .rz-dropdown-filter-container .rz-inputtext:focus, .rz-multiselect-filter-container .rz-inputtext:focus {
+        .rz-listbox-filter-container .rz-inputtext:focus,
+        .rz-dropdown-filter-container .rz-inputtext:focus,
+        .rz-multiselect-filter-container .rz-inputtext:focus {
             outline: none;
         }
 
-    .rz-listbox-filter-container .rzi-search, .rz-dropdown-filter-container .rzi-search, .rz-multiselect-filter-container .rzi-search {
+    .rz-listbox-filter-container .rzi-search,
+    .rz-dropdown-filter-container .rzi-search,
+    .rz-multiselect-filter-container .rzi-search {
         width: 1.25rem;
         height: 1.25rem;
         line-height: 1.25rem;
         font-size: 1.25rem;
     }
 
-        .rz-listbox-filter-container .rzi-search:before, .rz-dropdown-filter-container .rzi-search:before, .rz-multiselect-filter-container .rzi-search:before {
+        .rz-listbox-filter-container .rzi-search:before,
+        .rz-dropdown-filter-container .rzi-search:before,
+        .rz-multiselect-filter-container .rzi-search:before {
             content: 'search';
         }
 
@@ -2441,7 +2974,7 @@ ul.rz-profile-menu {
         padding: .5rem 1.25rem;
         font-size: 1.1rem;
         border-radius: .475rem 0 0 .475rem;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
 .rz-button-icon-only.rz-splitbutton-menubutton {
@@ -2562,7 +3095,9 @@ ul.rz-profile-menu {
         content: 'drag_handle';
     }
 
-.rz-slider:not(.rz-state-disabled) .rz-slider-handle:hover, .rz-slider:not(.rz-state-disabled) .rz-slider-handle:focus, .rz-slider:not(.rz-state-disabled) .rz-slider-handle:active {
+.rz-slider:not(.rz-state-disabled) .rz-slider-handle:hover,
+.rz-slider:not(.rz-state-disabled) .rz-slider-handle:focus,
+.rz-slider:not(.rz-state-disabled) .rz-slider-handle:active {
     background-color: #59a6cd;
     -webkit-box-shadow: inset 0 -3px 0 0 rgba(255, 255, 255, 0.2);
     box-shadow: inset 0 -3px 0 0 rgba(255, 255, 255, 0.2);
@@ -2578,7 +3113,22 @@ ul.rz-profile-menu {
     height: 1em;
 }
 
-    .rz-rating.rz-state-disabled .rzi, .rz-rating.rz-state-disabled .rz-column-drag, .rz-rating.rz-state-disabled .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-rating.rz-state-disabled .rzi-circle-o-notch, .rz-rating.rz-state-disabled .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-rating.rz-state-disabled .rzi-plus, .rz-rating.rz-state-disabled .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-rating.rz-state-disabled .rzi-grid-sort, .rz-rating.rz-state-disabled .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-rating.rz-state-disabled .rzi-chevron-circle-down, .rz-rating.rz-state-disabled .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-rating.rz-state-disabled .rzi-chevron-circle-right, .rz-rating.rz-state-disabled .rz-fileupload-row .rz-button .rzi-close, .rz-rating.rz-state-disabled .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-rating.rz-state-disabled .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-rating.rz-state-disabled .rzi-close,
+    .rz-rating.rz-state-disabled .rzi,
+    .rz-rating.rz-state-disabled .rz-column-drag,
+    .rz-rating.rz-state-disabled .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-rating.rz-state-disabled .rzi-circle-o-notch,
+    .rz-rating.rz-state-disabled .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-rating.rz-state-disabled .rzi-plus,
+    .rz-rating.rz-state-disabled .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-rating.rz-state-disabled .rzi-grid-sort,
+    .rz-rating.rz-state-disabled .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-rating.rz-state-disabled .rzi-chevron-circle-down,
+    .rz-rating.rz-state-disabled .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-rating.rz-state-disabled .rzi-chevron-circle-right,
+    .rz-rating.rz-state-disabled .rz-fileupload-row .rz-button .rzi-close,
+    .rz-rating.rz-state-disabled .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-rating.rz-state-disabled .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-rating.rz-state-disabled .rzi-close,
     .rz-rating.rz-state-disabled .rz-fileupload-row .rz-button .rzi-times,
     .rz-rating.rz-state-disabled .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-rating.rz-state-disabled .rzi-times,
@@ -2586,7 +3136,9 @@ ul.rz-profile-menu {
     .rz-rating.rz-state-disabled .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-rating.rz-state-disabled .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-rating.rz-state-disabled .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-rating.rz-state-disabled .rz-icon-trash, .rz-rating.rz-state-disabled .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-rating.rz-state-disabled .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-rating.rz-state-disabled .rz-icon-trash,
+    .rz-rating.rz-state-disabled .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-rating.rz-state-disabled .rz-menuitem-icon {
         opacity: 0.3;
         color: #88989b;
     }
@@ -2599,7 +3151,22 @@ ul.rz-profile-menu {
         outline: none;
     }
 
-    .rz-rating .rzi, .rz-rating .rz-column-drag, .rz-rating .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-rating .rzi-circle-o-notch, .rz-rating .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-rating .rzi-plus, .rz-rating .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-rating .rzi-grid-sort, .rz-rating .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-rating .rzi-chevron-circle-down, .rz-rating .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-rating .rzi-chevron-circle-right, .rz-rating .rz-fileupload-row .rz-button .rzi-close, .rz-rating .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-rating .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-rating .rzi-close,
+    .rz-rating .rzi,
+    .rz-rating .rz-column-drag,
+    .rz-rating .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-rating .rzi-circle-o-notch,
+    .rz-rating .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-rating .rzi-plus,
+    .rz-rating .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-rating .rzi-grid-sort,
+    .rz-rating .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-rating .rzi-chevron-circle-down,
+    .rz-rating .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-rating .rzi-chevron-circle-right,
+    .rz-rating .rz-fileupload-row .rz-button .rzi-close,
+    .rz-rating .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-rating .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-rating .rzi-close,
     .rz-rating .rz-fileupload-row .rz-button .rzi-times,
     .rz-rating .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-rating .rzi-times,
@@ -2607,7 +3174,9 @@ ul.rz-profile-menu {
     .rz-rating .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-rating .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-rating .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-rating .rz-icon-trash, .rz-rating .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-rating .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-rating .rz-icon-trash,
+    .rz-rating .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-rating .rz-menuitem-icon {
         color: #479cc8;
         font-size: 1em;
     }
@@ -2656,7 +3225,8 @@ ul.rz-profile-menu {
     display: inline-block;
 }
 
-    .rz-selectbutton .rz-button, .rz-selectbutton .rz-paginator-element {
+    .rz-selectbutton .rz-button,
+    .rz-selectbutton .rz-paginator-element {
         margin-left: -1px;
         display: inline-block;
         border-radius: 0;
@@ -2665,17 +3235,20 @@ ul.rz-profile-menu {
         border: solid 1px #dadfe2;
     }
 
-        .rz-selectbutton .rz-button:first-child, .rz-selectbutton .rz-paginator-element:first-child {
+        .rz-selectbutton .rz-button:first-child,
+        .rz-selectbutton .rz-paginator-element:first-child {
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
         }
 
-        .rz-selectbutton .rz-button:last-child, .rz-selectbutton .rz-paginator-element:last-child {
+        .rz-selectbutton .rz-button:last-child,
+        .rz-selectbutton .rz-paginator-element:last-child {
             border-top-right-radius: 4px;
             border-bottom-right-radius: 4px;
         }
 
-        .rz-selectbutton .rz-button.rz-state-active, .rz-selectbutton .rz-state-active.rz-paginator-element {
+        .rz-selectbutton .rz-button.rz-state-active,
+        .rz-selectbutton .rz-state-active.rz-paginator-element {
             background-color: #009ef7;
             color: #ffffff;
             border: solid 1px #459cca;
@@ -2727,7 +3300,8 @@ ul.rz-profile-menu {
         cursor: initial;
     }
 
-    .rz-datepicker-trigger:not(.rz-state-disabled):hover:not(:active), .rz-datepicker-trigger:not(.rz-state-disabled):hover:active {
+    .rz-datepicker-trigger:not(.rz-state-disabled):hover:not(:active),
+    .rz-datepicker-trigger:not(.rz-state-disabled):hover:active {
         background-color: transparent;
     }
 
@@ -2904,9 +3478,21 @@ ul.rz-profile-menu {
             display: none;
         }
 
-    .rz-timepicker .rz-button-md, .rz-timepicker .rz-date-filter-buttons .rz-button, .rz-timepicker .rz-date-filter-buttons .rz-paginator-element, .rz-date-filter-buttons .rz-timepicker .rz-button, .rz-date-filter-buttons .rz-timepicker .rz-paginator-element, .rz-timepicker .rz-fileupload-choose, .rz-timepicker .rz-splitbutton .rz-button-text-icon-left, .rz-splitbutton .rz-timepicker .rz-button-text-icon-left,
+    .rz-timepicker .rz-button-md,
+    .rz-timepicker .rz-date-filter-buttons .rz-button,
+    .rz-timepicker .rz-date-filter-buttons .rz-paginator-element,
+    .rz-date-filter-buttons .rz-timepicker .rz-button,
+    .rz-date-filter-buttons .rz-timepicker .rz-paginator-element,
+    .rz-timepicker .rz-fileupload-choose,
+    .rz-timepicker .rz-splitbutton .rz-button-text-icon-left,
+    .rz-splitbutton .rz-timepicker .rz-button-text-icon-left,
     .rz-timepicker .rz-splitbutton .rz-button-text-only,
-    .rz-splitbutton .rz-timepicker .rz-button-text-only, .rz-timepicker .rz-splitbutton-menubutton, .rz-timepicker .rz-selectbutton .rz-button, .rz-timepicker .rz-selectbutton .rz-paginator-element, .rz-selectbutton .rz-timepicker .rz-button, .rz-selectbutton .rz-timepicker .rz-paginator-element {
+    .rz-splitbutton .rz-timepicker .rz-button-text-only,
+    .rz-timepicker .rz-splitbutton-menubutton,
+    .rz-timepicker .rz-selectbutton .rz-button,
+    .rz-timepicker .rz-selectbutton .rz-paginator-element,
+    .rz-selectbutton .rz-timepicker .rz-button,
+    .rz-selectbutton .rz-timepicker .rz-paginator-element {
         padding: 0;
     }
 
@@ -2936,7 +3522,8 @@ ul.rz-profile-menu {
         outline: none;
     }
 
-        .rz-spinner input[type='number']::-webkit-inner-spin-button, .rz-spinner input[type='number']::-webkit-outer-spin-button,
+        .rz-spinner input[type='number']::-webkit-inner-spin-button,
+        .rz-spinner input[type='number']::-webkit-outer-spin-button,
         .rz-spinner input[type='text']::-webkit-inner-spin-button,
         .rz-spinner input[type='text']::-webkit-outer-spin-button {
             -webkit-appearance: none;
@@ -2948,7 +3535,8 @@ ul.rz-profile-menu {
         color: #88989b;
     }
 
-        .rz-spinner.rz-state-disabled .rz-spinner-button:active, .rz-spinner.rz-state-disabled .rz-spinner-button:hover {
+        .rz-spinner.rz-state-disabled .rz-spinner-button:active,
+        .rz-spinner.rz-state-disabled .rz-spinner-button:hover {
             background-color: #dadfe2;
             color: #88989b;
             background-image: none;
@@ -2972,7 +3560,22 @@ ul.rz-profile-menu {
         background-color: #479cc8;
     }
 
-    .rz-spinner-button .rzi, .rz-spinner-button .rz-column-drag, .rz-spinner-button .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-spinner-button .rzi-circle-o-notch, .rz-spinner-button .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-spinner-button .rzi-plus, .rz-spinner-button .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-spinner-button .rzi-grid-sort, .rz-spinner-button .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-spinner-button .rzi-chevron-circle-down, .rz-spinner-button .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-spinner-button .rzi-chevron-circle-right, .rz-spinner-button .rz-fileupload-row .rz-button .rzi-close, .rz-spinner-button .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-button .rz-spinner-button .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-spinner-button .rzi-close,
+    .rz-spinner-button .rzi,
+    .rz-spinner-button .rz-column-drag,
+    .rz-spinner-button .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-spinner-button .rzi-circle-o-notch,
+    .rz-spinner-button .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-spinner-button .rzi-plus,
+    .rz-spinner-button .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-spinner-button .rzi-grid-sort,
+    .rz-spinner-button .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-spinner-button .rzi-chevron-circle-down,
+    .rz-spinner-button .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-spinner-button .rzi-chevron-circle-right,
+    .rz-spinner-button .rz-fileupload-row .rz-button .rzi-close,
+    .rz-spinner-button .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rz-spinner-button .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-spinner-button .rzi-close,
     .rz-spinner-button .rz-fileupload-row .rz-button .rzi-times,
     .rz-spinner-button .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-spinner-button .rzi-times,
@@ -2980,7 +3583,9 @@ ul.rz-profile-menu {
     .rz-spinner-button .rz-fileupload-row .rz-button .rz-icon-trash,
     .rz-spinner-button .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
     .rz-fileupload-row .rz-button .rz-spinner-button .rz-icon-trash,
-    .rz-fileupload-row .rz-paginator-element .rz-spinner-button .rz-icon-trash, .rz-spinner-button .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-spinner-button .rz-menuitem-icon {
+    .rz-fileupload-row .rz-paginator-element .rz-spinner-button .rz-icon-trash,
+    .rz-spinner-button .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-spinner-button .rz-menuitem-icon {
         font-size: 0.875rem;
         vertical-align: top;
     }
@@ -3005,12 +3610,14 @@ ul.rz-profile-menu {
     display: inline-block;
 }
 
-    .rz-fileupload .rz-button, .rz-fileupload .rz-paginator-element {
+    .rz-fileupload .rz-button,
+    .rz-fileupload .rz-paginator-element {
         vertical-align: middle;
         -webkit-appearance: none !important;
     }
 
-        .rz-fileupload .rz-button[disabled], .rz-fileupload .rz-paginator-element[disabled] {
+        .rz-fileupload .rz-button[disabled],
+        .rz-fileupload .rz-paginator-element[disabled] {
             opacity: 0.5;
         }
 
@@ -3051,7 +3658,8 @@ ul.rz-profile-menu {
         display: none;
     }
 
-    .rz-fileupload-row .rz-button .rzi-close, .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-button .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rzi-close,
     .rz-fileupload-row .rz-button .rzi-times,
     .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-button .rz-icon-trash,
@@ -3059,7 +3667,8 @@ ul.rz-profile-menu {
         display: block;
     }
 
-        .rz-fileupload-row .rz-button .rzi-close:before, .rz-fileupload-row .rz-paginator-element .rzi-close:before,
+        .rz-fileupload-row .rz-button .rzi-close:before,
+        .rz-fileupload-row .rz-paginator-element .rzi-close:before,
         .rz-fileupload-row .rz-button .rzi-times:before,
         .rz-fileupload-row .rz-paginator-element .rzi-times:before,
         .rz-fileupload-row .rz-button .rz-icon-trash:before,
@@ -3074,7 +3683,8 @@ ul.rz-profile-menu {
     border-radius: 4px;
 }
 
-    .rz-fileupload-buttonbar .rz-button:nth-child(3), .rz-fileupload-buttonbar .rz-paginator-element:nth-child(3) {
+    .rz-fileupload-buttonbar .rz-button:nth-child(3),
+    .rz-fileupload-buttonbar .rz-paginator-element:nth-child(3) {
         float: right;
         background-color: #dadfe2;
         color: #3a474d;
@@ -3087,12 +3697,13 @@ ul.rz-profile-menu {
 
 .rz-datatable {
     position: relative;
-    -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.01);
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.01);
-    border: solid 1px #dfe7eb;
+    border-radius: 0.475rem;
+    box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
     background-color: #ffffff;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    color: #7E8299;
+    font-weight: 500;
+    margin: 0 !important;
+    width: auto;
 }
 
     .rz-datatable .rz-col-icon {
@@ -3180,36 +3791,41 @@ ul.rz-profile-menu {
 }
 
 .rz-datatable-scrollable-footer {
-    background-color: #e6ecef;
+    background-color: #eeeeef;
     border-top: solid 1px #dfe7eb;
 }
 
-.rz-datatable-thead th, .rz-grid-table thead th {
-    background-color: #e6ecef;
+.rz-datatable-thead th,
+.rz-grid-table thead th {
+    background-color: #ffffff;
     padding: 0.5rem 0 0 0;
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    border-bottom: none;
+    /* border-bottom: none; } */
 }
 
-    .rz-datatable-thead th:not(:last-child), .rz-grid-table thead th:not(:last-child) {
+    .rz-datatable-thead th:not(:last-child),
+    .rz-grid-table thead th:not(:last-child) {
         border-right: solid 1px #dfe7eb;
     }
 
-    .rz-datatable-thead th .rz-column-title, .rz-grid-table thead th .rz-column-title {
+    .rz-datatable-thead th .rz-column-title,
+    .rz-grid-table thead th .rz-column-title {
         display: inline-block;
         font-size: 0.75rem;
         line-height: inherit;
         text-transform: uppercase;
         color: #3a474d;
         padding: 0 0 0.625rem 0.625rem;
-        font-weight: normal;
+        font-weight: bold;
+        /*header in đậm*/
         vertical-align: unset;
     }
 
-.rz-datatable-tfoot td, .rz-grid-table tfoot td {
+.rz-datatable-tfoot td,
+.rz-grid-table tfoot td {
     background-color: #e6ecef;
     font-size: 0.875rem;
     color: #48606c;
@@ -3220,23 +3836,21 @@ ul.rz-profile-menu {
     text-overflow: ellipsis;
 }
 
-    .rz-datatable-tfoot td:not(:last-child), .rz-grid-table tfoot td:not(:last-child) {
+    .rz-datatable-tfoot td:not(:last-child),
+    .rz-grid-table tfoot td:not(:last-child) {
         border-right: solid 1px #dfe7eb;
     }
 
 .rz-datatable-scrollable-header {
-    background-color: #e6ecef;
+    background-color: #eeeeef;
     border-bottom: solid 1px #dfe7eb;
 }
 
 .rz-datatable-scrollable-body {
     overflow: auto;
     border-top: none;
-    -webkit-box-flex: 1;
-    -ms-flex: auto;
     flex: auto;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 0.475rem;
 }
 
 .rz-has-paginator .rz-datatable-scrollable-body {
@@ -3252,10 +3866,11 @@ ul.rz-profile-menu {
     }
 
     .rz-sortable-column.rz-state-active {
-        background-color: #e2e9ee;
+        background-color: #eeeeef;
     }
 
     .rz-sortable-column .rzi-grid-sort {
+        /*kí hiệu sort*/
         width: 1rem;
         height: 1rem;
         font-size: 1rem;
@@ -3273,7 +3888,8 @@ ul.rz-profile-menu {
             content: 'sort';
         }
 
-        .rz-sortable-column .rzi-sort:hover, .rz-sortable-column .rzi-sort:active {
+        .rz-sortable-column .rzi-sort:hover,
+        .rz-sortable-column .rzi-sort:active {
             color: #3a474d;
         }
 
@@ -3294,66 +3910,100 @@ ul.rz-profile-menu {
         }
 
 .rz-datatable-odd > td {
-    background-color: #f7f9fa;
-}
-
-.rz-datatable-even > td {
     background-color: #ffffff;
 }
 
-.rz-datatable-data .rz-cell-data .rz-button-sm, .rz-datatable-data .rz-cell-data .rz-paginator-element, .rz-datatable-data .rz-cell-data .rz-fileupload .rz-button, .rz-fileupload .rz-datatable-data .rz-cell-data .rz-button, .rz-grid-table .rz-cell-data .rz-button-sm, .rz-grid-table .rz-cell-data .rz-paginator-element, .rz-grid-table .rz-cell-data .rz-fileupload .rz-button, .rz-fileupload .rz-grid-table .rz-cell-data .rz-button {
+.rz-datatable-even > td {
+    background-color: #eeeeef;
+}
+
+.rz-datatable-data .rz-cell-data .rz-button-sm,
+.rz-datatable-data .rz-cell-data .rz-paginator-element,
+.rz-datatable-data .rz-cell-data .rz-fileupload .rz-button,
+.rz-fileupload .rz-datatable-data .rz-cell-data .rz-button,
+.rz-grid-table .rz-cell-data .rz-button-sm,
+.rz-grid-table .rz-cell-data .rz-paginator-element,
+.rz-grid-table .rz-cell-data .rz-fileupload .rz-button,
+.rz-fileupload .rz-grid-table .rz-cell-data .rz-button {
     line-height: 1.25rem;
     padding: 0 0.6875rem;
     height: 1.25rem;
     font-size: 0.75rem;
 }
 
-    .rz-datatable-data .rz-cell-data .rz-button-sm .rz-button-icon-left, .rz-datatable-data .rz-cell-data .rz-paginator-element .rz-button-icon-left, .rz-datatable-data .rz-cell-data .rz-fileupload .rz-button .rz-button-icon-left, .rz-fileupload .rz-datatable-data .rz-cell-data .rz-button .rz-button-icon-left, .rz-grid-table .rz-cell-data .rz-button-sm .rz-button-icon-left, .rz-grid-table .rz-cell-data .rz-paginator-element .rz-button-icon-left, .rz-grid-table .rz-cell-data .rz-fileupload .rz-button .rz-button-icon-left, .rz-fileupload .rz-grid-table .rz-cell-data .rz-button .rz-button-icon-left {
+    .rz-datatable-data .rz-cell-data .rz-button-sm .rz-button-icon-left,
+    .rz-datatable-data .rz-cell-data .rz-paginator-element .rz-button-icon-left,
+    .rz-datatable-data .rz-cell-data .rz-fileupload .rz-button .rz-button-icon-left,
+    .rz-fileupload .rz-datatable-data .rz-cell-data .rz-button .rz-button-icon-left,
+    .rz-grid-table .rz-cell-data .rz-button-sm .rz-button-icon-left,
+    .rz-grid-table .rz-cell-data .rz-paginator-element .rz-button-icon-left,
+    .rz-grid-table .rz-cell-data .rz-fileupload .rz-button .rz-button-icon-left,
+    .rz-fileupload .rz-grid-table .rz-cell-data .rz-button .rz-button-icon-left {
         font-size: 0.75rem;
         line-height: 1.25rem;
         width: 0.75rem;
     }
 
-    .rz-datatable-data .rz-cell-data .rz-button-sm .rz-button-text, .rz-datatable-data .rz-cell-data .rz-paginator-element .rz-button-text, .rz-datatable-data .rz-cell-data .rz-fileupload .rz-button .rz-button-text, .rz-fileupload .rz-datatable-data .rz-cell-data .rz-button .rz-button-text, .rz-grid-table .rz-cell-data .rz-button-sm .rz-button-text, .rz-grid-table .rz-cell-data .rz-paginator-element .rz-button-text, .rz-grid-table .rz-cell-data .rz-fileupload .rz-button .rz-button-text, .rz-fileupload .rz-grid-table .rz-cell-data .rz-button .rz-button-text {
+    .rz-datatable-data .rz-cell-data .rz-button-sm .rz-button-text,
+    .rz-datatable-data .rz-cell-data .rz-paginator-element .rz-button-text,
+    .rz-datatable-data .rz-cell-data .rz-fileupload .rz-button .rz-button-text,
+    .rz-fileupload .rz-datatable-data .rz-cell-data .rz-button .rz-button-text,
+    .rz-grid-table .rz-cell-data .rz-button-sm .rz-button-text,
+    .rz-grid-table .rz-cell-data .rz-paginator-element .rz-button-text,
+    .rz-grid-table .rz-cell-data .rz-fileupload .rz-button .rz-button-text,
+    .rz-fileupload .rz-grid-table .rz-cell-data .rz-button .rz-button-text {
         line-height: 1.25rem;
     }
 
-    .rz-datatable-data .rz-cell-data .rz-button-sm.rz-button-icon-only, .rz-datatable-data .rz-cell-data .rz-paginator-element, .rz-datatable-data .rz-cell-data .rz-fileupload .rz-button-icon-only.rz-button, .rz-fileupload .rz-datatable-data .rz-cell-data .rz-button-icon-only.rz-button, .rz-grid-table .rz-cell-data .rz-button-sm.rz-button-icon-only, .rz-grid-table .rz-cell-data .rz-paginator-element, .rz-grid-table .rz-cell-data .rz-fileupload .rz-button-icon-only.rz-button, .rz-fileupload .rz-grid-table .rz-cell-data .rz-button-icon-only.rz-button {
+    .rz-datatable-data .rz-cell-data .rz-button-sm.rz-button-icon-only,
+    .rz-datatable-data .rz-cell-data .rz-paginator-element,
+    .rz-datatable-data .rz-cell-data .rz-fileupload .rz-button-icon-only.rz-button,
+    .rz-fileupload .rz-datatable-data .rz-cell-data .rz-button-icon-only.rz-button,
+    .rz-grid-table .rz-cell-data .rz-button-sm.rz-button-icon-only,
+    .rz-grid-table .rz-cell-data .rz-paginator-element,
+    .rz-grid-table .rz-cell-data .rz-fileupload .rz-button-icon-only.rz-button,
+    .rz-fileupload .rz-grid-table .rz-cell-data .rz-button-icon-only.rz-button {
         padding: 0 0.25rem;
     }
 
-.rz-datatable-data td, .rz-grid-table td {
+.rz-datatable-data td,
+.rz-grid-table td {
     padding: 0.5rem 0.625rem 0.5rem 0.625rem;
     border-bottom: solid 1px #dfe7eb;
 }
 
-    .rz-datatable-data td:not(:last-child), .rz-grid-table td:not(:last-child) {
+    .rz-datatable-data td:not(:last-child),
+    .rz-grid-table td:not(:last-child) {
         border-right: solid 1px #dfe7eb;
     }
 
-    .rz-datatable-data td .rz-cell-data, .rz-grid-table td .rz-cell-data {
+    .rz-datatable-data td .rz-cell-data,
+    .rz-grid-table td .rz-cell-data {
         color: #48606c;
         font-size: 0.875rem;
         display: block;
         overflow: hidden;
-        -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
-.rz-datatable-data tr td:first-child, .rz-grid-table tr td:first-child {
+.rz-datatable-data tr td:first-child,
+.rz-grid-table tr td:first-child {
     border-left: none;
 }
 
-.rz-datatable-data tr td:last-child, .rz-grid-table tr td:last-child {
+.rz-datatable-data tr td:last-child,
+.rz-grid-table tr td:last-child {
     border-right: none;
 }
 
-.rz-datatable-data tr:first-child td, .rz-grid-table tr:first-child td {
+.rz-datatable-data tr:first-child td,
+.rz-grid-table tr:first-child td {
     border-top: none;
 }
 
-.rz-datatable-data tr:last-child td, .rz-grid-table tr:last-child td {
+.rz-datatable-data tr:last-child td,
+.rz-grid-table tr:last-child td {
     border-bottom: none;
 }
 
@@ -3421,11 +4071,12 @@ ul.rz-profile-menu {
         }
 
 .rz-cell-filter {
-    padding: 0.25rem 0.625rem;
+    padding: 0;
     margin: 0;
-    background-color: #f6f8f9;
-    border-top: solid 1px #dfe7eb;
-    font-size: 0.8125rem;
+    background-color: #f4f5f9;
+    border-top: none;
+    font-size: 0.875rem;
+    position: relative;
     font-weight: normal;
 }
 
@@ -3441,7 +4092,16 @@ ul.rz-profile-menu {
         align-items: center;
     }
 
-        .rz-cell-filter .rz-cell-filter-label > .rzi, .rz-cell-filter .rz-cell-filter-label > .rz-column-drag, .rz-cell-filter .rz-datatable-loading-content .rz-cell-filter-label > .rzi-circle-o-notch, .rz-datatable-loading-content .rz-cell-filter .rz-cell-filter-label > .rzi-circle-o-notch, .rz-cell-filter .rz-menuitem .rz-cell-filter-label > .rz-menuitem-icon, .rz-menuitem .rz-cell-filter .rz-cell-filter-label > .rz-menuitem-icon, .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rzi-close, .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rzi-close, .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rzi-close,
+        .rz-cell-filter .rz-cell-filter-label > .rzi,
+        .rz-cell-filter .rz-cell-filter-label > .rz-column-drag,
+        .rz-cell-filter .rz-datatable-loading-content .rz-cell-filter-label > .rzi-circle-o-notch,
+        .rz-datatable-loading-content .rz-cell-filter .rz-cell-filter-label > .rzi-circle-o-notch,
+        .rz-cell-filter .rz-menuitem .rz-cell-filter-label > .rz-menuitem-icon,
+        .rz-menuitem .rz-cell-filter .rz-cell-filter-label > .rz-menuitem-icon,
+        .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rzi-close,
+        .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rzi-close,
+        .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rzi-close,
+        .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rzi-close,
         .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rzi-times,
         .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rzi-times,
         .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rzi-times,
@@ -3449,7 +4109,15 @@ ul.rz-profile-menu {
         .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rz-icon-trash,
         .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rz-icon-trash,
         .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rz-icon-trash,
-        .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rz-icon-trash, .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rzi-chevron-circle-right, .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rzi-chevron-circle-right, .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rzi-chevron-circle-down, .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rzi-chevron-circle-down, .rz-cell-filter .rz-sortable-column .rz-cell-filter-label > .rzi-grid-sort, .rz-sortable-column .rz-cell-filter .rz-cell-filter-label > .rzi-grid-sort, .rz-cell-filter .rz-datatable-header .rz-cell-filter-label > .rzi-plus, .rz-datatable-header .rz-cell-filter .rz-cell-filter-label > .rzi-plus {
+        .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rz-icon-trash,
+        .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rzi-chevron-circle-right,
+        .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rzi-chevron-circle-right,
+        .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rzi-chevron-circle-down,
+        .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rzi-chevron-circle-down,
+        .rz-cell-filter .rz-sortable-column .rz-cell-filter-label > .rzi-grid-sort,
+        .rz-sortable-column .rz-cell-filter .rz-cell-filter-label > .rzi-grid-sort,
+        .rz-cell-filter .rz-datatable-header .rz-cell-filter-label > .rzi-plus,
+        .rz-datatable-header .rz-cell-filter .rz-cell-filter-label > .rzi-plus {
             width: 0.875rem;
             height: 0.875rem;
             font-size: 0.8125rem;
@@ -3457,7 +4125,16 @@ ul.rz-profile-menu {
             color: #88989b;
         }
 
-            .rz-cell-filter .rz-cell-filter-label > .rzi.rz-cell-filter-clear, .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rz-column-drag, .rz-cell-filter .rz-datatable-loading-content .rz-cell-filter-label > .rz-cell-filter-clear.rzi-circle-o-notch, .rz-datatable-loading-content .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-circle-o-notch, .rz-cell-filter .rz-menuitem .rz-cell-filter-label > .rz-cell-filter-clear.rz-menuitem-icon, .rz-menuitem .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rz-menuitem-icon, .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close, .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close, .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close, .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close,
+            .rz-cell-filter .rz-cell-filter-label > .rzi.rz-cell-filter-clear,
+            .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rz-column-drag,
+            .rz-cell-filter .rz-datatable-loading-content .rz-cell-filter-label > .rz-cell-filter-clear.rzi-circle-o-notch,
+            .rz-datatable-loading-content .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-circle-o-notch,
+            .rz-cell-filter .rz-menuitem .rz-cell-filter-label > .rz-cell-filter-clear.rz-menuitem-icon,
+            .rz-menuitem .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rz-menuitem-icon,
+            .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close,
+            .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close,
+            .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close,
+            .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-close,
             .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rz-cell-filter-clear.rzi-times,
             .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rz-cell-filter-clear.rzi-times,
             .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-times,
@@ -3465,7 +4142,15 @@ ul.rz-profile-menu {
             .rz-cell-filter .rz-fileupload-row .rz-button .rz-cell-filter-label > .rz-cell-filter-clear.rz-icon-trash,
             .rz-cell-filter .rz-fileupload-row .rz-paginator-element .rz-cell-filter-label > .rz-cell-filter-clear.rz-icon-trash,
             .rz-fileupload-row .rz-button .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rz-icon-trash,
-            .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rz-icon-trash, .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-right, .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-right, .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-down, .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-down, .rz-cell-filter .rz-sortable-column .rz-cell-filter-label > .rz-cell-filter-clear.rzi-grid-sort, .rz-sortable-column .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-grid-sort, .rz-cell-filter .rz-datatable-header .rz-cell-filter-label > .rz-cell-filter-clear.rzi-plus, .rz-datatable-header .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-plus {
+            .rz-fileupload-row .rz-paginator-element .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rz-icon-trash,
+            .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-right,
+            .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-right,
+            .rz-cell-filter .rz-datatable .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-down,
+            .rz-datatable .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-chevron-circle-down,
+            .rz-cell-filter .rz-sortable-column .rz-cell-filter-label > .rz-cell-filter-clear.rzi-grid-sort,
+            .rz-sortable-column .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-grid-sort,
+            .rz-cell-filter .rz-datatable-header .rz-cell-filter-label > .rz-cell-filter-clear.rzi-plus,
+            .rz-datatable-header .rz-cell-filter .rz-cell-filter-label > .rz-cell-filter-clear.rzi-plus {
                 margin-left: auto;
             }
 
@@ -3529,7 +4214,16 @@ ul.rz-profile-menu {
     color: #ffffff;
 }
 
-.rz-selectable .rz-datatable-even.rz-state-highlight > .rzi, .rz-selectable .rz-datatable-even.rz-state-highlight > .rz-column-drag, .rz-selectable .rz-datatable-loading-content .rz-datatable-even.rz-state-highlight > .rzi-circle-o-notch, .rz-datatable-loading-content .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-circle-o-notch, .rz-selectable .rz-menuitem .rz-datatable-even.rz-state-highlight > .rz-menuitem-icon, .rz-menuitem .rz-selectable .rz-datatable-even.rz-state-highlight > .rz-menuitem-icon, .rz-selectable .rz-fileupload-row .rz-button .rz-datatable-even.rz-state-highlight > .rzi-close, .rz-selectable .rz-fileupload-row .rz-paginator-element .rz-datatable-even.rz-state-highlight > .rzi-close, .rz-fileupload-row .rz-button .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-close,
+.rz-selectable .rz-datatable-even.rz-state-highlight > .rzi,
+.rz-selectable .rz-datatable-even.rz-state-highlight > .rz-column-drag,
+.rz-selectable .rz-datatable-loading-content .rz-datatable-even.rz-state-highlight > .rzi-circle-o-notch,
+.rz-datatable-loading-content .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-circle-o-notch,
+.rz-selectable .rz-menuitem .rz-datatable-even.rz-state-highlight > .rz-menuitem-icon,
+.rz-menuitem .rz-selectable .rz-datatable-even.rz-state-highlight > .rz-menuitem-icon,
+.rz-selectable .rz-fileupload-row .rz-button .rz-datatable-even.rz-state-highlight > .rzi-close,
+.rz-selectable .rz-fileupload-row .rz-paginator-element .rz-datatable-even.rz-state-highlight > .rzi-close,
+.rz-fileupload-row .rz-button .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-close,
+.rz-fileupload-row .rz-paginator-element .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-close,
 .rz-selectable .rz-fileupload-row .rz-button .rz-datatable-even.rz-state-highlight > .rzi-times,
 .rz-selectable .rz-fileupload-row .rz-paginator-element .rz-datatable-even.rz-state-highlight > .rzi-times,
 .rz-fileupload-row .rz-button .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-times,
@@ -3537,7 +4231,15 @@ ul.rz-profile-menu {
 .rz-selectable .rz-fileupload-row .rz-button .rz-datatable-even.rz-state-highlight > .rz-icon-trash,
 .rz-selectable .rz-fileupload-row .rz-paginator-element .rz-datatable-even.rz-state-highlight > .rz-icon-trash,
 .rz-fileupload-row .rz-button .rz-selectable .rz-datatable-even.rz-state-highlight > .rz-icon-trash,
-.rz-fileupload-row .rz-paginator-element .rz-selectable .rz-datatable-even.rz-state-highlight > .rz-icon-trash, .rz-selectable .rz-datatable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-right, .rz-datatable .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-right, .rz-selectable .rz-datatable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-down, .rz-datatable .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-down, .rz-selectable .rz-sortable-column .rz-datatable-even.rz-state-highlight > .rzi-grid-sort, .rz-sortable-column .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-grid-sort, .rz-selectable .rz-datatable-header .rz-datatable-even.rz-state-highlight > .rzi-plus, .rz-datatable-header .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-plus,
+.rz-fileupload-row .rz-paginator-element .rz-selectable .rz-datatable-even.rz-state-highlight > .rz-icon-trash,
+.rz-selectable .rz-datatable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-right,
+.rz-datatable .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-right,
+.rz-selectable .rz-datatable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-down,
+.rz-datatable .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-chevron-circle-down,
+.rz-selectable .rz-sortable-column .rz-datatable-even.rz-state-highlight > .rzi-grid-sort,
+.rz-sortable-column .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-grid-sort,
+.rz-selectable .rz-datatable-header .rz-datatable-even.rz-state-highlight > .rzi-plus,
+.rz-datatable-header .rz-selectable .rz-datatable-even.rz-state-highlight > .rzi-plus,
 .rz-selectable .rz-datatable-odd.rz-state-highlight > .rzi,
 .rz-selectable .rz-datatable-odd.rz-state-highlight > .rz-column-drag,
 .rz-selectable .rz-datatable-loading-content .rz-datatable-odd.rz-state-highlight > .rzi-circle-o-notch,
@@ -3797,22 +4499,16 @@ ul.rz-profile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .rz-data-grid-data {
     overflow: auto;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-.rz-grid-table td, .rz-grid-table th {
+.rz-grid-table td,
+.rz-grid-table th {
     padding: 0.5rem 0.625rem 0.5rem 0.625rem;
 }
 
@@ -3834,12 +4530,14 @@ ul.rz-profile-menu {
     .rz-grid-table-fixed .rz-frozen-cell {
         position: -webkit-sticky;
         position: sticky;
-        background: #e6ecef;
+        background: #eeeeef;
+        /*chỉnh màu ô frozen*/
         border-right: solid 1px #dfe7eb !important;
         z-index: 1;
     }
 
-.rz-grid-table tfoot, .rz-grid-table tfoot td {
+.rz-grid-table tfoot,
+.rz-grid-table tfoot td {
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
@@ -3921,14 +4619,14 @@ ul.rz-profile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0.5rem;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: right;
     background-color: #ffffff;
-    padding: 0.625rem;
 }
 
     .rz-paginator .rzi-step-backward:before {
@@ -3959,7 +4657,10 @@ ul.rz-profile-menu {
 
 .rz-paginator-element:hover,
 .rz-paginator-page:hover {
-    color: inherit;
+    color: #009EF7;
+    text-decoration: none;
+    background-color: #F1FAFF;
+    border-color: transparent;
 }
 
 .rz-paginator-bottom {
@@ -3973,11 +4674,11 @@ ul.rz-profile-menu {
 }
 
 .rz-paginator-prev {
-    margin-right: auto;
+    margin-right: 0.5rem;
 }
 
 .rz-paginator-next {
-    margin-left: auto;
+    margin-left: 0.5rem;
 }
 
 .rz-paginator-last {
@@ -3986,7 +4687,7 @@ ul.rz-profile-menu {
 
 .rz-paginator-first,
 .rz-paginator-prev {
-    background-color: #e6ecef;
+    background-color: #fff;
     color: #6d787d;
 }
 
@@ -3996,8 +4697,8 @@ ul.rz-profile-menu {
 
 .rz-paginator-last,
 .rz-paginator-next {
-    background-color: #479cc8;
-    color: #ffffff;
+    background-color: #fff;
+    color: #6d787d;
 }
 
     .rz-paginator-last:hover,
@@ -4007,18 +4708,19 @@ ul.rz-profile-menu {
 
 .rz-paginator-page {
     display: inline-block;
-    margin: 0 0.3125rem;
-    background-color: #e6ecef;
+    margin: 0;
+    background-color: #fff;
     border-radius: 4px;
     padding: 0.3125rem 0.6875rem;
-    color: #6d787d;
+    color: #5e6278;
 }
 
     .rz-paginator-page.rz-state-active {
-        background-color: #ffffff;
-        color: #ff6d41;
-        border: 1px solid #e6ecef;
+        background-color: #009ef7;
+        color: #fff;
+        border: transparent;
         padding: 0.25rem 0.625rem;
+        text-decoration: none;
     }
 
 .rz-paginator-summary {
@@ -4033,15 +4735,21 @@ ul.rz-profile-menu {
     }
 }
 
+
+/*chỉnh cửa sổ lọc*/
+
 .rz-overlaypanel {
     position: absolute;
     overflow: hidden;
     -webkit-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.06);
     box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.06);
     border: solid 1px #cecece;
-    border-radius: 4px;
-    background-color: #f3f5f7;
+    border-radius: 0.475rem;
+    background-color: #eeeeef;
 }
+
+
+/*end chỉnh cửa sổ lọc*/
 
 .rz-tree {
     display: inline-block;
@@ -4053,7 +4761,7 @@ ul.rz-profile-menu {
     }
 
 .rz-treenode {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .rz-tree-toggler {
@@ -4134,7 +4842,8 @@ ul.rz-profile-menu {
     border: 1px solid #e6ecef;
 }
 
-.rz-g > div, .rz-datalist-data > li {
+.rz-g > div,
+.rz-datalist-data > li {
     border-radius: 4px;
     border: solid 1px #e6ecef;
     -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.01);
@@ -4195,7 +4904,7 @@ ul.rz-profile-menu {
 
     .rz-scheduler .rz-event-list-btn {
         position: absolute;
-        color: #479cc8;
+        color: #009ef7;
     }
 
         .rz-scheduler .rz-event-list-btn:hover {
@@ -4236,12 +4945,12 @@ ul.rz-profile-menu {
 }
 
 .rz-event-content {
-    background: #68d5c8;
-    border-radius: 4px;
+    background: #009ef7;
+    border-radius: 0.25rem;
     color: #ffffff;
     height: 100%;
     padding: 4px;
-    font-size: 0.6875rem;
+    font-size: 0.575rem;
     line-height: 12px;
     overflow: hidden;
 }
@@ -4265,28 +4974,28 @@ ul.rz-profile-menu {
 
 .rz-slot-title {
     text-align: right;
-    padding: 0 11px;
+    font-size: 0.75rem;
 }
 
+
+/*chỉnh calendar nav*/
+
 .rz-scheduler-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    font-size: 0.75rem;
+    /* -webkit-box-pack: justify; */
     justify-content: space-between;
     padding: 0.625rem;
-    background: #e6ecef;
+    background: #ffffff;
 }
 
     .rz-scheduler-nav .rz-scheduler-nav-title {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-item-align: center;
         align-self: center;
         font-size: inherit;
-        font-weight: inherit;
+        font-weight: bold;
     }
 
 .rz-view-header {
@@ -4301,11 +5010,9 @@ ul.rz-profile-menu {
 }
 
     .rz-view-header .rz-slot-header {
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
         flex: 1;
         text-align: center;
-        font-size: 0.6875rem;
+        font-size: 0.5rem;
         padding: 0.5rem 0;
     }
 
@@ -4356,8 +5063,6 @@ ul.rz-profile-menu {
 }
 
 .rz-week {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
 }
 
@@ -4373,9 +5078,8 @@ ul.rz-profile-menu {
     }
 
 .rz-month-view .rz-slot {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    display: flex;
+    justify-content: right;
     height: 100%;
 }
 
@@ -4399,32 +5103,35 @@ ul.rz-profile-menu {
     display: flex;
 }
 
-    .rz-scheduler-nav-views .rz-button, .rz-scheduler-nav-views .rz-paginator-element {
+    .rz-scheduler-nav-views .rz-button,
+    .rz-scheduler-nav-views .rz-paginator-element {
         background: #ffffff;
-        color: #88989b;
-        text-transform: uppercase;
-        padding: 0 0.875rem;
-        font-size: 0.6875rem;
+        color: #5e6278 !important;
+        padding: 0 0.5rem;
+        font-size: 0.475rem;
         line-height: 1.75rem;
         border: solid 1px #dadfe2;
         border-radius: 0;
+        font-weight: 300;
     }
 
-        .rz-scheduler-nav-views .rz-button:first-child, .rz-scheduler-nav-views .rz-paginator-element:first-child {
-            border-top-left-radius: 4px;
-            border-bottom-left-radius: 4px;
+        .rz-scheduler-nav-views .rz-button:first-child,
+        .rz-scheduler-nav-views .rz-paginator-element:first-child {
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
             border-right: none;
         }
 
-        .rz-scheduler-nav-views .rz-button:last-child, .rz-scheduler-nav-views .rz-paginator-element:last-child {
-            border-top-right-radius: 4px;
-            border-bottom-right-radius: 4px;
+        .rz-scheduler-nav-views .rz-button:last-child,
+        .rz-scheduler-nav-views .rz-paginator-element:last-child {
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
             border-left: none;
         }
 
     .rz-scheduler-nav-views .rz-state-active {
-        background-color: #479cc8;
-        border-color: #479cc8;
+        background-color: #e9eaed;
+        border-color: #e9eaed;
         color: #ffffff;
     }
 
@@ -4435,28 +5142,29 @@ ul.rz-profile-menu {
 }
 
     .rz-scheduler-nav-prev-next .rz-today {
-        margin-left: 16px;
+        margin-left: 0.75em;
     }
 
-    .rz-scheduler-nav-prev-next .rz-button, .rz-scheduler-nav-prev-next .rz-paginator-element {
-        background-color: #479cc8;
-        color: #ffffff;
+    .rz-scheduler-nav-prev-next .rz-button,
+    .rz-scheduler-nav-prev-next .rz-paginator-element {
+        background-color: #fff;
+        color: #5e6278;
         text-transform: uppercase;
-        padding: 0 0.875rem;
-        font-size: 0.6875rem;
+        padding: 0 0.5rem;
+        font-size: 0.5rem;
     }
 
     .rz-scheduler-nav-prev-next .rz-prev {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        padding: 0 0.875rem;
+        padding: 0 0.5rem;
         font-size: 0.6875rem;
     }
 
     .rz-scheduler-nav-prev-next .rz-next {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 0 0.875rem;
+        padding: 0 0.5rem;
         font-size: 0.6875rem;
     }
 
@@ -4738,17 +5446,20 @@ ul.rz-profile-menu {
     padding: 1em;
 }
 
-    .rz-dialog-footer .rz-button, .rz-dialog-footer .rz-paginator-element {
+    .rz-dialog-footer .rz-button,
+    .rz-dialog-footer .rz-paginator-element {
         text-align: left !important;
         padding: 6px;
     }
 
-        .rz-dialog-footer .rz-button:first-child, .rz-dialog-footer .rz-paginator-element:first-child {
+        .rz-dialog-footer .rz-button:first-child,
+        .rz-dialog-footer .rz-paginator-element:first-child {
             background-color: #ff6d41;
             width: 80px;
         }
 
-        .rz-dialog-footer .rz-button:last-child, .rz-dialog-footer .rz-paginator-element:last-child {
+        .rz-dialog-footer .rz-button:last-child,
+        .rz-dialog-footer .rz-paginator-element:last-child {
             background-color: #479cc8;
             width: 105px;
         }
@@ -4986,7 +5697,8 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
         padding: 1rem;
     }
 
-        .login .register .rz-button, .login .register .rz-paginator-element {
+        .login .register .rz-button,
+        .login .register .rz-paginator-element {
             margin: 0 1rem;
         }
 
@@ -5131,23 +5843,19 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
 }
 
 .rz-progressbar {
-    border-radius: 4px;
-    height: 1.25rem;
+    border-radius: 0.475rem;
+    height: 1rem;
     position: relative;
-    background-color: #e6ecef;
+    background-color: #e9eaed;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
 .rz-progressbar-value {
-    border-radius: 4px;
+    border-radius: 0.475rem;
     position: absolute;
-    background-color: #479cc8;
+    background-color: rgba(17, 81, 243, 0.16);
     height: 100%;
     width: 100%;
 }
@@ -5156,8 +5864,8 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
     position: relative;
     width: 100%;
     text-align: center;
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
 }
 
 .rz-progressbar-indeterminate {
@@ -5186,7 +5894,7 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
             top: 0;
             left: 0;
             bottom: 0;
-            background-color: #479cc8;
+            background-color: rgba(17, 81, 243, 0.16);
             will-change: left, right;
             -webkit-animation: 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite rz-progressbar-indeterminate-anim-short;
             animation: 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite rz-progressbar-indeterminate-anim-short;
@@ -6049,11 +6757,28 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
     vertical-align: middle;
 }
 
-.rz-link .rzi, .rz-link .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-link .rz-menuitem-icon, .rz-link .rz-fileupload-row .rz-button .rzi-close, .rz-fileupload-row .rz-button .rz-link .rzi-close,
+.rz-link .rzi,
+.rz-link .rz-menuitem .rz-menuitem-icon,
+.rz-menuitem .rz-link .rz-menuitem-icon,
+.rz-link .rz-fileupload-row .rz-button .rzi-close,
+.rz-fileupload-row .rz-button .rz-link .rzi-close,
 .rz-link .rz-fileupload-row .rz-button .rzi-times,
 .rz-fileupload-row .rz-button .rz-link .rzi-times,
 .rz-link .rz-fileupload-row .rz-button .rz-icon-trash,
-.rz-fileupload-row .rz-button .rz-link .rz-icon-trash, .rz-link .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-link .rzi-chevron-circle-right, .rz-link .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-link .rzi-chevron-circle-down, .rz-link .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-link .rzi-grid-sort, .rz-link .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-link .rzi-plus, .rz-link .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-link .rzi-circle-o-notch, .rz-link .rz-column-drag, .rz-link .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-link .rzi-close,
+.rz-fileupload-row .rz-button .rz-link .rz-icon-trash,
+.rz-link .rz-datatable .rzi-chevron-circle-right,
+.rz-datatable .rz-link .rzi-chevron-circle-right,
+.rz-link .rz-datatable .rzi-chevron-circle-down,
+.rz-datatable .rz-link .rzi-chevron-circle-down,
+.rz-link .rz-sortable-column .rzi-grid-sort,
+.rz-sortable-column .rz-link .rzi-grid-sort,
+.rz-link .rz-datatable-header .rzi-plus,
+.rz-datatable-header .rz-link .rzi-plus,
+.rz-link .rz-datatable-loading-content .rzi-circle-o-notch,
+.rz-datatable-loading-content .rz-link .rzi-circle-o-notch,
+.rz-link .rz-column-drag,
+.rz-link .rz-fileupload-row .rz-paginator-element .rzi-close,
+.rz-fileupload-row .rz-paginator-element .rz-link .rzi-close,
 .rz-link .rz-fileupload-row .rz-paginator-element .rzi-times,
 .rz-fileupload-row .rz-paginator-element .rz-link .rzi-times,
 .rz-link .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
@@ -6099,11 +6824,28 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
     background-color: #ffffff;
 }
 
-    .rz-html-editor-toolbar .rzi, .rz-html-editor-toolbar .rz-menuitem .rz-menuitem-icon, .rz-menuitem .rz-html-editor-toolbar .rz-menuitem-icon, .rz-html-editor-toolbar .rz-fileupload-row .rz-button .rzi-close, .rz-fileupload-row .rz-button .rz-html-editor-toolbar .rzi-close,
+    .rz-html-editor-toolbar .rzi,
+    .rz-html-editor-toolbar .rz-menuitem .rz-menuitem-icon,
+    .rz-menuitem .rz-html-editor-toolbar .rz-menuitem-icon,
+    .rz-html-editor-toolbar .rz-fileupload-row .rz-button .rzi-close,
+    .rz-fileupload-row .rz-button .rz-html-editor-toolbar .rzi-close,
     .rz-html-editor-toolbar .rz-fileupload-row .rz-button .rzi-times,
     .rz-fileupload-row .rz-button .rz-html-editor-toolbar .rzi-times,
     .rz-html-editor-toolbar .rz-fileupload-row .rz-button .rz-icon-trash,
-    .rz-fileupload-row .rz-button .rz-html-editor-toolbar .rz-icon-trash, .rz-html-editor-toolbar .rz-datatable .rzi-chevron-circle-right, .rz-datatable .rz-html-editor-toolbar .rzi-chevron-circle-right, .rz-html-editor-toolbar .rz-datatable .rzi-chevron-circle-down, .rz-datatable .rz-html-editor-toolbar .rzi-chevron-circle-down, .rz-html-editor-toolbar .rz-sortable-column .rzi-grid-sort, .rz-sortable-column .rz-html-editor-toolbar .rzi-grid-sort, .rz-html-editor-toolbar .rz-datatable-header .rzi-plus, .rz-datatable-header .rz-html-editor-toolbar .rzi-plus, .rz-html-editor-toolbar .rz-datatable-loading-content .rzi-circle-o-notch, .rz-datatable-loading-content .rz-html-editor-toolbar .rzi-circle-o-notch, .rz-html-editor-toolbar .rz-column-drag, .rz-html-editor-toolbar .rz-fileupload-row .rz-paginator-element .rzi-close, .rz-fileupload-row .rz-paginator-element .rz-html-editor-toolbar .rzi-close,
+    .rz-fileupload-row .rz-button .rz-html-editor-toolbar .rz-icon-trash,
+    .rz-html-editor-toolbar .rz-datatable .rzi-chevron-circle-right,
+    .rz-datatable .rz-html-editor-toolbar .rzi-chevron-circle-right,
+    .rz-html-editor-toolbar .rz-datatable .rzi-chevron-circle-down,
+    .rz-datatable .rz-html-editor-toolbar .rzi-chevron-circle-down,
+    .rz-html-editor-toolbar .rz-sortable-column .rzi-grid-sort,
+    .rz-sortable-column .rz-html-editor-toolbar .rzi-grid-sort,
+    .rz-html-editor-toolbar .rz-datatable-header .rzi-plus,
+    .rz-datatable-header .rz-html-editor-toolbar .rzi-plus,
+    .rz-html-editor-toolbar .rz-datatable-loading-content .rzi-circle-o-notch,
+    .rz-datatable-loading-content .rz-html-editor-toolbar .rzi-circle-o-notch,
+    .rz-html-editor-toolbar .rz-column-drag,
+    .rz-html-editor-toolbar .rz-fileupload-row .rz-paginator-element .rzi-close,
+    .rz-fileupload-row .rz-paginator-element .rz-html-editor-toolbar .rzi-close,
     .rz-html-editor-toolbar .rz-fileupload-row .rz-paginator-element .rzi-times,
     .rz-fileupload-row .rz-paginator-element .rz-html-editor-toolbar .rzi-times,
     .rz-html-editor-toolbar .rz-fileupload-row .rz-paginator-element .rz-icon-trash,
@@ -6260,11 +7002,28 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
     background-color: inherit;
 }
 
-    .rz-html-editor-dropdown-trigger .rzi:before, .rz-html-editor-dropdown-trigger .rz-menuitem .rz-menuitem-icon:before, .rz-menuitem .rz-html-editor-dropdown-trigger .rz-menuitem-icon:before, .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-button .rzi-close:before, .rz-fileupload-row .rz-button .rz-html-editor-dropdown-trigger .rzi-close:before,
+    .rz-html-editor-dropdown-trigger .rzi:before,
+    .rz-html-editor-dropdown-trigger .rz-menuitem .rz-menuitem-icon:before,
+    .rz-menuitem .rz-html-editor-dropdown-trigger .rz-menuitem-icon:before,
+    .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-button .rzi-close:before,
+    .rz-fileupload-row .rz-button .rz-html-editor-dropdown-trigger .rzi-close:before,
     .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-button .rzi-times:before,
     .rz-fileupload-row .rz-button .rz-html-editor-dropdown-trigger .rzi-times:before,
     .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-button .rz-icon-trash:before,
-    .rz-fileupload-row .rz-button .rz-html-editor-dropdown-trigger .rz-icon-trash:before, .rz-html-editor-dropdown-trigger .rz-datatable .rzi-chevron-circle-right:before, .rz-datatable .rz-html-editor-dropdown-trigger .rzi-chevron-circle-right:before, .rz-html-editor-dropdown-trigger .rz-datatable .rzi-chevron-circle-down:before, .rz-datatable .rz-html-editor-dropdown-trigger .rzi-chevron-circle-down:before, .rz-html-editor-dropdown-trigger .rz-sortable-column .rzi-grid-sort:before, .rz-sortable-column .rz-html-editor-dropdown-trigger .rzi-grid-sort:before, .rz-html-editor-dropdown-trigger .rz-datatable-header .rzi-plus:before, .rz-datatable-header .rz-html-editor-dropdown-trigger .rzi-plus:before, .rz-html-editor-dropdown-trigger .rz-datatable-loading-content .rzi-circle-o-notch:before, .rz-datatable-loading-content .rz-html-editor-dropdown-trigger .rzi-circle-o-notch:before, .rz-html-editor-dropdown-trigger .rz-column-drag:before, .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rzi-close:before, .rz-fileupload-row .rz-paginator-element .rz-html-editor-dropdown-trigger .rzi-close:before,
+    .rz-fileupload-row .rz-button .rz-html-editor-dropdown-trigger .rz-icon-trash:before,
+    .rz-html-editor-dropdown-trigger .rz-datatable .rzi-chevron-circle-right:before,
+    .rz-datatable .rz-html-editor-dropdown-trigger .rzi-chevron-circle-right:before,
+    .rz-html-editor-dropdown-trigger .rz-datatable .rzi-chevron-circle-down:before,
+    .rz-datatable .rz-html-editor-dropdown-trigger .rzi-chevron-circle-down:before,
+    .rz-html-editor-dropdown-trigger .rz-sortable-column .rzi-grid-sort:before,
+    .rz-sortable-column .rz-html-editor-dropdown-trigger .rzi-grid-sort:before,
+    .rz-html-editor-dropdown-trigger .rz-datatable-header .rzi-plus:before,
+    .rz-datatable-header .rz-html-editor-dropdown-trigger .rzi-plus:before,
+    .rz-html-editor-dropdown-trigger .rz-datatable-loading-content .rzi-circle-o-notch:before,
+    .rz-datatable-loading-content .rz-html-editor-dropdown-trigger .rzi-circle-o-notch:before,
+    .rz-html-editor-dropdown-trigger .rz-column-drag:before,
+    .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rzi-close:before,
+    .rz-fileupload-row .rz-paginator-element .rz-html-editor-dropdown-trigger .rzi-close:before,
     .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rzi-times:before,
     .rz-fileupload-row .rz-paginator-element .rz-html-editor-dropdown-trigger .rzi-times:before,
     .rz-html-editor-dropdown-trigger .rz-fileupload-row .rz-paginator-element .rz-icon-trash:before,
@@ -6325,11 +7084,28 @@ button.rz-colorpicker-trigger {
     outline: none;
 }
 
-    button.rz-colorpicker-trigger .rzi:before, button.rz-colorpicker-trigger .rz-menuitem .rz-menuitem-icon:before, .rz-menuitem button.rz-colorpicker-trigger .rz-menuitem-icon:before, button.rz-colorpicker-trigger .rz-fileupload-row .rz-button .rzi-close:before, .rz-fileupload-row .rz-button button.rz-colorpicker-trigger .rzi-close:before,
+    button.rz-colorpicker-trigger .rzi:before,
+    button.rz-colorpicker-trigger .rz-menuitem .rz-menuitem-icon:before,
+    .rz-menuitem button.rz-colorpicker-trigger .rz-menuitem-icon:before,
+    button.rz-colorpicker-trigger .rz-fileupload-row .rz-button .rzi-close:before,
+    .rz-fileupload-row .rz-button button.rz-colorpicker-trigger .rzi-close:before,
     button.rz-colorpicker-trigger .rz-fileupload-row .rz-button .rzi-times:before,
     .rz-fileupload-row .rz-button button.rz-colorpicker-trigger .rzi-times:before,
     button.rz-colorpicker-trigger .rz-fileupload-row .rz-button .rz-icon-trash:before,
-    .rz-fileupload-row .rz-button button.rz-colorpicker-trigger .rz-icon-trash:before, button.rz-colorpicker-trigger .rz-datatable .rzi-chevron-circle-right:before, .rz-datatable button.rz-colorpicker-trigger .rzi-chevron-circle-right:before, button.rz-colorpicker-trigger .rz-datatable .rzi-chevron-circle-down:before, .rz-datatable button.rz-colorpicker-trigger .rzi-chevron-circle-down:before, button.rz-colorpicker-trigger .rz-sortable-column .rzi-grid-sort:before, .rz-sortable-column button.rz-colorpicker-trigger .rzi-grid-sort:before, button.rz-colorpicker-trigger .rz-datatable-header .rzi-plus:before, .rz-datatable-header button.rz-colorpicker-trigger .rzi-plus:before, button.rz-colorpicker-trigger .rz-datatable-loading-content .rzi-circle-o-notch:before, .rz-datatable-loading-content button.rz-colorpicker-trigger .rzi-circle-o-notch:before, button.rz-colorpicker-trigger .rz-column-drag:before, button.rz-colorpicker-trigger .rz-fileupload-row .rz-paginator-element .rzi-close:before, .rz-fileupload-row .rz-paginator-element button.rz-colorpicker-trigger .rzi-close:before,
+    .rz-fileupload-row .rz-button button.rz-colorpicker-trigger .rz-icon-trash:before,
+    button.rz-colorpicker-trigger .rz-datatable .rzi-chevron-circle-right:before,
+    .rz-datatable button.rz-colorpicker-trigger .rzi-chevron-circle-right:before,
+    button.rz-colorpicker-trigger .rz-datatable .rzi-chevron-circle-down:before,
+    .rz-datatable button.rz-colorpicker-trigger .rzi-chevron-circle-down:before,
+    button.rz-colorpicker-trigger .rz-sortable-column .rzi-grid-sort:before,
+    .rz-sortable-column button.rz-colorpicker-trigger .rzi-grid-sort:before,
+    button.rz-colorpicker-trigger .rz-datatable-header .rzi-plus:before,
+    .rz-datatable-header button.rz-colorpicker-trigger .rzi-plus:before,
+    button.rz-colorpicker-trigger .rz-datatable-loading-content .rzi-circle-o-notch:before,
+    .rz-datatable-loading-content button.rz-colorpicker-trigger .rzi-circle-o-notch:before,
+    button.rz-colorpicker-trigger .rz-column-drag:before,
+    button.rz-colorpicker-trigger .rz-fileupload-row .rz-paginator-element .rzi-close:before,
+    .rz-fileupload-row .rz-paginator-element button.rz-colorpicker-trigger .rzi-close:before,
     button.rz-colorpicker-trigger .rz-fileupload-row .rz-paginator-element .rzi-times:before,
     .rz-fileupload-row .rz-paginator-element button.rz-colorpicker-trigger .rzi-times:before,
     button.rz-colorpicker-trigger .rz-fileupload-row .rz-paginator-element .rz-icon-trash:before,
@@ -6646,7 +7422,9 @@ button.rz-colorpicker-trigger {
         opacity: 1;
     }
 
-        .rz-splitter > .rz-splitter-bar-resizable:active > .rz-expand, .rz-splitter > .rz-splitter-bar-resizable:active > .rz-resize, .rz-splitter > .rz-splitter-bar-resizable:active > .rz-collapse {
+        .rz-splitter > .rz-splitter-bar-resizable:active > .rz-expand,
+        .rz-splitter > .rz-splitter-bar-resizable:active > .rz-resize,
+        .rz-splitter > .rz-splitter-bar-resizable:active > .rz-collapse {
             color: #fff;
         }
 

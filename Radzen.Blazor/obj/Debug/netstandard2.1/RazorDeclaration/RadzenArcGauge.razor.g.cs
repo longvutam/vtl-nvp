@@ -12,12 +12,12 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenArcGauge.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenArcGauge.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
@@ -29,7 +29,7 @@ using Radzen.Blazor.Rendering;
         {
         }
         #pragma warning restore 1998
-#line 41 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenArcGauge.razor"
+#line 41 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenArcGauge.razor"
        
     IList<RadzenArcGaugeScaleValue> Values { get; set; } = new List<RadzenArcGaugeScaleValue>();
 

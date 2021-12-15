@@ -12,12 +12,12 @@ namespace Radzen.Blazor.Rendering
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\Rendering\LegendItem.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\Rendering\LegendItem.razor"
 using Radzen.Blazor;
 
 #line default
@@ -29,7 +29,7 @@ using Radzen.Blazor;
         {
         }
         #pragma warning restore 1998
-#line 12 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\Rendering\LegendItem.razor"
+#line 12 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\Rendering\LegendItem.razor"
        
     [Parameter]
     public string Color { get; set; }

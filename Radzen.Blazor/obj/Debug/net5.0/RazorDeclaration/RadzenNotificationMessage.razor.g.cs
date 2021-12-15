@@ -12,12 +12,12 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenNotificationMessage.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenNotificationMessage.razor"
 using System.Timers;
 
 #line default
@@ -29,7 +29,7 @@ using System.Timers;
         {
         }
         #pragma warning restore 1998
-#line 21 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenNotificationMessage.razor"
+#line 21 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenNotificationMessage.razor"
        
     Tuple<string, string> GetMessageCssClasses()
     {

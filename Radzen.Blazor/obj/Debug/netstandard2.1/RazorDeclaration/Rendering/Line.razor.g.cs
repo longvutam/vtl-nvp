@@ -12,7 +12,7 @@ namespace Radzen.Blazor.Rendering
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
@@ -24,7 +24,7 @@ using Microsoft.AspNetCore.Components.Web;
         {
         }
         #pragma warning restore 1998
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\Rendering\Line.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\Rendering\Line.razor"
        
     [Parameter]
     public string Style { get; set; }

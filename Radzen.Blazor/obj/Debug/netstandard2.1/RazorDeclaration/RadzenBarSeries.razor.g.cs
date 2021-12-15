@@ -12,22 +12,22 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
 using Radzen;
 
 #line default
 #line hidden
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
-#line 3 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 3 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
@@ -39,7 +39,7 @@ using Radzen.Blazor.Rendering;
         {
         }
         #pragma warning restore 1998
-#line 12 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 12 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
        
    public override RenderFragment Render(ScaleBase categoryScale, ScaleBase valueScale)
    {
@@ -65,14 +65,14 @@ using Radzen.Blazor.Rendering;
         (__builder2) => {
             __builder2.OpenElement(0, "g");
             __builder2.AddAttribute(1, "class", 
-#line 30 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 30 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                     className
 
 #line default
 #line hidden
             );
             __builder2.AddMarkupContent(2, "\r\n");
-#line 31 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 31 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
              foreach(var data in Items)
             {
                 var y = category(data) - barHeight / 2 + index * height + index * padding;
@@ -101,49 +101,49 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(3, "                ");
             __builder2.OpenElement(4, "Path");
             __builder2.AddAttribute(5, "@key", 
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                              path
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(6, "D", 
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                                        path
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(7, "Stroke", 
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                                                       stroke
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(8, "StrokeWidth", 
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                                                                             StrokeWidth
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(9, "Fill", 
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                                                                                                 fill
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(10, "LineType", 
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                                                                                                                  LineType
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(11, "Style", 
-#line 53 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 53 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
                                                                                                                                    style
 
 #line default
@@ -151,7 +151,7 @@ using Radzen.Blazor.Rendering;
             );
             __builder2.CloseElement();
             __builder2.AddMarkupContent(12, "\r\n");
-#line 54 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 54 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
             }
 
 #line default
@@ -159,7 +159,7 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(13, "        ");
             __builder2.CloseElement();
         }
-#line 55 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
+#line 55 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenBarSeries.razor"
             ;
     }
 

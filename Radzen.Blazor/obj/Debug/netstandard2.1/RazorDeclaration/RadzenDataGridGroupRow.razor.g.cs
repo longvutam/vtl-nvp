@@ -12,12 +12,12 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDataGridGroupRow.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDataGridGroupRow.razor"
 using System.Linq.Dynamic.Core;
 
 #line default
@@ -29,7 +29,7 @@ using System.Linq.Dynamic.Core;
         {
         }
         #pragma warning restore 1998
-#line 40 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDataGridGroupRow.razor"
+#line 40 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenDataGridGroupRow.razor"
        
         [Parameter]
         public IList<RadzenDataGridColumn<TItem>> Columns { get; set; }

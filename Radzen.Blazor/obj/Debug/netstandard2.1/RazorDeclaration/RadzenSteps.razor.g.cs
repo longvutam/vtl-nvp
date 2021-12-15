@@ -10,27 +10,27 @@ namespace Radzen.Blazor
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
+#line 1 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
-#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
+#line 2 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
-#line 3 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
+#line 3 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
-#line 7 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
+#line 7 "D:\c#\blazor\vtl-nvp\Radzen.Blazor\RadzenSteps.razor"
 using System.Linq;
 
 #line default
