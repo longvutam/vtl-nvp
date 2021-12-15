@@ -4808,7 +4808,7 @@ ul.rz-profile-menu {
     }
 
     .rz-treenode-content:not(.rz-treenode-content-selected):hover .rz-treenode-label {
-        background-color: #59a6cd;
+        background-color: #E4E6EF;
         color: #ffffff;
         border-radius: 2px;
     }
@@ -4829,7 +4829,7 @@ ul.rz-profile-menu {
 .rz-treenode-content-selected .rz-treenode-label {
     border-radius: 2px;
     color: #ffffff;
-    background-color: #479cc8;
+    background-color: #e4e6ef;
 }
 
 .rz-datalist,
@@ -4881,7 +4881,6 @@ ul.rz-profile-menu {
     .rz-g > div {
         -webkit-box-flex: 1;
         -ms-flex: auto;
-        flex: auto;
         margin: 0.6875rem;
     }
 
@@ -5884,7 +5883,7 @@ body:not(.rz-default-scrollbars) ::-webkit-scrollbar-corner {
             top: 0;
             left: 0;
             bottom: 0;
-            background-color: #479cc8;
+            background-color: rgba(17, 81, 243, 0.16);
             will-change: left, right;
             -webkit-animation: 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite rz-progressbar-indeterminate-anim;
             animation: 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite rz-progressbar-indeterminate-anim;
