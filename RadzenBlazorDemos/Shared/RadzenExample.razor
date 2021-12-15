@@ -1,0 +1,50 @@
+@using System.IO
+@using Radzen.Blazor
+
+@if (Heading)
+{
+    <h1>@Name</h1>
+    <p>Demonstration and configuration of the Radzen Blazor <strong>@Name</strong> component.</p>
+}
+@if (Documentation)
+{
+    <a class="documentation-link" target="blank" href="@DocumentationHref"><RadzenIcon Icon="help_outline" style="font-size: 1rem; margin-right: 4px;" /> Documentation</a>
+}
+<RadzenTabs>
+    <Tabs>
+        <RadzenTabsItem Text="Example" Icon="apps">
+            @ChildContent
+        </RadzenTabsItem>
+        <RadzenTabsItem Text="Source" Icon="code">
+            <CodeViewer PageName="@($"{Source ?? Name}Page.razor")" />
+        </RadzenTabsItem>
+        @foreach (var p in AdditionalSourceCodePages)
+        {
+        <RadzenTabsItem Text="@Path.GetFileName(p)" Icon="code">
+            <CodeViewer PageName="@p" />
+        </RadzenTabsItem>
+        }
+    </Tabs>
+</RadzenTabs>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Name { get; set; }
+
+    [Parameter]
+    public string Source { get; set; }
+
+    [Parameter]
+    public bool Heading { get; set; } = true;
+
+    [Parameter]
+    public bool Documentation { get; set; } = true;
+
+    string DocumentationHref => $"/docs/guides/components/{Name.ToLower()}.html";
+
+    [Parameter]
+    public IEnumerable<string> AdditionalSourceCodePages { get; set; } = Enumerable.Empty<string>();
+}

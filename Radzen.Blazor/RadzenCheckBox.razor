@@ -1,0 +1,18 @@
+﻿@using Radzen
+@using Radzen.Blazor.Rendering
+@using Microsoft.AspNetCore.Components.Forms
+@typeparam TValue
+@inherits FormComponent<TValue>
+@if (Visible)
+{
+    <div @ref="@Element" @attributes="Attributes" class="@GetCssClass()" @onmouseup=@Toggle @onkeypress=@OnKeyPress
+    @onkeypress:preventDefault style="@Style" tabindex="@TabIndex" id="@GetId()">
+    <div class="rz-helper-hidden-accessible">
+        <input type="checkbox" @onchange=@Toggle value=@CheckBoxValue name=@Name id=@Name checked=@CheckBoxChecked
+            tabindex="-1">
+    </div>
+    <div class=@BoxClassList>
+        <span class=@IconClassList></span>
+    </div>
+</div>
+}
