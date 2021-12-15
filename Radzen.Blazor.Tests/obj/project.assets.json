@@ -6432,19 +6432,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MyPC\\.nuget\\packages\\": {}
+    "C:\\Users\\owlsn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c#\\radzen-blazor\\Radzen.Blazor.Tests\\Radzen.Blazor.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\owlsn\\Source\\Repos\\vtl-nvp\\Radzen.Blazor.Tests\\Radzen.Blazor.Tests.csproj",
       "projectName": "Radzen.Blazor.Tests",
-      "projectPath": "D:\\c#\\radzen-blazor\\Radzen.Blazor.Tests\\Radzen.Blazor.Tests.csproj",
-      "packagesPath": "C:\\Users\\MyPC\\.nuget\\packages\\",
-      "outputPath": "D:\\c#\\radzen-blazor\\Radzen.Blazor.Tests\\obj\\",
+      "projectPath": "C:\\Users\\owlsn\\Source\\Repos\\vtl-nvp\\Radzen.Blazor.Tests\\Radzen.Blazor.Tests.csproj",
+      "packagesPath": "C:\\Users\\owlsn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\owlsn\\Source\\Repos\\vtl-nvp\\Radzen.Blazor.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MyPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\owlsn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6459,8 +6459,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\c#\\radzen-blazor\\Radzen.Blazor\\Radzen.Blazor.csproj": {
-              "projectPath": "D:\\c#\\radzen-blazor\\Radzen.Blazor\\Radzen.Blazor.csproj"
+            "C:\\Users\\owlsn\\Source\\Repos\\vtl-nvp\\Radzen.Blazor\\Radzen.Blazor.csproj": {
+              "projectPath": "C:\\Users\\owlsn\\Source\\Repos\\vtl-nvp\\Radzen.Blazor\\Radzen.Blazor.csproj"
             }
           }
         }
@@ -6515,7 +6515,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

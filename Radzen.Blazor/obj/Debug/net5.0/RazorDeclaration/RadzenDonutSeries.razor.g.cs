@@ -12,12 +12,12 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\_Imports.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
@@ -29,7 +29,7 @@ using Radzen.Blazor.Rendering;
         {
         }
         #pragma warning restore 1998
-#line 10 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 10 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
        
     public RenderFragment RenderTitle(double x, double y)
     {
@@ -53,42 +53,40 @@ using Radzen.Blazor.Rendering;
         (__builder2) => {
             __builder2.OpenElement(0, "div");
             __builder2.AddAttribute(1, "style", "position:" + " absolute;left:" + " " + (
-#line 26 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 26 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                      left
 
 #line default
 #line hidden
             ) + "px;top:" + " " + (
-#line 26 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 26 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                                     top
 
 #line default
 #line hidden
             ) + "px;width:" + " " + (
-#line 26 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 26 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                                                     width
 
 #line default
 #line hidden
             ) + "px;" + " height:" + " " + (
-#line 26 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 26 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                                                                         height
 
 #line default
 #line hidden
             ) + "px;");
-            __builder2.AddMarkupContent(2, "\n                ");
-            __builder2.AddContent(3, 
-#line 27 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
-                 TitleTemplate
+            __builder2.AddMarkupContent(2, "\r\n                ");
+#line 27 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
+__builder2.AddContent(3, TitleTemplate);
 
 #line default
 #line hidden
-            );
-            __builder2.AddMarkupContent(4, "\n            ");
+            __builder2.AddMarkupContent(4, "\r\n            ");
             __builder2.CloseElement();
         }
-#line 28 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 28 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                   ;
       }
 
@@ -107,17 +105,17 @@ using Radzen.Blazor.Rendering;
 #line hidden
         (__builder2) => {
             __builder2.OpenElement(5, "g");
-            __builder2.AddMarkupContent(6, "\n            ");
+            __builder2.AddMarkupContent(6, "\r\n            ");
             __builder2.OpenElement(7, "g");
             __builder2.AddAttribute(8, "class", 
-#line 41 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 41 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                        className
 
 #line default
 #line hidden
             );
-            __builder2.AddMarkupContent(9, "\n");
-#line 42 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+            __builder2.AddMarkupContent(9, "\r\n");
+#line 42 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                  if (Items.Any())
                 {
                     var sum = Items.Sum(Value);
@@ -127,7 +125,7 @@ using Radzen.Blazor.Rendering;
 
 #line default
 #line hidden
-#line 47 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 47 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                      foreach(var data in Items)
                     {
                         var value = Value(data);
@@ -149,52 +147,52 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(10, "                        ");
             __builder2.OpenElement(11, "g");
             __builder2.AddAttribute(12, "class", 
-#line 62 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 62 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                    arcClassName
 
 #line default
 #line hidden
             );
-            __builder2.AddMarkupContent(13, "\n                            ");
+            __builder2.AddMarkupContent(13, "\r\n                            ");
             __builder2.OpenElement(14, "Path");
             __builder2.AddAttribute(15, "D", 
-#line 63 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 63 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                       d
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(16, "Fill", 
-#line 63 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 63 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                 fill
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(17, "StrokeWidth", 
-#line 63 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 63 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                                     StrokeWidth
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(18, "Stroke", 
-#line 63 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 63 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                                                           stroke
 
 #line default
 #line hidden
             );
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(19, "\n                        ");
+            __builder2.AddMarkupContent(19, "\r\n                        ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(20, "\n");
-#line 65 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+            __builder2.AddMarkupContent(20, "\r\n");
+#line 65 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                     }
 
 #line default
 #line hidden
-#line 65 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 65 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                      
                 }
 
@@ -202,8 +200,8 @@ using Radzen.Blazor.Rendering;
 #line hidden
             __builder2.AddContent(21, "            ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(22, "\n       \n");
-#line 69 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+            __builder2.AddMarkupContent(22, "\r\n       \r\n");
+#line 69 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
          if (!string.IsNullOrEmpty(Title) && TitleTemplate == null)
         {
 
@@ -212,37 +210,35 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(23, "            ");
             __builder2.OpenElement(24, "g");
             __builder2.AddAttribute(25, "class", "rz-donut-title");
-            __builder2.AddMarkupContent(26, "\n                ");
+            __builder2.AddMarkupContent(26, "\r\n                ");
             __builder2.OpenElement(27, "text");
             __builder2.AddAttribute(28, "class", "rz-donut-title");
             __builder2.AddAttribute(29, "x", 
-#line 72 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 72 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                  CenterX.ToInvariantString()
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(30, "y", 
-#line 72 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 72 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
                                                                                   CenterY.ToInvariantString()
 
 #line default
 #line hidden
             );
-            __builder2.AddMarkupContent(31, "\n                    ");
-            __builder2.AddContent(32, 
-#line 73 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
-                     Title
+            __builder2.AddMarkupContent(31, "\r\n                    ");
+#line 73 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
+__builder2.AddContent(32, Title);
 
 #line default
 #line hidden
-            );
-            __builder2.AddMarkupContent(33, "\n                ");
+            __builder2.AddMarkupContent(33, "\r\n                ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(34, "\n            ");
+            __builder2.AddMarkupContent(34, "\r\n            ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(35, "\n");
-#line 76 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+            __builder2.AddMarkupContent(35, "\r\n");
+#line 76 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
         }
 
 #line default
@@ -250,7 +246,7 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(36, "        ");
             __builder2.CloseElement();
         }
-#line 77 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenDonutSeries.razor"
+#line 77 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenDonutSeries.razor"
             ;
     }
 

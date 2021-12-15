@@ -12,12 +12,12 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\_Imports.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 2 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenContextMenu.razor"
+#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenContextMenu.razor"
 using Microsoft.JSInterop;
 
 #line default

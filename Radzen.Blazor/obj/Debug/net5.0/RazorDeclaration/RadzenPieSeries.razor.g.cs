@@ -12,12 +12,12 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\_Imports.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
@@ -29,7 +29,7 @@ using Radzen.Blazor.Rendering;
         {
         }
         #pragma warning restore 1998
-#line 9 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 9 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
        
    public override RenderFragment Render(ScaleBase categoryScale, ScaleBase valueScale)
    {
@@ -46,14 +46,14 @@ using Radzen.Blazor.Rendering;
         (__builder2) => {
             __builder2.OpenElement(0, "g");
             __builder2.AddAttribute(1, "class", 
-#line 18 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 18 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                     className
 
 #line default
 #line hidden
             );
-            __builder2.AddMarkupContent(2, "\n");
-#line 19 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+            __builder2.AddMarkupContent(2, "\r\n");
+#line 19 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
              if (Items.Any())
             {
                 var sum = Items.Sum(Value);
@@ -64,7 +64,7 @@ using Radzen.Blazor.Rendering;
 
 #line default
 #line hidden
-#line 25 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 25 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                  foreach(var data in Items)
                 {
                     var value = Value(data);
@@ -86,14 +86,14 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(3, "                    ");
             __builder2.OpenElement(4, "g");
             __builder2.AddAttribute(5, "class", 
-#line 40 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 40 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                                arcClassName
 
 #line default
 #line hidden
             );
-            __builder2.AddMarkupContent(6, "\n");
-#line 41 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+            __builder2.AddMarkupContent(6, "\r\n");
+#line 41 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                          if (angle > 0)
                         {
 
@@ -102,49 +102,49 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(7, "                            ");
             __builder2.OpenElement(8, "Path");
             __builder2.AddAttribute(9, "D", 
-#line 43 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 43 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                                       d
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(10, "Fill", 
-#line 43 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 43 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                                                 fill
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(11, "StrokeWidth", 
-#line 43 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 43 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                                                                     StrokeWidth
 
 #line default
 #line hidden
             );
             __builder2.AddAttribute(12, "Stroke", 
-#line 43 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 43 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                                                                                           stroke
 
 #line default
 #line hidden
             );
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(13, "\n");
-#line 44 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+            __builder2.AddMarkupContent(13, "\r\n");
+#line 44 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                         }
 
 #line default
 #line hidden
             __builder2.AddContent(14, "                    ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(15, "\n");
-#line 46 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+            __builder2.AddMarkupContent(15, "\r\n");
+#line 46 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                 }
 
 #line default
 #line hidden
-#line 46 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 46 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
                  
             }
 
@@ -153,7 +153,7 @@ using Radzen.Blazor.Rendering;
             __builder2.AddContent(16, "        ");
             __builder2.CloseElement();
         }
-#line 48 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenPieSeries.razor"
+#line 48 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenPieSeries.razor"
             ;
     }
 

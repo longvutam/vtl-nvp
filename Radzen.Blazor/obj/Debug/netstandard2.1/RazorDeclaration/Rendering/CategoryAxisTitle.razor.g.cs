@@ -12,7 +12,7 @@ namespace Radzen.Blazor.Rendering
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\_Imports.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
@@ -24,7 +24,7 @@ using Microsoft.AspNetCore.Components.Web;
         {
         }
         #pragma warning restore 1998
-#line 5 "D:\c#\radzen-blazor\Radzen.Blazor\Rendering\CategoryAxisTitle.razor"
+#line 5 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\Rendering\CategoryAxisTitle.razor"
        
     [Parameter]
     public double X { get; set; }

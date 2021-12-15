@@ -12,12 +12,12 @@ namespace Radzen.Blazor.Rendering
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\_Imports.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\Rendering\DaySlotEvents.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\Rendering\DaySlotEvents.razor"
 using Radzen.Blazor;
 
 #line default
@@ -29,7 +29,7 @@ using Radzen.Blazor;
         {
         }
         #pragma warning restore 1998
-#line 45 "D:\c#\radzen-blazor\Radzen.Blazor\Rendering\DaySlotEvents.razor"
+#line 45 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\Rendering\DaySlotEvents.razor"
        
     [CascadingParameter]
     public IScheduler Scheduler { get; set; }

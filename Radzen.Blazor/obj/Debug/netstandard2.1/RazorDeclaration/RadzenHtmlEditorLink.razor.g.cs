@@ -12,22 +12,22 @@ namespace Radzen.Blazor
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\_Imports.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 1 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 1 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
 using System.Text;
 
 #line default
 #line hidden
-#line 2 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 2 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
 using Radzen.Blazor.Rendering;
 
 #line default
 #line hidden
-#line 3 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 3 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
 using Microsoft.JSInterop;
 
 #line default
@@ -39,7 +39,7 @@ using Microsoft.JSInterop;
         {
         }
         #pragma warning restore 1998
-#line 10 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 10 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
        
     protected override async Task OnClick()
     {
@@ -63,23 +63,21 @@ using Microsoft.JSInterop;
         (__builder2) => {
             __builder2.OpenElement(0, "div");
             __builder2.AddAttribute(1, "class", "rz-html-editor-dialog");
-            __builder2.AddMarkupContent(2, "\n        ");
+            __builder2.AddMarkupContent(2, "\r\n        ");
             __builder2.OpenElement(3, "div");
             __builder2.AddAttribute(4, "class", "rz-html-editor-dialog-item");
-            __builder2.AddMarkupContent(5, "\n            ");
+            __builder2.AddMarkupContent(5, "\r\n            ");
             __builder2.OpenElement(6, "label");
-            __builder2.AddContent(7, 
-#line 28 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
-                    UrlText
+#line 28 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+__builder2.AddContent(7, UrlText);
 
 #line default
 #line hidden
-            );
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(8, "\n            ");
+            __builder2.AddMarkupContent(8, "\r\n            ");
             __builder2.OpenElement(9, "RadzenTextBox");
             __builder2.AddAttribute(10, "@bind-Value", 
-#line 29 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 29 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
                                         attributes.Href
 
 #line default
@@ -87,10 +85,10 @@ using Microsoft.JSInterop;
             );
             __builder2.AddAttribute(11, "style", "width: 100%");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(12, "\n        ");
+            __builder2.AddMarkupContent(12, "\r\n        ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(13, "\n");
-#line 31 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+            __builder2.AddMarkupContent(13, "\r\n");
+#line 31 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
          if (string.IsNullOrEmpty(attributes.InnerHtml))
             {
 
@@ -99,20 +97,18 @@ using Microsoft.JSInterop;
             __builder2.AddContent(14, "                ");
             __builder2.OpenElement(15, "div");
             __builder2.AddAttribute(16, "class", "rz-html-editor-dialog-item");
-            __builder2.AddMarkupContent(17, "\n                    ");
+            __builder2.AddMarkupContent(17, "\r\n                    ");
             __builder2.OpenElement(18, "label");
-            __builder2.AddContent(19, 
-#line 34 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
-                            LinkText
+#line 34 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+__builder2.AddContent(19, LinkText);
 
 #line default
 #line hidden
-            );
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(20, "\n                    ");
+            __builder2.AddMarkupContent(20, "\r\n                    ");
             __builder2.OpenElement(21, "RadzenTextBox");
             __builder2.AddAttribute(22, "@bind-Value", 
-#line 35 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 35 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
                                                 attributes.InnerText
 
 #line default
@@ -120,10 +116,10 @@ using Microsoft.JSInterop;
             );
             __builder2.AddAttribute(23, "style", "width: 100%");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(24, "\n                ");
+            __builder2.AddMarkupContent(24, "\r\n                ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(25, "\n");
-#line 37 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+            __builder2.AddMarkupContent(25, "\r\n");
+#line 37 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
             }
 
 #line default
@@ -131,35 +127,33 @@ using Microsoft.JSInterop;
             __builder2.AddContent(26, "            ");
             __builder2.OpenElement(27, "div");
             __builder2.AddAttribute(28, "class", "rz-html-editor-dialog-item");
-            __builder2.AddMarkupContent(29, "\n                ");
+            __builder2.AddMarkupContent(29, "\r\n                ");
             __builder2.OpenElement(30, "RadzenCheckBox");
             __builder2.AddAttribute(31, "@bind-Value", 
-#line 39 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 39 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
                                              blank
 
 #line default
 #line hidden
             );
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(32, "\n                ");
+            __builder2.AddMarkupContent(32, "\r\n                ");
             __builder2.OpenElement(33, "label");
-            __builder2.AddContent(34, 
-#line 40 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
-                        OpenInNewWindowText
+#line 40 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+__builder2.AddContent(34, OpenInNewWindowText);
 
 #line default
 #line hidden
-            );
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(35, "\n            ");
+            __builder2.AddMarkupContent(35, "\r\n            ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(36, "\n            ");
+            __builder2.AddMarkupContent(36, "\r\n            ");
             __builder2.OpenElement(37, "div");
             __builder2.AddAttribute(38, "class", "rz-html-editor-dialog-buttons");
-            __builder2.AddMarkupContent(39, "\n                ");
+            __builder2.AddMarkupContent(39, "\r\n                ");
             __builder2.OpenElement(40, "RadzenButton");
             __builder2.AddAttribute(41, "Text", 
-#line 43 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 43 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
                                     OkText
 
 #line default
@@ -167,10 +161,10 @@ using Microsoft.JSInterop;
             );
             __builder2.AddAttribute(42, "Click", "()=> ds.Close(true)");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(43, "\n                ");
+            __builder2.AddMarkupContent(43, "\r\n                ");
             __builder2.OpenElement(44, "RadzenButton");
             __builder2.AddAttribute(45, "Text", 
-#line 44 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 44 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
                                     CancelText
 
 #line default
@@ -179,13 +173,13 @@ using Microsoft.JSInterop;
             __builder2.AddAttribute(46, "Click", "()=> ds.Close(false)");
             __builder2.AddAttribute(47, "ButtonStyle", "ButtonStyle.Secondary");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(48, "\n            ");
+            __builder2.AddMarkupContent(48, "\r\n            ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(49, "\n        ");
+            __builder2.AddMarkupContent(49, "\r\n        ");
             __builder2.CloseElement();
-            __builder2.AddMarkupContent(50, "\n");
+            __builder2.AddMarkupContent(50, "\r\n");
         }
-#line 47 "D:\c#\radzen-blazor\Radzen.Blazor\RadzenHtmlEditorLink.razor"
+#line 47 "C:\Users\owlsn\Source\Repos\vtl-nvp\Radzen.Blazor\RadzenHtmlEditorLink.razor"
     );
 
         await Editor.RestoreSelectionAsync();
